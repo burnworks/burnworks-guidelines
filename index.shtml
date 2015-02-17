@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.0.4 (Last modified 2015-02-17)
+  Burnworks Inc. Web Development Guidelines Ver.1.0.5 (Last modified 2015-02-17)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,9 +47,8 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2015-02-17T19:18:13+09:00">2015-02-17</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2015-02-17T20:17:59+09:00">2015-02-17</time></span></p>
 </div>
-
 
 <div class="block-section">
 <section>
@@ -61,7 +60,6 @@
 <p>ディレクターはクライアントから指定の Web サイト要件を満たし、Web サイトのビジネスゴールを達成するため、適切な情報提供、提案を行う、また Web サイトの情報設計からプロジェクトの進行管理、プロジェクトメンバーの業務管理、納品物の品質管理を適切に行うものとする。</p>
 
 <p>ディレクターはクライアントを含めプロジェクトメンバー間でのコミュニケーションを積極的に取ることで円滑なプロジェクト進行を心がける。また、クライアントに対しては進捗の報告、情報共有を適時、および明確に行い、信頼関係の構築に努める。</p>
-
 
 </div>
 
@@ -113,7 +111,6 @@
 <li>議事録の作成</li>
 </ul>
 
-
 </div>
 
 <h3 id="direction-member">社内プロジェクトメンバーのアサイン</h3>
@@ -121,7 +118,6 @@
 <p>社内におけるプロジェクトメンバーのアサインは Web サイト制作事業の責任者権限で行う。リソース管理の観点から、ディレクターが現場の独自判断でメンバーをアサインしたりすることは禁止する。</p>
 
 <p>守秘義務契約、及び業務委託契約を結んでいない外部の個人事業主、及び企業へのプロジェクト情報の開示や作業の依頼は当然ながら一切禁止する。</p>
-
 
 </div>
 
@@ -141,7 +137,6 @@
 
 <p>例えば Movable Type の場合、カスタムフィールドを用いた特殊な入力画面をクライアントに提供するなど、開発元が提供する公式ドキュメントでは対応できない場合などに、簡易なものを作成する前提とする。</p>
 
-
 </div>
 
 <h3 id="direction-communication">プロジェクト進行における連絡手段</h3>
@@ -149,7 +144,6 @@
 <p>プロジェクト進行中のクライアントを含むプロジェクトメンバーとの連絡・情報共有の手段は、基本的にクライアントへの新たなツール導入の負荷を避けるため、メーリングリストを利用する。プロジェクトのキックオフがされた後、ディレクターによってメーリングリストの開設が行われ、プロジェクトメンバーが招待される。</p>
 
 <p>クライアントの要望や、プロジェクトの特性、要件に応じて、連絡・情報共有用のツールは最適なものを選択できる。ただし、情報管理の観点から、使用ツールの選定はクライアント、および当社の情報管理ポリシーに基づき行う他、連絡の内容がすべて、ログとして長期にわたり保存され、後から検索可能なツールを選択すること。</p>
-
 
 </div>
 
@@ -171,7 +165,6 @@
 
 <p>Web ページ内の文字サイズ変更を Web サイト側で提供する所謂「文字サイズ変更ボタン」の提供は原則として行わない。文字サイズの変更はブラウザ UI に任せるべきで、必要であれば操作方法をヘルプページ等に表記するものとする。</p>
 
-
 </div>
 
 <h3 id="direction-url">ページタイトルやURL</h3>
@@ -183,7 +176,6 @@
 <p>必要に応じて、ページ内に記述する <code>&lt;meta name="description" /&gt;</code> の値なども決められる場合は記述しておく。</p>
 
 <p>なお、この一覧に CSS や JavaScript 等、ページで読み込まれる各リソースのパス指定などは不要（これらに関しては別途 <a href="#section-coding">コーディング関連のセクション</a> で定める）。</p>
-
 
 </div>
 
@@ -208,7 +200,6 @@
 <li>例）当社|当社、貴社|御社、お客様|クライアント、～します|～いたします ...etc</li>
 </ul>
 
-
 </div>
 
 <h3 id="direction-access-analytics">アクセス解析</h3>
@@ -218,7 +209,6 @@
 <p>ディレクターは、Web サイト公開前に必ず Web サイトへの Google Analytics トラッキングコードの設置、及び設定 （主にゴール設定） が行われていることを確認する。</p>
 
 <p>また、Web サイトには必ず個人情報保護方針 （プライバシーポリシー） を掲載し、その中で、Google Analysis の使用、およびクッキー （Cookie） を使用したアクセスログ収集に関する掲示を行うものとする。その際、Google 社のプライバシーポリシーページへのリンクもあわせて掲載すること。（詳しくは <a href="#direction-privacy-policy">個人情報保護方針のセクション</a> を参照） </p>
-
 
 </div>
 
@@ -245,13 +235,11 @@
 <li><a href="https://burnworks.com/privacy/">個人情報保護方針 ： バーンワークス株式会社</a></li>
 </ul>
 
-
 </div>
 
 <h3 id="direction-contract">サーバや外部サービスの契約</h3>
 <div class="block-article-body">
 <p>クライアントから新規のサーバ契約やその他外部サービス（ドメイン取得、ASP の利用等）の利用を求められた場合は、当社にてその選定や申し込みの代行を行うなど、最大限協力するものとする。しかし、実際の契約自体はクライアントとサービス提供元間での直接契約とし、当社が代理契約をすることは原則として行わない。</p>
-
 
 </div>
 
@@ -300,7 +288,6 @@
 
 <p>フォントサイズは、最小サイズを 12px 相当とする。ただし、重要でない注釈等に関しては 10px 相当まで許容する。現在のディスプレイサイズ等を考慮すれば、標準的なフォントサイズは本文で 14px 相当～ 16px 相当が妥当と考える。その他、ボタンサイズ等については <a href="#smartphone-touch-device">タッチデバイスのセクション</a> を参照。</p>
 
-
 </div>
 
 <h3 id="design-design-data">デザインデータ</h3>
@@ -315,7 +302,6 @@
 
 <p>デザインデータはクライアントに納品される。レイヤーの分け方や名前の付け方など、他の人が見てもわかりやすいように配慮すること。これは実装担当者の作業効率も向上させる。</p>
 
-
 </div>
 
 <h3 id="design-style-guide">スタイルガイド</h3>
@@ -326,7 +312,6 @@
 
 <p>加えて、デザイン内で使用している基本カラーの一覧、および使用フォントの一覧もスタイルガイド内に記載すること。</p>
 
-
 </div>
 
 <h3 id="design-stock-photo">画像素材のライセンス</h3>
@@ -335,13 +320,11 @@
 
 <p>素材として使用する画像のライセンスは、原則として「ロイヤリティフリー」のものとする。ただし、クライアントの許可を得た上で、「ライツマネージドライセンス」 の画像素材を購入することは問題ない。その際の契約は素材提供業者とクライアント間で行い、当社が代理で契約することはしない。</p>
 
-
 </div>
 
 <h3 id="design-svg">SVG</h3>
 <div class="block-article-body">
 <p>アイコン、簡単な図版などに関しては、SVG の使用を推奨する。Illustrator でデータを作成し、SVG での書き出しは実装担当者が行う。実際のデザイン上での表示サイズなどはデザインデータ内で明確に指定すること。</p>
-
 
 </div>
 
@@ -361,7 +344,6 @@
 
 <p>Web サイトのパフォーマンス、メンテナンス性や CMS の利用も考慮し、テキストの不要な画像化は避ける。</p>
 
-
 </div>
 
 <h3 id="design-favicon">Favicon</h3>
@@ -380,7 +362,6 @@
 <li><a href="https://github.com/gleero/grunt-favicons">gleero/grunt-favicons</a></li>
 </ul>
 
-
 </div>
 
 </div>
@@ -398,7 +379,6 @@
 
 <p>画面サイズが小さいデバイスでは、モーダルウィンドウ形式の UI は操作性を著しく低下させる可能性があるため避ける。あるいは画面サイズが小さい場合は無効にするなどの配慮が必要。</p>
 
-
 </div>
 
 <h3 id="smartphone-touch-device">タッチデバイス</h3>
@@ -411,7 +391,6 @@
 
 <p>タップ可能な要素は視覚的にわかりやすいよう配慮する。</p>
 
-
 </div>
 
 <h3 id="smartphone-breakpoint">ブレイクポイント</h3>
@@ -421,7 +400,6 @@
 <p>ディスプレイの横サイズ 768px 以上のデバイスに関しては PC 向けレイアウトを表示する。</p>
 
 <p>ただし、上記はプロジェクトの要件によって変動する場合がある。</p>
-
 
 </div>
 
@@ -436,7 +414,6 @@
 <p>よって、Retina 対応が必要なスマートフォンサイトのデザインデータの作成は、ブレイクポイントとなる 768px の 2 倍の横サイズ（1,536px）で行うこととなる。その際、アイコンフォントや CSS を利用し、極力画像の使用を避けるデザインを心がけることで実装時の負担を低減する。また、Web サイトの表示速度面も配慮すること。</p>
 
 <p>PC 向け Web ページに関しては、Retina 対応は不要とする。対応する場合は画像のファイルサイズ増加に十分注意すること。</p>
-
 
 </div>
 
@@ -456,7 +433,6 @@
 <p>上記以外に、使用した各種ライブラリ、jQuery や Movable Type 等、CMS のプラグインを 1つのドキュメントにまとめてディレクターに提出すること。</p>
 
 <p>また、Sass ファイルや、プリプロセスされた中間制作物一式 （<a href="#css-halfway">中間制作物のセクション</a> を参照） は、特に要望がない限りはクライアントへは納品しない。メンテナンス作業に備え、プロジェクトごとに社内規定に基づき管理する。</p>
-
 
 </div>
 
@@ -496,7 +472,6 @@
 
 <p>スタイルシートは css ディレクトリへ、同様に、画像、インクルード用ファイル、JavaScript ファイルをそれぞれのディレクトリに格納する。画像は全ページ共通で使用するものを share ディレクトリへ、その他は使用するページのディレクトリ構成に合わせて格納する。</p>
 
-
 </div>
 
 <h3 id="coding-file-name">ファイル名の基本ルール</h3>
@@ -513,7 +488,6 @@
 </ul>
 
 <p><a href="#coding-server-path">ディレクトリ構成のルール</a>とあわせて、第三者が見てもわかりやすいファイル名を心がけること。</p>
-
 
 </div>
 
@@ -556,13 +530,11 @@
 </ul>
 </div>
 
-
 </div>
 
 <h3 id="coding-charset">文字コード</h3>
 <div class="block-article-body">
 <p>Web サイトの文字コードは、特別な指定がない限り UTF-8 (no BOM) を使用すること。HTML 文書においては、<code>&lt;meta charset=&quot;utf-8&quot; /&gt;</code> を head 要素内の可能な限り上部 （基本的には最初の子要素として） に記述すること。</p>
-
 
 </div>
 
@@ -606,7 +578,6 @@ color:blue;
 
 <p>ただし、プリプロセッサやビルドツールを使用する場合においては、最終的な納品物からインデントや改行が削除されていてもよい。元のコーディングファイル、あるいは中間制作物はこのフォーマットに従うこと。</p>
 
-
 </div>
 
 <h3 id="coding-letter">大文字小文字</h3>
@@ -637,7 +608,6 @@ color:blue;
 }
 </pre>
 
-
 </div>
 
 <h3 id="coding-comment">コメント</h3>
@@ -659,7 +629,6 @@ color:blue;
 </pre>
 
 <p>また、HTML 文書内で不要になった要素ブロックや、CSS ファイル内の不要なスタイル宣言等を、一時的な場合を除いてコメントアウトで長い期間運用することは推奨しない。</p>
-
 
 </div>
 
@@ -694,7 +663,6 @@ color:blue;
 <pre>
 &lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1.0&quot; /&gt;
 </pre>
-
 
 </div>
 
@@ -745,7 +713,6 @@ color:blue;
 }
 </pre>
 
-
 </div>
 
 <h3 id="coding-ｌibrary">ライブラリ・フレームワーク</h3>
@@ -753,7 +720,6 @@ color:blue;
 <p>CSS / JavaScript ライブラリやフレームワークの利用はプロジェクトの要件に応じて選択可能。ただし、使用するライブラリやフレームワークに関してはメンテナンスが継続されていること、バグフィックスや脆弱性への対応等が、過去きちんと行われていることを重視して選択すること。</p>
 
 <p>また、使用したライブラリ・フレームワークは一覧できるように別途ドキュメントに記載すること。</p>
-
 
 </div>
 
@@ -781,7 +747,6 @@ color:blue;
 <p>各要素は、HTML5 のコンテンツモデルや使用できる文脈に基づき適切に記述すること。またアウトラインが適切かについて必ず確認すること。</p>
 
 <p>また、納品前の HTML ファイルは、必ず <a href="http://validator.w3.org/">The W3C Markup Validation Service</a> によるチェックを行うこと。特に HTML タグの閉じ忘れといったミスは避ける。なお、バリデーションはビルドツール等によって行っても構わない。</p>
-
 
 </div>
 
@@ -835,7 +800,6 @@ color:blue;
 
 <p>また、ある要素 （例えばナビゲーションなど） の位置固定表示 （e.g. <code>position: fixed;</code>） を行う場合は、画面サイズが小さいときなどに画面外に要素がはみ出して閲覧できなくなるなどの可能性を十分に配慮する。</p>
 
-
 </div>
 
 <h3 id="html-document-type-definition">文書型宣言</h3>
@@ -853,7 +817,6 @@ color:blue;
 <li>論理属性は必ず 属性名=&quot;属性値&quot; という記述にすること。<code class="badcode">&lt;input type=&quot;check&quot; checked /&gt;</code> → <code>&lt;input type=&quot;check&quot; checked=&quot;checked&quot; /&gt;</code></li>
 <li>URL内やテキストノード内の &amp; は <code>&amp;amp;</code> と文字参照で記述すること</li>
 </ul>
-
 
 </div>
 
@@ -890,7 +853,6 @@ color:blue;
 
 <p>なお、要素に関わらず、終了タグの省略は禁止する。</p>
 
-
 </div>
 
 <h3 id="html-semantics">セマンティクス</h3>
@@ -920,7 +882,6 @@ color:blue;
 </pre>
 
 <p>class 名や id 名の命名規則に関して詳しくは <a href="#css-selector-name">セレクタの命名規則セクション</a> を参照。</p>
-
 
 </div>
 
@@ -961,7 +922,6 @@ color:blue;
 
 <p><a href="#section-performance">パフォーマンスのセクション</a> もあわせて参照のこと。</p>
 
-
 </div>
 
 <h3 id="html-type-attribute">type 属性</h3>
@@ -988,7 +948,6 @@ color:blue;
 &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
 </pre>
 
-
 </div>
 
 <h3 id="html-structured-data">構造化データ</h3>
@@ -998,7 +957,6 @@ color:blue;
 <p>現状、トピックパス （所謂パンくず） 向けの構造化データマークアップ語彙としては Google が <a href="http://www.data-vocabulary.org/">data-vocabulary.org</a> にのみの対応としているため、トピックパスのマークアップに関しては schema.org 以外の語彙の使用を認める。ただし、近い将来、Google が schema.org のトピックパス向け語彙に今後対応することは念頭に置くこと。</p>
 
 <p>構造化データのテストツールとしては、Google の <a href="https://developers.google.com/webmasters/structured-data/testing-tool/">構造化データテストツール</a> を推奨する。</p>
-
 
 </div>
 
@@ -1033,7 +991,6 @@ color:blue;
 &lt;meta property=&quot;og:type&quot; content=&quot;article&quot; /&gt;
 </pre>
 
-
 </div>
 
 <h3 id="html-conditional-comment">条件付きコメント</h3>
@@ -1048,7 +1005,6 @@ color:blue;
 </pre>
 
 <p>ただし、要件上どうしても旧式のブラウザ向けにポリフィルを読み込まなければならない場合など、やむを得ない場合は使用可能。</p>
-
 
 </div>
 
@@ -1065,7 +1021,6 @@ color:blue;
 <ul>
 <li><a href="http://reference.hyper-text.org/html5/element/a/">a 要素 ： HTML5 タグリファレンス</a></li>
 </ul>
-
 
 </div>
 
@@ -1098,7 +1053,6 @@ $(function(){
 </pre>
 
 <p>フォールバックの手法は他にもあるが、メンテナンス性やパフォーマンスの関係から上記の方法を標準とする。</p>
-
 
 </div>
 
@@ -1184,13 +1138,11 @@ h3 {
 
 <p><a href="http://jigsaw.w3.org/css-validator/">W3C CSS 検証サービス</a>によるバリデーションを行うこと。特にスペルミスや記述ミスは確実にチェックし、排除すること。プリプロセッサやビルドツールを用いたバリデーションでも構わない。</p>
 
-
 </div>
 
 <h3 id="css-normalize">デフォルトスタイルシートのノーマライズ</h3>
 <div class="block-article-body">
 <p>デフォルトスタイルシートのノーマライズには <a href="http://necolas.github.io/normalize.css/">Normalize.css</a> を使用する。また、リセット CSS の使用は非推奨とする。</p>
-
 
 </div>
 
@@ -1251,7 +1203,6 @@ h3 {
 .state-active {...}
 </pre>
 
-
 </div>
 
 <h3 id="css-shorthand">ショートハンド</h3>
@@ -1284,7 +1235,6 @@ padding: 0 1em 2em;
 
 <p>ただし、font 関連プロパティのショートハンドに関しては、記述順などが煩雑なことや、スタイルの継承が複雑になる場合もあるため、メンテナンス性や記述ミスのリスクを考慮して、無理に使用する必要はない。body 要素に対しての指定のみにとどめるなど、実装時に判断する。</p>
 
-
 </div>
 
 <h3 id="css-media-rule">@media 規則</h3>
@@ -1292,7 +1242,6 @@ padding: 0 1em 2em;
 <p>HTML ガイドラインにて、link 要素に対する media 属性の使用は原則として禁止しているため、メディアクエリに関しては CSS ファイル内での @media 規則のみ許可する。</p>
 
 <p>ただし、プリント用 CSS を記述する場合は、CSS ファイルの末尾に記述すること。また、原則として CSS ファイル内での @import 規則の使用は禁止する。</p>
-
 
 </div>
 
@@ -1317,7 +1266,6 @@ line-height: 1.5;
 opacity: .8;
 font-size: .875em;
 </pre>
-
 
 </div>
 
@@ -1347,7 +1295,6 @@ a:active {
 
 <p>リンクの下線はデザイン要件により非表示にしてもよいが、文字色などで通常のテキストとの差異を明確にし、リンクがわかりやすいように配慮すること。</p>
 
-
 </div>
 
 <h3 id="css-font-family">font-family の指定</h3>
@@ -1359,7 +1306,6 @@ body {
   font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Sans-Serif;
 }
 </pre>
-
 
 </div>
 
@@ -1377,7 +1323,6 @@ body {
 <li>大規模サイトで上記ルールでは数値が足りなそうなことが想定される場合はこの限りではない。</li>
 </ul>
 
-
 </div>
 
 <h3 id="css-web">Web フォントやアイコンフォントの利用</h3>
@@ -1385,7 +1330,6 @@ body {
 <p>Web フォントやアイコンフォントの利用は可能。特にアイコンフォントに関しては、<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> を推奨する。</p>
 
 <p>第三者が提供するフォントを使用する場合は、<a href="#other-license">ライセンスのセクション</a> も確認すること。</p>
-
 
 </div>
 
@@ -1397,13 +1341,11 @@ body {
 
 <p>なお、サポート対象ブラウザよりも古いバージョンのブラウザに関しては、未対応のプロパティやセレクタを使用することで、閲覧に支障が出るほどレイアウトが大きく崩れたり、アクセシビリティを損ねるような状態になることが予想される場合には、フォールバックを用意すること。</p>
 
-
 </div>
 
 <h3 id="css-css-hack">CSSハック</h3>
 <div class="block-article-body">
 <p>CSS ハックは原則として使用しないこと。やむを得ない場合のみ使用できるが、CSS ファイル内の末尾などにまとめて記述し、標準的なスタイルの記述と混ぜないこと。</p>
-
 
 </div>
 
@@ -1412,7 +1354,6 @@ body {
 <p>ビルドツールやプリプロセッサを使用する場合、最終納品物（Web サイトで読み込まれる CSS ファイル）と、実際に編集している Sass ファイル等の間に、改行、コメントを残し、1ファイルにまとめた CSS ファイルを中間制作物として必ず出力するようにすること。CSS によるコードレビューが必要な場合などに配慮して。</p>
 
 <p>通常は、中間制作物となる CSS ファイルからコメント、改行等を取り除いた（Minify した）ものが最終納品物となる。</p>
-
 
 </div>
 
@@ -1477,7 +1418,6 @@ $('#item');
 }
 </pre>
 
-
 </div>
 
 <h3 id="javascript-quotation-mark">シングルクォーテーションとダブルクォーテーション</h3>
@@ -1492,13 +1432,11 @@ $('div').add('p').css('background-color', 'red');
 $('div').add('&lt;p id=&quot;sample&quot;&gt;new paragraph&lt;/p&gt;').css('background-color', 'red');
 </pre>
 
-
 </div>
 
 <h3 id="javascript-semicolon">セミコロン</h3>
 <div class="block-article-body">
 <p>セミコロンの省略は行わないこと。JavaScript ではセミコロンの省略が許されるが、セミコロンの挿入を処理系に任せた結果、自動補完が意図せず行われたり、または行われないことでエラーが発生し、デバッグが困難になる等の問題が想定されるため。</p>
-
 
 </div>
 
@@ -1538,7 +1476,6 @@ var jiro = new Person('jiro', 29);
 var API_KEY = 'b6lC50HCr4mA';
 </pre>
 
-
 </div>
 
 <h3 id="javascript-function-declaration">ブロックの中での関数宣言</h3>
@@ -1558,7 +1495,6 @@ if (x) {
   var foo = function() {}
 }
 </pre>
-
 
 </div>
 
@@ -1586,7 +1522,6 @@ if (x) {
 
 <p>jquery-latest.js の使用は禁止する。必ずバージョンを明示して呼び出すこと。（<a href="http://hyper-text.org/archives/2014/07/dont_use_jquery_latest_js.shtml">参考記事</a>）</p>
 
-
 </div>
 
 </div>
@@ -1607,7 +1542,6 @@ if (x) {
 <p>「無料」であることを理由にオープンソースプロダクトを選択するようなことはしない。クライアントに対してはプロダクトのサポート体制やプロダクトライフサイクルポリシーについて説明を怠らない。</p>
 
 <p>上記を踏まえ、当社では原則として SixApart 社の Movable Type、およびその関連プロダクトを選択肢の第一候補とするが、プロダクト選定はクライアントの要件、ビジネスゴールの達成に対してそのプロダクトが最適であるかが前提となる。</p>
-
 
 </div>
 
@@ -1632,7 +1566,6 @@ if (x) {
 
 <p>通常の案件に関しては、Movable Type 6 （ソフトウェア版）を使用する。</p>
 
-
 </div>
 
 <h3 id="cms-plugin">プラグイン</h3>
@@ -1642,7 +1575,6 @@ if (x) {
 <p>プラグインの動作を理由に CMS のバージョンを下げること、あるいは CMS 本体のプログラムの改変を行うことは禁止する。最新のバージョンで動作しないプラグインは利用不可。</p>
 
 <p>また、使用したプラグインは一覧できるように別途ドキュメントに記載すること。</p>
-
 
 </div>
 
@@ -1690,7 +1622,6 @@ if (x) {
 <li><code>oGZ2BL0ZLjl@</code></li>
 </ul>
 
-
 </div>
 
 <h3 id="security-password-protect">管理画面のパスワード保護</h3>
@@ -1714,7 +1645,6 @@ if (x) {
 
 <p>ディレクトリ単位で認証をかけても問題ない場合は、そのように対処する。Movable Type 等の場合、インストールディレクトリ全体に認証をかけてしまうと、コメントや検索用プログラム等を外部から利用できなくなるので注意が必要。</p>
 
-
 </div>
 
 <h3 id="security-ssl">SSL の利用</h3>
@@ -1732,7 +1662,6 @@ if (x) {
 <li>ジオトラスト</li>
 </ul>
 
-
 </div>
 
 <h3 id="security-ftp">FTP</h3>
@@ -1740,7 +1669,6 @@ if (x) {
 <p>サーバへのファイル転送に関して、FTP の使用は禁止する。SFTP（SSH File Transfer Protocol）、もしくは FTPS （File Transfer Protocol over SSL/TLS） を利用し、FTP クライアントに関しては、これらに対応していないものの使用は禁止。</p>
 
 <p>SFTP/FTPS 対応クライアントとして、Windows 環境であれば、WinSCP、NextFTP の利用を推奨。</p>
-
 
 </div>
 
@@ -1762,7 +1690,6 @@ UpgradeScript mt-upgrade-example.cgi
 DataAPIScript mt-data-api-example.cgi
 CheckScript mt-check-example.cgi
 </pre>
-
 
 </div>
 
@@ -1792,7 +1719,6 @@ CheckScript mt-check-example.cgi
 <h4>パフォーマンス向上のヒント</h4>
 
 <p>以下のセクションで説明する。</p>
-
 
 </div>
 
@@ -1824,7 +1750,6 @@ CheckScript mt-check-example.cgi
 <li><a href="https://github.com/marrone/grunt-tinypng">marrone/grunt-tinypng</a>（.png のみ / APIキー必須）</li>
 </ul>
 
-
 </div>
 
 <h3 id="performance-cssmin">CSS の最適化</h3>
@@ -1834,7 +1759,6 @@ CheckScript mt-check-example.cgi
 <p>Sass 等を使用する場合は、ネストが深くなりすぎないように注意。またはメディアクエリが複数の場所に分散したりしないように配慮すること。また、実際にページで読み込まれる CSS は必ず Minify すること。</p>
 
 <p>また、メンテナンス等により、使われていないスタイル宣言が大量に残ったままになるなど、ファイルサイズを無駄に肥大化させる記述は、ツールなどを用いてなるべく早期に排除するよう心がける。</p>
-
 
 </div>
 
@@ -1847,7 +1771,6 @@ CheckScript mt-check-example.cgi
 <h4>Google タグマネージャ</h4>
 
 <p>可能な限り、Google タグマネージャの利用を推奨する。Google Analysis のトラッキングコードも Google タグマネージャから配信すれば個別にコードをページに入れる必要はない。（<a href="http://hyper-text.org/archives/2013/11/google_tagmanager_get_start.shtml">参考記事</a>）</p>
-
 
 </div>
 
@@ -1893,7 +1816,6 @@ CheckScript mt-check-example.cgi
 
 <p>サーバ側で HTTP/2 の利用が可能であれば利用する。SPDY の利用も効果があるが、HTTP/2 が利用できる Web サーバであれば、そちらを優先すること。サーバプッシュの設定なども含めて、クライアントサーバ管理担当者と協議。</p>
 
-
 </div>
 
 <h3 id="performance-rel-subresource">rel=subresource</h3>
@@ -1916,7 +1838,6 @@ CheckScript mt-check-example.cgi
 <li><a href="http://www.chromium.org/spdy/link-headers-and-server-hint/link-rel-subresource">LINK rel=subresource ： The Chromium Projects</a></li>
 </ul>
 
-
 </div>
 
 <h3 id="performance-rel-prefetch">rel=prefetch</h3>
@@ -1934,7 +1855,6 @@ CheckScript mt-check-example.cgi
 <ul>
 <li><a href="https://developer.mozilla.org/ja/docs/Link_prefetching_FAQ">Link prefetching FAQ ： MDN</a></li>
 </ul>
-
 
 </div>
 
@@ -1973,7 +1893,6 @@ CheckScript mt-check-example.cgi
 
 <p>個人としての SNS の利用やブログの開設、運営は原則として禁止しないが、クライアントやプロジェクトの内容に関してそれらに投稿することは一切禁止する。これはアカウントが非公開になっている場合も含む。</p>
 
-
 </div>
 
 <h3 id="im-pc-security">パソコンのセキュリティ</h3>
@@ -1981,7 +1900,6 @@ CheckScript mt-check-example.cgi
 <p>デスクトップ、モバイルを問わず、使用するパソコンには必ずパスワードによるロックをかけること。また、画面ロックをしないまま PC の前を離れたり、第三者にパソコンを貸したりはしないこと （どうしても一時的に貸さなければならない場合はゲストアカウントを使用し、目の届く範囲で使用させること）。</p>
 
 <p>カフェなど、複数の人間が周囲にいる状況で会社やクライアントの重要な情報が記載されたファイルを開くことを禁止する。また、公衆無線 LAN など、安全でないネットワーク上において、さらに通信が暗号化されていない状況で重要なファイルをメール送信したり、受け取ったりしないこと。</p>
-
 
 </div>
 
@@ -1995,7 +1913,6 @@ CheckScript mt-check-example.cgi
 
 <p>パスワード情報などを誰でも閲覧可能な場所に保存したりはしないこと。各自の手元でパスワードを管理する場合は、パスワード管理ソフトを使用し、適切に管理すること。</p>
 
-
 </div>
 
 <h3 id="im-data-management">機密情報の管理</h3>
@@ -2004,7 +1921,6 @@ CheckScript mt-check-example.cgi
 
 <p>また、紙で提供された情報は、不用意に書類ケースに放置したり、シュレッダーにかけずに廃棄したりするようなことがないように注意すること。</p>
 
-
 </div>
 
 <h3 id="im-cloud-service">クラウドサービスの利用</h3>
@@ -2012,7 +1928,6 @@ CheckScript mt-check-example.cgi
 <p>Dropbox をはじめとした、データを外部サーバに預けるサービスの利用に関しては、2段階認証を行うなど、セキュリティの要件を満たしていれば特に制約はしないが、クライアントとの業務委託契約、あるいは機密保持契約の内容が優先される。</p>
 
 <p>使用する場合でも、クライアント関連のデータは暗号化して保存するなど、データの取り扱いには注意すること。なお、機密情報と文書または口頭にて明示されたデータのクラウドサービスへのアップロードは原則として禁止する。</p>
-
 
 </div>
 
@@ -2030,7 +1945,6 @@ CheckScript mt-check-example.cgi
 <p>映像、写真、音楽など、他者が創作したものを Web サイトで使用する場合は著作権の侵害を行わないよう十分に注意すること。映像や音楽等、他者が創作したものを公の場で利用する場合は、原則として創作者に対する利用許諾が必要なため、クライアントから提供された素材だとしても、必ず著作権の問題がクリアされているかを確認の上、使用する。</p>
 
 <p>その他、フレームワークやライブラリをはじめとしたプログラムのソースコード等、ライセンスに則った適切な利用を行うこと。詳しくは <a href="#other-license">ライセンスのセクション</a> を参照。</p>
-
 
 </div>
 
@@ -2064,7 +1978,6 @@ CheckScript mt-check-example.cgi
 <li><a href="http://line.me/logo/ja">LINEロゴの利用について</a></li>
 </ul>
 
-
 </div>
 
 <h3 id="other-buildtool">ビルドツール等</h3>
@@ -2082,7 +1995,6 @@ CheckScript mt-check-example.cgi
 <h4>バージョン管理</h4>
 
 <p>Git を推奨。リポジトリサービスは GitHub を使用を推奨するが、クライアント案件のソースコードをパブリックなリポジトリには保存しないこと。</p>
-
 
 </div>
 
@@ -2109,7 +2021,6 @@ CheckScript mt-check-example.cgi
 
 <p>また、コーディングにおいて、HTML や CSS をはじめとした Web 標準技術は W3C の各仕様に基づいて正しく使用することを前提としており、本ガイドライン内のコーディング規則ではその詳細について取り扱わない。</p>
 
-
 </div>
 
 <h3 id="guidelines-version">ガイドラインの改定</h3>
@@ -2128,12 +2039,11 @@ CheckScript mt-check-example.cgi
 
 <p>本ガイドラインは、下記のルールに則って、更新、改訂ごとにバージョン番号が変更される。</p>
 
-<ol start='1'>
+<ol>
 <li>メジャーバージョン番号は、大幅な構成の変更など、前バージョンと別のドキュメントとして扱うのが妥当なほどの変更が行われた場合に 1 ずつ増加する。</li>
 <li>マイナーバージョン番号は、項目、項目内のセクションの追加が行われた場合に 1 ずつ増加する。</li>
 <li>リビジョン番号は誤字脱字の修正や文章の軽微な修正などが行われた場合に 1 ずつ増加する。メジャーバージョン番号、またはマイナーバージョン番号が変更された際は、0 にリセットされる。</li>
 </ol>
-
 
 </div>
 
@@ -2150,7 +2060,6 @@ CheckScript mt-check-example.cgi
 <ul>
 <li><a href="https://github.com/burnworks/burnworks-guidelines">burnworks/burnworks-guidelines</a></li>
 </ul>
-
 
 </div>
 
@@ -2170,405 +2079,147 @@ CheckScript mt-check-example.cgi
 <ul class="module-menu-list">
 <li class="module-go-top"><a href="#top">ページの上部へ移動</a></li>
 <li><a href="#section-direction">サイト設計・ディレクション</a>
-
 <ul>
 <li><a href="#direction-basic">基本</a></li>
-
-
-
 <li><a href="#direction-kickoff">プロジェクトキックオフ</a></li>
-
-
-
 <li><a href="#direction-member">社内プロジェクトメンバーのアサイン</a></li>
-
-
-
 <li><a href="#direction-document">ドキュメント</a></li>
-
-
-
 <li><a href="#direction-communication">プロジェクト進行における連絡手段</a></li>
-
-
-
 <li><a href="#direction-accessibility">アクセシビリティ</a></li>
-
-
-
 <li><a href="#direction-url">ページタイトルやURL</a></li>
-
-
-
 <li><a href="#direction-use-terms-consistently">文言の統一</a></li>
-
-
-
 <li><a href="#direction-access-analytics">アクセス解析</a></li>
-
-
-
 <li><a href="#direction-privacy-policy">個人情報保護方針</a></li>
-
-
-
 <li><a href="#direction-contract">サーバや外部サービスの契約</a></li>
 </ul>
-
 </li>
 <li><a href="#section-design">デザイン関連</a>
-
 <ul>
 <li><a href="#design-accessibility">アクセシビリティ</a></li>
-
-
-
 <li><a href="#design-design-data">デザインデータ</a></li>
-
-
-
 <li><a href="#design-style-guide">スタイルガイド</a></li>
-
-
-
 <li><a href="#design-stock-photo">画像素材のライセンス</a></li>
-
-
-
 <li><a href="#design-svg">SVG</a></li>
-
-
-
 <li><a href="#design-text">長いテキストの可読性など</a></li>
-
-
-
 <li><a href="#design-favicon">Favicon</a></li>
 </ul>
-
 </li>
 <li><a href="#section-smartphone">スマートフォン関連</a>
-
 <ul>
 <li><a href="#smartphone-basic">基本</a></li>
-
-
-
 <li><a href="#smartphone-touch-device">タッチデバイス</a></li>
-
-
-
 <li><a href="#smartphone-breakpoint">ブレイクポイント</a></li>
-
-
-
 <li><a href="#smartphone-retina">高精細ディスプレイ対応</a></li>
 </ul>
-
 </li>
 <li><a href="#section-coding">コーディング全般</a>
-
 <ul>
 <li><a href="#coding-basic">基本</a></li>
-
-
-
 <li><a href="#coding-server-path">ディレクトリ構成</a></li>
-
-
-
 <li><a href="#coding-file-name">ファイル名の基本ルール</a></li>
-
-
-
 <li><a href="#coding-browser-version">動作検証ブラウザ</a></li>
-
-
-
 <li><a href="#coding-charset">文字コード</a></li>
-
-
-
 <li><a href="#coding-indent">インデントルール</a></li>
-
-
-
 <li><a href="#coding-letter">大文字小文字</a></li>
-
-
-
 <li><a href="#coding-comment">コメント</a></li>
-
-
-
 <li><a href="#coding-viewport">viewport</a></li>
-
-
-
 <li><a href="#coding-scheme">スキームの記述</a></li>
-
-
-
 <li><a href="#coding-ｌibrary">ライブラリ・フレームワーク</a></li>
 </ul>
-
 </li>
 <li><a href="#section-html">HTMLコーディング</a>
-
 <ul>
 <li><a href="#html-validation">基本・バリデーション</a></li>
-
-
-
 <li><a href="#html-accessibility">アクセシビリティ</a></li>
-
-
-
 <li><a href="#html-document-type-definition">文書型宣言</a></li>
-
-
-
 <li><a href="#html-tag">要素や終了タグの省略</a></li>
-
-
-
 <li><a href="#html-semantics">セマンティクス</a></li>
-
-
-
 <li><a href="#html-include">CSS や JavaScript ファイルの読み込み</a></li>
-
-
-
 <li><a href="#html-type-attribute">type 属性</a></li>
-
-
-
 <li><a href="#html-structured-data">構造化データ</a></li>
-
-
-
 <li><a href="#html-ogp">メタデータや OGP</a></li>
-
-
-
 <li><a href="#html-conditional-comment">条件付きコメント</a></li>
-
-
-
 <li><a href="#html-anchor-link">ページ上部へのアンカーリンク</a></li>
-
-
-
 <li><a href="#html-svg">SVG</a></li>
 </ul>
-
 </li>
 <li><a href="#section-css">CSSコーディング</a>
-
 <ul>
 <li><a href="#css-basic">基本・バリデーション</a></li>
-
-
-
 <li><a href="#css-normalize">デフォルトスタイルシートのノーマライズ</a></li>
-
-
-
 <li><a href="#css-selector-name">セレクタの命名規則</a></li>
-
-
-
 <li><a href="#css-shorthand">ショートハンド</a></li>
-
-
-
 <li><a href="#css-media-rule">@media 規則</a></li>
-
-
-
 <li><a href="#css-unit">単位などの省略</a></li>
-
-
-
 <li><a href="#css-link-color">リンクの文字色</a></li>
-
-
-
 <li><a href="#css-font-family">font-family の指定</a></li>
-
-
-
 <li><a href="#css-z-index">z-index の値</a></li>
-
-
-
 <li><a href="#css-web">Web フォントやアイコンフォントの利用</a></li>
-
-
-
 <li><a href="#css-css3">CSS3 プロパティやセレクタ</a></li>
-
-
-
 <li><a href="#css-css-hack">CSSハック</a></li>
-
-
-
 <li><a href="#css-halfway">中間制作物</a></li>
 </ul>
-
 </li>
 <li><a href="#section-javascript">JavaScript</a>
-
 <ul>
 <li><a href="#javascript-basic">基本・バリデーション</a></li>
-
-
-
 <li><a href="#javascript-quotation-mark">シングルクォーテーションとダブルクォーテーション</a></li>
-
-
-
 <li><a href="#javascript-semicolon">セミコロン</a></li>
-
-
-
 <li><a href="#javascript-function">変数 / 関数の命名規則</a></li>
-
-
-
 <li><a href="#javascript-function-declaration">ブロックの中での関数宣言</a></li>
-
-
-
 <li><a href="#javascript-jquery">jQuery</a></li>
 </ul>
-
 </li>
 <li><a href="#section-cms">CMS</a>
-
 <ul>
 <li><a href="#cms-product">プロダクトの選定</a></li>
-
-
-
 <li><a href="#cms-movable-type">Movable Type</a></li>
-
-
-
 <li><a href="#cms-plugin">プラグイン</a></li>
 </ul>
-
 </li>
 <li><a href="#section-security">セキュリティ</a>
-
 <ul>
 <li><a href="#security-password">強固なパスワード</a></li>
-
-
-
 <li><a href="#security-password-protect">管理画面のパスワード保護</a></li>
-
-
-
 <li><a href="#security-ssl">SSL の利用</a></li>
-
-
-
 <li><a href="#security-ftp">FTP</a></li>
-
-
-
 <li><a href="#security-movable-type">Movable Type</a></li>
 </ul>
-
 </li>
 <li><a href="#section-performance">パフォーマンス</a>
-
 <ul>
 <li><a href="#performance-basic">基本</a></li>
-
-
-
 <li><a href="#performance-imagemin">画像の最適化</a></li>
-
-
-
 <li><a href="#performance-cssmin">CSS の最適化</a></li>
-
-
-
 <li><a href="#performance-javascriptmin">JavaScript の最適化</a></li>
-
-
-
 <li><a href="#performance-server">サーバサイドでの設定</a></li>
-
-
-
 <li><a href="#performance-rel-subresource">rel=subresource</a></li>
-
-
-
 <li><a href="#performance-rel-prefetch">rel=prefetch</a></li>
 </ul>
-
 </li>
 <li><a href="#section-im">情報管理体制</a>
-
 <ul>
 <li><a href="#im-basic">基本</a></li>
-
-
-
 <li><a href="#im-pc-security">パソコンのセキュリティ</a></li>
-
-
-
 <li><a href="#im-password-management">パスワード等の管理</a></li>
-
-
-
 <li><a href="#im-data-management">機密情報の管理</a></li>
-
-
-
 <li><a href="#im-cloud-service">クラウドサービスの利用</a></li>
 </ul>
-
 </li>
 <li><a href="#section-other">その他</a>
-
 <ul>
 <li><a href="#other-copyright">他者の著作権</a></li>
-
-
-
 <li><a href="#other-license">ライセンス</a></li>
-
-
-
 <li><a href="#other-buildtool">ビルドツール等</a></li>
 </ul>
-
 </li>
 <li><a href="#section-guidelines">本ガイドラインについて</a>
-
 <ul>
 <li><a href="#guidelines-purpose">ガイドラインの目的</a></li>
-
-
-
 <li><a href="#guidelines-version">ガイドラインの改定</a></li>
-
-
-
 <li><a href="#guidelines-license">ガイドラインの公開とライセンス</a></li>
 </ul>
-
 </li>
-
 </ul>
 </nav>
 </div>
@@ -2581,7 +2232,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer role="contentinfo">
-<p>burnworks Inc. Ver.1.0.4 (2015-02-17)</p>
+<p>burnworks Inc. Ver.1.0.5 (2015-02-17)</p>
 <p class="module-license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons License -- 表示 - 非営利 2.1 日本 -- CC BY-NC 2.1 JP" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons Attribution-NonCommercial 2.1 Japan License</a>.</p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
