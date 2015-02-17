@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.0.3 (Last modified 2015-02-17)
+  Burnworks Inc. Web Development Guidelines Ver.1.0.4 (Last modified 2015-02-17)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2015-02-17T17:25:58+09:00">2015-02-17</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2015-02-17T19:18:13+09:00">2015-02-17</time></span></p>
 </div>
 
 
@@ -2145,6 +2145,12 @@ CheckScript mt-check-example.cgi
 <li><a href="http://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons -- 表示 - 非営利 2.1 日本 -- CC BY-NC 2.1 JP</a></li>
 </ul>
 
+<p>本ガイドラインの HTML ファイル一式は下記から取得可能。</p>
+
+<ul>
+<li><a href="https://github.com/burnworks/burnworks-guidelines">burnworks/burnworks-guidelines</a></li>
+</ul>
+
 
 </div>
 
@@ -2575,7 +2581,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer role="contentinfo">
-<p>burnworks Inc. Ver.1.0.3 (2015-02-17)</p>
+<p>burnworks Inc. Ver.1.0.4 (2015-02-17)</p>
 <p class="module-license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons License -- 表示 - 非営利 2.1 日本 -- CC BY-NC 2.1 JP" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons Attribution-NonCommercial 2.1 Japan License</a>.</p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
