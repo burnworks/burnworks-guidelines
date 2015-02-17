@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.0.2 (Last modified 2015-02-17)
+  Burnworks Inc. Web Development Guidelines Ver.1.0.3 (Last modified 2015-02-17)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2015-02-17T14:46:11+09:00">2015-02-17</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2015-02-17T17:25:58+09:00">2015-02-17</time></span></p>
 </div>
 
 
@@ -69,7 +69,7 @@
 <div class="block-article-body">
 <p>新規 Web サイト制作案件が立ち上げに際して行われるキックオフミーティングについては、下記の要領を基本として開催する。クライアントとの間では現状の把握、ゴールイメージの共有、プロジェクト進行におけるスケジュールを含めた認識の共有を主な目的とする。</p>
 
-<p>また、社内のプロジェクトメンバー間においては、現状の把握、ゴールイメージの共有、スケジュールの共有の他、要件の確認に伴い、事前の意見交換を目的とする。これは例えば「事前にフロントエンドエンジニア、デザイナー、プログラマが知っていればもっと効率よくやる方法があった」「こうしておいてくれればもっと作業がしやすかった」といった無駄をなくすことで、生産性を高め、納期の短縮や品質の向上でクライアントに還元する。</p>
+<p>また、社内のプロジェクトメンバー間においては、現状の把握、ゴールイメージの共有、スケジュールの共有の他、要件の確認に伴い、事前の意見交換を目的とする。これは例えば「事前に実装担当者、デザイナー、プログラマが知っていればもっと効率よくやる方法があった」「こうしておいてくれればもっと作業がしやすかった」といった無駄をなくすことで、生産性を高め、納期の短縮や品質の向上でクライアントに還元する。</p>
 
 <h4>クライアントと行うキックオフ</h4>
 
@@ -340,7 +340,7 @@
 
 <h3 id="design-svg">SVG</h3>
 <div class="block-article-body">
-<p>アイコン、簡単な図版などに関しては、SVG の使用を推奨する。Illustrator でデータを作成し、SVG での書き出しはフロントエンドエンジニアが行う。実際のデザイン上での表示サイズなどはデザインデータ内で明確に指定すること。</p>
+<p>アイコン、簡単な図版などに関しては、SVG の使用を推奨する。Illustrator でデータを作成し、SVG での書き出しは実装担当者が行う。実際のデザイン上での表示サイズなどはデザインデータ内で明確に指定すること。</p>
 
 
 </div>
@@ -1012,7 +1012,7 @@ color:blue;
 
 <h4>OGP</h4>
 
-<p>トップページに関しては原則として OGP の記述を入れておく事。その他、商品ページなど重要なページに関してはクライアントとの取り決め、もしくはディレクター、フロントエンドエンジニアの判断で記述する。下記に標準的な OGP 設定のサンプルを示す。</p>
+<p>トップページに関しては原則として OGP の記述を入れておく事。その他、商品ページなど重要なページに関してはクライアントとの取り決め、もしくはディレクター、実装担当者の判断で記述する。下記に標準的な OGP 設定のサンプルを示す。</p>
 
 <pre>
 &lt;!-- トップページへの記述例（MT タグ使用例） --&gt;
@@ -2575,7 +2575,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer role="contentinfo">
-<p>burnworks Inc. Ver.1.0.2 (2015-02-17)</p>
+<p>burnworks Inc. Ver.1.0.3 (2015-02-17)</p>
 <p class="module-license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons License -- 表示 - 非営利 2.1 日本 -- CC BY-NC 2.1 JP" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons Attribution-NonCommercial 2.1 Japan License</a>.</p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
