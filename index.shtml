@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.1.0 (Last modified 2015-02-18)
+  Burnworks Inc. Web Development Guidelines Ver.1.1.1 (Last modified 2015-02-18)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2015-02-18T11:52:26+09:00">2015-02-18</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2015-02-18T12:55:40+09:00">2015-02-18</time></span></p>
 </div>
 
 <div class="block-section">
@@ -1834,6 +1834,7 @@ CheckScript mt-check-example.cgi
 
 <pre>
 &lt;link rel=&quot;stylesheet subresource&quot; href=&quot;style.css&quot; /&gt;
+&lt;!-- ただし、この指定 （rel=&quot;stylesheet subresource&quot;） は IE7 以前など旧ブラウザでスタイルが読み込まれない場合がある --&gt;
 </pre>
 
 <p>HTTP の Link: ヘッダによる指定でもよい。</p>
@@ -2244,7 +2245,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer role="contentinfo">
-<p>burnworks Inc. Ver.1.1.0 (2015-02-18)</p>
+<p>burnworks Inc. Ver.1.1.1 (2015-02-18)</p>
 <p class="module-license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons License -- 表示 - 非営利 2.1 日本 -- CC BY-NC 2.1 JP" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons Attribution-NonCommercial 2.1 Japan License</a>.</p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
