@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.1.1 (Last modified 2015-02-18)
+  Burnworks Inc. Web Development Guidelines Ver.1.2.0 (Last modified 2015-02-18)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2015-02-18T12:55:40+09:00">2015-02-18</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2015-02-18T13:25:54+09:00">2015-02-18</time></span></p>
 </div>
 
 <div class="block-section">
@@ -855,9 +855,15 @@ color:blue;
 &lt;/html&gt;
 </pre>
 
-<p>本セクションにおける 「省略可能な要素」 とは、ある要素内で記述が必須だが、記述を省略することで UA による補完が行われる要素がその対象となる。記述が任意の要素、例えば table 要素内における thead 要素、tbody 要素などはこの限りではない。</p>
+<p>本セクションにおける 「省略可能な要素」 とは、ある要素のコンテンツモデル上は必須だが、条件を満たすことで記述を省略することができるとされている要素 （html 要素、head 要素、body 要素） がその対象となる （詳しくは下記参考リンクを参照）。記述が任意の要素、例えば table 要素内における thead 要素、tbody 要素などはこの限りではない。</p>
 
 <p>なお、要素に関わらず、終了タグの省略は禁止する。</p>
+
+<h4>参考リンク （省略可能な要素）</h4>
+
+<ul>
+<li><a href="http://www.w3.org/TR/html5/syntax.html#optional-tags">8.1.2.4 Optional tags - HTML5</a></li>
+</ul>
 
 </div>
 
@@ -2245,7 +2251,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer role="contentinfo">
-<p>burnworks Inc. Ver.1.1.1 (2015-02-18)</p>
+<p>burnworks Inc. Ver.1.2.0 (2015-02-18)</p>
 <p class="module-license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons License -- 表示 - 非営利 2.1 日本 -- CC BY-NC 2.1 JP" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons Attribution-NonCommercial 2.1 Japan License</a>.</p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
