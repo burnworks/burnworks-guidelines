@@ -20,12 +20,12 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.2.1 (Last modified 2015-02-19)
+  Burnworks Inc. Web Development Guidelines Ver.1.2.2 (Last modified 2015-07-17)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
-  This work is licensed under a Creative Commons Attribution-NonCommercial 2.1 Japan License.
-  http://creativecommons.org/licenses/by-nc/2.1/jp/
+  This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.
+  https://creativecommons.org/licenses/by-nc/4.0/
 ******************************************************************************************** -->
 
 </head>
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2015-02-19T09:05:02+09:00">2015-02-19</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2015-07-17T01:24:21+09:00">2015-07-17</time></span></p>
 </div>
 
 <div class="block-section">
@@ -2071,7 +2071,7 @@ CheckScript mt-check-example.cgi
 <p>本ガイドラインは、下記のライセンスで一般に公開される。</p>
 
 <ul>
-<li><a href="http://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons -- 表示 - 非営利 2.1 日本 -- CC BY-NC 2.1 JP</a></li>
+<li><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja">Creative Commons -- 表示 - 非営利 4.0 国際 -- CC BY-NC 4.0</a></li>
 </ul>
 
 <p>本ガイドラインの HTML ファイル一式は下記から取得可能。</p>
@@ -2251,8 +2251,8 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer role="contentinfo">
-<p>burnworks Inc. Ver.1.2.1 (2015-02-19)</p>
-<p class="module-license"><a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons License -- 表示 - 非営利 2.1 日本 -- CC BY-NC 2.1 JP" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.1/jp/">Creative Commons Attribution-NonCommercial 2.1 Japan License</a>.</p>
+<p>burnworks Inc. Ver.1.2.2 (2015-07-17)</p>
+<p class="module-license"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.</a></p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
 </div>
