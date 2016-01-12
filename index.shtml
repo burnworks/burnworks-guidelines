@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.2.2 (Last modified 2015-07-17)
+  Burnworks Inc. Web Development Guidelines Ver.1.2.3 (Last modified 2016-01-12)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2015-07-17T01:24:21+09:00">2015-07-17</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2016-01-12T14:23:27+09:00">2016-01-12</time></span></p>
 </div>
 
 <div class="block-section">
@@ -498,7 +498,7 @@
 <h4>パソコン</h4>
 
 <ul>
-<li>Internet Explorer 10 以降</li>
+<li>Internet Explorer 11 以降</li>
 <li>Mozilla Firefox 最新版</li>
 <li>Google Chrome 最新版</li>
 <li>Safari 最新版</li>
@@ -508,9 +508,9 @@
 <h4>スマートフォン</h4>
 
 <ul>
-<li>iOS Safari 7 以降 （iOS 7 以降）</li>
-<li>Android 4.1.x 以降 標準ブラウザ</li>
-<li>Android 4.1.x 以降 Chrome</li>
+<li>iOS Safari 8 以降 （iOS 8 以降）</li>
+<li>Android 4.2.x 以降 標準ブラウザ</li>
+<li>Android 4.2.x 以降 Chrome</li>
 </ul>
 
 <p>なお、Android OSのバージョンは、<a href="https://developer.android.com/about/dashboards/">グローバルなシェアデータ</a>に基づいて決定している。</p>
@@ -522,7 +522,7 @@
 <div class="module-text-example">
 <p>JavaScript、スタイルシート、画像表示が有効になっている下記のブラウザソフト</p>
 <ul>
-<li>Internet Explorer 10 以降 （Internet Explorer 11 を推奨）</li>
+<li>Internet Explorer 11 以降</li>
 <li>Mozilla Firefox 最新版</li>
 <li>Google Chrome 最新版</li>
 <li>Safari 最新版</li>
@@ -532,7 +532,7 @@
 
 <h4>プログレッシブエンハンスメント</h4>
 
-<p>上記、動作検証ブラウザに含まれない旧式ブラウザに関しても、最低限必要な操作、情報の取得ができるよう、スタイルシートの調整は行うこと。多少のレイアウト崩れや装飾目的の画像の表示がされないといった問題に関しては気にする必要はない。旧式ブラウザとは主に IE6 ～ IE8 や Android 2.x 系の標準ブラウザを指す。</p>
+<p>上記、動作検証ブラウザに含まれない旧式ブラウザに関しても、最低限必要な操作、情報の取得ができるよう、スタイルシートの調整は行うこと。多少のレイアウト崩れや装飾目的の画像の表示がされないといった問題に関しては気にする必要はない。旧式ブラウザとは主に IE9 ～ IE10 や Android 4.1.x 系の標準ブラウザを指す。</p>
 
 <p><a href="#html-accessibility">HTML コーディング -&gt; アクセシビリティのセクション</a> や、<a href="#javascript-basic">JavaScruipt -&gt; 基本・バリデーションのセクション</a> 等もあわせて参照のこと。</p>
 
@@ -2251,7 +2251,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer role="contentinfo">
-<p>burnworks Inc. Ver.1.2.2 (2015-07-17)</p>
+<p>burnworks Inc. Ver.1.2.3 (2016-01-12)</p>
 <p class="module-license"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.</a></p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
