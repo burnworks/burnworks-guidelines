@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.2.4 (Last modified 2016-04-28)
+  Burnworks Inc. Web Development Guidelines Ver.1.3.0 (Last modified 2016-04-28)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2016-04-28T10:34:30+09:00">2016-04-28</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2016-04-28T11:15:33+09:00">2016-04-28</time></span></p>
 </div>
 
 <div class="block-section">
@@ -1592,6 +1592,18 @@ if (x) {
 <h2 class="module-block-header" id="section-security">セキュリティ</h2>
 <div class="block-section-body">
 
+<h3 id="security-post">基本</h3>
+<div class="block-article-body">
+<p>Webサイト、及び Webアプリケーションの実装にあたって参考とすべき外部のガイドラインとしては、IPA 独立行政法人 情報処理推進機構が公開する、「安全なウェブサイトの作り方（改訂第7版）」を参考とすること。</p>
+
+<ul>
+<li><a href="https://www.ipa.go.jp/security/vuln/websecurity.html">安全なウェブサイトの作り方 ： IPA 独立行政法人 情報処理推進機構</a></li>
+</ul>
+
+<p>また、納品物として Webアプリケーションのセキュリティ実装の実施状況を確認する必要がある場合は、同ガイドライン付属の「セキュリティ実装 チェックリスト」を利用、あるいは参考の上、クライアントの要望に応じたチェックリストを作成する。</p>
+
+</div>
+
 <h3 id="security-password">強固なパスワード</h3>
 <div class="block-article-body">
 <p>CMS インストール時のアカウント設定など、新規でアカウントを設定する際は推測されにくいアカウント名、および強固なパスワードを設定すること。</p>
@@ -2191,6 +2203,7 @@ CheckScript mt-check-example.cgi
 </li>
 <li><a href="#section-security">セキュリティ</a>
 <ul>
+<li><a href="#security-post">基本</a></li>
 <li><a href="#security-password">強固なパスワード</a></li>
 <li><a href="#security-password-protect">管理画面のパスワード保護</a></li>
 <li><a href="#security-ssl">SSL の利用</a></li>
@@ -2244,7 +2257,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer role="contentinfo">
-<p>burnworks Inc. Ver.1.2.4 (2016-04-28)</p>
+<p>burnworks Inc. Ver.1.3.0 (2016-04-28)</p>
 <p class="module-license"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.</a></p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
