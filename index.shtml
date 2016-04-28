@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.2.3 (Last modified 2016-01-12)
+  Burnworks Inc. Web Development Guidelines Ver.1.2.4 (Last modified 2016-04-28)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2016-01-12T14:23:27+09:00">2016-01-12</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2016-04-28T10:34:30+09:00">2016-04-28</time></span></p>
 </div>
 
 <div class="block-section">
@@ -256,25 +256,18 @@
 <div class="block-article-body">
 <p>デザイン時にもアクセシビリティに配慮すること。</p>
 
-<p>背景色とテキストのコントラスト、色覚障がい者向けの配色等に考慮する。JIS X 8341-3:2010 における該当箇所は下記引用の通り。</p>
+<p>背景色とテキストのコントラスト、色覚障がい者向けの配色等に考慮する。JIS X 8341-3:2016 における該当箇所は下記引用の通り。</p>
 
 <blockquote>
-  <p>7.1.4.3 最低限のコントラストに関する達成基準</p>
+  <p>1.4.3 コントラスト（最低限レベル）の達成基準</p>
 
-<p>テキスト及び画像化された文字の視覚的な表現には、少なくとも4.5:1 のコントラスト比がなければならない。ただし、次の場合は除く。</p>
+<p>テキスト及び文字画像の視覚的提示には，少なくとも4.5:1 のコントラスト比がある。ただし，次の場
+合は除く（レベル AA）。 <br />
+a) 大きな文字 サイズの大きなテキスト及びサイズの大きな文字画像には，少なくとも3:1 のコントラスト比がある。 <br />
+b) 附随的 テキスト又は文字画像において，次の場合はコントラストの要件はない。アクティブではないユーザインタフェース コンポーネントの一部である，純粋な装飾である，誰も視覚的に確認できない，又は重要な他の視覚的なコンテンツを含む写真の一部分である。 <br />
+c) ロゴタイプ ロゴ又はブランド名の一部である文字には，最低限のコントラストの要件はない。  </p>
 
-<p>a) 大きな文字 <br />
-サイズの大きなテキスト及びサイズの大きな画像化された文字には、少なくとも3:1のコントラスト比がある。  </p>
-
-<p><strong>注記</strong> サイズの大きなテキストとは、半角の英数字の場合，少なくとも18 ポイント又は14 ポイントの太字であり、日本語、中国語及び韓国語のフォントでは、それと同等の文字サイズである。日本語を含む場合、少なくとも 22 ポイント又は 18 ポイントの太字と考えるとよい。</p>
-
-<p>b) 附随的 <br />
-テキスト又は画像化された文字において、次の場合はコントラストの要件は該当しない。アクティブではないユーザインタフェースコンポーネントの一部である、装飾だけを目的にしている、だれ（誰）も視覚的に確認できない，又は重要な他の視覚的なコンテンツを含む写真の一部分である。</p>
-
-<p>c) ロゴタイプ <br />
-ロゴ又はブランド名の一部である文字には、コントラストの要件はない。</p>
-
-<p>JIS X 8341-3:2010「7. ウェブコンテンツに関する要件」から引用</p>
+<p>JIS X 8341-3:2016「1.4 判別可能のガイドライン」から引用</p>
 </blockquote>
 
 <p>コントラストのチェックに関しては、下記のツール等を推奨。</p>
@@ -332,7 +325,7 @@
 <div class="block-article-body">
 <h4>行間や行長</h4>
 
-<p>Web ページ内に表示するテキストの行間は 150〜190% （<code>line-height: 1.5;</code> ～ <code>line-height: 1.9;</code>）の値となるように調整する。</p>
+<p>Web ページ内に表示するテキストの行間は 140〜190% （<code>line-height: 1.4;</code> ～ <code>line-height: 1.9;</code>）の値となるように調整する。</p>
 
 <p>1行あたりの文字数 （行長） は、最長で 30～40 文字程度になるよう調整することが読みやすさの点から望ましい。</p>
 
@@ -351,10 +344,12 @@
 <p>新規構築の Web サイトに関して、デザインには Favicon のデータも含めること。既存のデータがある場合はそれを使用する。サイズは最低限、下記を実装担当者が生成する前提でデザインを用意すること。基本的にはすべて同じデザインとするため、最小サイズでも認識しやすいようにデザインする。</p>
 
 <ul>
-<li>favicon.ico （16x16, 32x32, 48x48）</li>
-<li>favicon.png （64x64）</li>
-<li>apple-touch-icon-152x152.png （152x152）</li>
+<li>favicon.ico （16×16, 32×32, 48×48）</li>
+<li>favicon.png （64×64）</li>
+<li>apple-touch-icon.png （152×152）</li>
 </ul>
+
+<p>favicon.png は 64×64 の画像を作成せず apple-touch-icon.png （152px×152px）のファイル名だけ変更して同じ画像を使用してもよい。</p>
 
 <p>実装担当者は上記サイズの画像をデザイナーのデータを基に生成する。例えばビルドツールを使用する場合、下記などがある。</p>
 
@@ -395,7 +390,7 @@
 
 <h3 id="smartphone-breakpoint">ブレイクポイント</h3>
 <div class="block-article-body">
-<p>要件説明時に特別な指定がないレスポンシブ Web デザイン対応案件では、ブレイクポイントを 1つ、768px に設定 （iPad / 縦を基準） することを基準とする。スマートフォンの最小画面サイズは横幅 320px とし、768px までの間は横サイズの可変で対応する。</p>
+<p>要件説明時に特別な指定がないレスポンシブ Web デザイン対応案件では、ブレイクポイントを 1つ、768px に設定 （初期 iPad / 縦表示を基準） することを基準とする。スマートフォンの最小画面サイズは横幅 320px とし、768px までの間は横サイズの可変で対応する。</p>
 
 <p>ディスプレイの横サイズ 768px 以上のデバイスに関しては PC 向けレイアウトを表示する。</p>
 
@@ -498,7 +493,7 @@
 <h4>パソコン</h4>
 
 <ul>
-<li>Internet Explorer 11 以降</li>
+<li>Internet Explorer 11 以降 （Microsoft Edge）</li>
 <li>Mozilla Firefox 最新版</li>
 <li>Google Chrome 最新版</li>
 <li>Safari 最新版</li>
@@ -508,9 +503,9 @@
 <h4>スマートフォン</h4>
 
 <ul>
-<li>iOS Safari 8 以降 （iOS 8 以降）</li>
-<li>Android 4.2.x 以降 標準ブラウザ</li>
-<li>Android 4.2.x 以降 Chrome</li>
+<li>iOS Safari 9.x 以降 （iOS 9 以降）</li>
+<li>Android 4.4.x 以降 標準ブラウザ</li>
+<li>Android 4.4.x 以降 Chrome</li>
 </ul>
 
 <p>なお、Android OSのバージョンは、<a href="https://developer.android.com/about/dashboards/">グローバルなシェアデータ</a>に基づいて決定している。</p>
@@ -522,7 +517,7 @@
 <div class="module-text-example">
 <p>JavaScript、スタイルシート、画像表示が有効になっている下記のブラウザソフト</p>
 <ul>
-<li>Internet Explorer 11 以降</li>
+<li>Internet Explorer 11 以降 （Microsoft Edge 推奨）</li>
 <li>Mozilla Firefox 最新版</li>
 <li>Google Chrome 最新版</li>
 <li>Safari 最新版</li>
@@ -532,7 +527,7 @@
 
 <h4>プログレッシブエンハンスメント</h4>
 
-<p>上記、動作検証ブラウザに含まれない旧式ブラウザに関しても、最低限必要な操作、情報の取得ができるよう、スタイルシートの調整は行うこと。多少のレイアウト崩れや装飾目的の画像の表示がされないといった問題に関しては気にする必要はない。旧式ブラウザとは主に IE9 ～ IE10 や Android 4.1.x 系の標準ブラウザを指す。</p>
+<p>上記、動作検証ブラウザに含まれない旧式ブラウザに関しても、最低限必要な操作、情報の取得ができるよう、スタイルシートの調整は行うこと。多少のレイアウト崩れや装飾目的の画像の表示がされないといった問題に関しては気にする必要はない。旧式ブラウザとは主に IE9 ～ IE10 や Android 4.1.x や Android 4.2.x 系の標準ブラウザを指す。</p>
 
 <p><a href="#html-accessibility">HTML コーディング -&gt; アクセシビリティのセクション</a> や、<a href="#javascript-basic">JavaScruipt -&gt; 基本・バリデーションのセクション</a> 等もあわせて参照のこと。</p>
 
@@ -676,7 +671,7 @@ color:blue;
 <div class="block-article-body">
 <p>外部 CDN からの JavaScript ライブラリ読み込み等を行う場合、URI のスキーム（http: / https:）はすべて <code>https://</code> から記述すること。</p>
 
-<p>ただし、読み込むファイルが HTTPS で提供されていない等、状況によってはこの限りではないが、原則として HTTPS で提供されない第三者サーバからのライブラリの読み込みは禁止する。</p>
+<p>ただし、読み込むファイルが HTTPS で提供されていない等、状況によってはこの限りではないが、原則として HTTPS で提供されない第三者サーバからのライブラリの読み込みは禁止する。また配信先ドメイン所有者の信頼性については事前に確認すること。</p>
 
 <pre class="badcode">
 &lt;!-- 非推奨 --&gt;
@@ -965,8 +960,6 @@ color:blue;
 <h3 id="html-structured-data">構造化データ</h3>
 <div class="block-article-body">
 <p>HTML 文書に対する構造化データの付与は、Microdata、もしくは RDFa Lite を用い、語彙は <a href="https://schema.org/">schema.org</a> を原則として使用すること。ただし、構造化データの付与自体は必須ではない。</p>
-
-<p>現状、トピックパス （所謂パンくず） 向けの構造化データマークアップ語彙としては Google が <a href="http://www.data-vocabulary.org/">data-vocabulary.org</a> にのみの対応としているため、トピックパスのマークアップに関しては schema.org 以外の語彙の使用を認める。ただし、近い将来、Google が schema.org のトピックパス向け語彙に今後対応することは念頭に置くこと。</p>
 
 <p>構造化データのテストツールとしては、Google の <a href="https://developers.google.com/webmasters/structured-data/testing-tool/">構造化データテストツール</a> を推奨する。</p>
 
@@ -1512,10 +1505,10 @@ if (x) {
 
 <h3 id="javascript-jquery">jQuery</h3>
 <div class="block-article-body">
-<p>jQuery を使用する場合は原則として 1系の最新版を使用すること。jQuery の読み込みは <a href="https://developers.google.com/speed/libraries/devguide?hl=ja#jquery">Google Hosted Libraries</a> より行う。</p>
+<p>jQuery を使用する場合は原則として 2.x 系の最新版を使用すること。jQuery の読み込みは <a href="https://developers.google.com/speed/libraries/devguide?hl=ja#jquery">Google Hosted Libraries</a> より行う。</p>
 
 <pre>
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js&quot;&gt;&lt;/script&gt;
 </pre>
 
 <p>開発中 bower 等を用いてローカルに必要なライブラリをインストールするといった手法に制約はない。リリース時に上記のルールに基づいてソースコードを修正すること。</p>
@@ -2251,7 +2244,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer role="contentinfo">
-<p>burnworks Inc. Ver.1.2.3 (2016-01-12)</p>
+<p>burnworks Inc. Ver.1.2.4 (2016-04-28)</p>
 <p class="module-license"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.</a></p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
