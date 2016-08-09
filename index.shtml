@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.3.0 (Last modified 2016-05-28)
+  Burnworks Inc. Web Development Guidelines Ver.1.3.1 (Last modified 2016-08-09)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2016-05-28T10:21:07+09:00">2016-05-28</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2016-08-09T16:15:17+09:00">2016-08-09</time></span></p>
 </div>
 
 <div class="block-section">
@@ -717,7 +717,7 @@ color:blue;
 
 <h3 id="coding-ｌibrary">ライブラリ・フレームワーク</h3>
 <div class="block-article-body">
-<p>CSS / JavaScript ライブラリやフレームワークの利用はプロジェクトの要件に応じて選択可能。ただし、使用するライブラリやフレームワークに関してはメンテナンスが継続されていること、バグフィックスや脆弱性への対応等が、過去きちんと行われていることを重視して選択すること。</p>
+<p>CSS / JavaScript ライブラリやフレームワークの利用はプロジェクトの要件に応じて選択可能。ただし、使用するライブラリやフレームワークに関してはメンテナンスが継続されていること、バグフィックスや脆弱性への対応等が、適切に行われていることを重視して選択すること。</p>
 
 <p>また、使用したライブラリ・フレームワークは一覧できるように別途ドキュメントに記載すること。</p>
 
@@ -1574,7 +1574,7 @@ if (x) {
 
 <h3 id="cms-plugin">プラグイン</h3>
 <div class="block-article-body">
-<p>Movable Type や WordPress など CMS のプラグイン利用に特に制限はないが、メンテナンスが継続されていること、脆弱性など、不具合への対応が過去きちんと行われていることを重視して選択すること。</p>
+<p>Movable Type や WordPress など CMS のプラグイン利用に特に制限はないが、メンテナンスが継続されていること、脆弱性など、不具合への対応が適切に行われていることを重視して選択すること。</p>
 
 <p>プラグインの動作を理由に CMS のバージョンを下げること、あるいは CMS 本体のプログラムの改変を行うことは禁止する。最新のバージョンで動作しないプラグインは利用不可。</p>
 
@@ -2256,7 +2256,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer role="contentinfo">
-<p>burnworks Inc. Ver.1.3.0 (2016-05-28)</p>
+<p>burnworks Inc. Ver.1.3.1 (2016-08-09)</p>
 <p class="module-license"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.</a></p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
