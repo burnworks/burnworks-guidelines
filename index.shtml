@@ -2,7 +2,7 @@
 <html lang="ja" dir="ltr">
 <head>
 <meta charset="utf-8" />
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>制作ガイドライン - バーンワークス株式会社</title>
 
 <link rel="stylesheet subresource" href="css/s.min.css" />
