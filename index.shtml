@@ -6,9 +6,9 @@
 <title>制作ガイドライン - バーンワークス株式会社</title>
 
 <link rel="stylesheet subresource" href="css/s.min.css" />
-<link rel="apple-touch-icon" href="/static/img/ico/apple-touch-icon.png" sizes="144x144" />
-<link rel="icon" type="image/png" href="/static/img/ico/favicon.png" sizes="64x64" />
-<link rel="shortcut icon" type="image/x-icon" href="/static/img/ico/favicon.ico" sizes="16x16 32x32 64x64" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" sizes="144x144" />
+<link rel="icon" type="image/png" href="img/favicon.png" sizes="64x64" />
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" sizes="16x16 32x32 64x64" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。" />
@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.3.1 (Last modified 2016-08-09)
+  Burnworks Inc. Web Development Guidelines Ver.1.4.0 (Last modified 2021-12-09)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -30,11 +30,11 @@
 
 </head>
 
-<body id="top" class="guideline" data-spy="scroll" data-target=".module-sub-menu" data-offset="30">
+<body id="top" class="guideline" data-bs-spy="scroll" data-bs-target="#role-sub-menu" data-offset="30">
 
 <div class="block-header">
 <header>
-<h1 class="module-page-title" role="banner"><a href="./" title="制作ガイドライン - バーンワークス株式会社">Web Development Guidelines</a></h1>
+<h1 class="module-page-title"><a href="./" title="制作ガイドライン - バーンワークス株式会社">Web Development Guidelines</a></h1>
 <p class="module-m-menu-btn module-swing"><a href="#sub-menu" title="メニューに移動">Menu</a></p>
 </header>
 </div>
@@ -43,11 +43,11 @@
 <div class="block-inner">
 
 <div class="layout-main">
-<main role="main">
+<main>
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2016-08-09T16:23:02+09:00">2016-08-09</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2021-12-09T14:17:59+09:00">2021-12-09</time></span></p>
 </div>
 
 <div class="block-section">
@@ -141,9 +141,11 @@
 
 <h3 id="direction-communication">プロジェクト進行における連絡手段</h3>
 <div class="block-article-body">
-<p>プロジェクト進行中のクライアントを含むプロジェクトメンバーとの連絡・情報共有の手段は、基本的にクライアントへの新たなツール導入の負荷を避けるため、メーリングリストを利用する。プロジェクトのキックオフがされた後、ディレクターによってメーリングリストの開設が行われ、プロジェクトメンバーが招待される。</p>
+<p>プロジェクト進行中のクライアントを含むプロジェクトメンバーとの連絡・情報共有の手段は、クライアントと協議の上、Backlog、Slack、Chatwork をはじめとしたチャット・プロジェクト管理ツールを利用するが、原則として Backlog の利用を推奨する。ただし、クライアントがすでに Slack、もしくは Chatwork を利用している場合など、Backlog よりもそちらを利用した方が効率がよいと考えられる場合はこの限りではない。</p>
 
-<p>クライアントの要望や、プロジェクトの特性、要件に応じて、連絡・情報共有用のツールは最適なものを選択できる。ただし、情報管理の観点から、使用ツールの選定はクライアント、および当社の情報管理ポリシーに基づき行う他、連絡の内容がすべて、ログとして長期にわたり保存され、後から検索可能なツールを選択すること。</p>
+<p>プロジェクトのキックオフがされた後、ディレクターによってチャット・プロジェクト管理ツールに当該プロジェクト用のスペースが開設され、プロジェクトメンバーが招待される。</p>
+
+<p>なお、クライアントの要望や、プロジェクトの特性、要件に応じて、連絡・情報共有用のツールは前述したサービス以外にも最適なものを選択できる。ただし、情報管理の観点から、使用ツールの選定はクライアント、および当社の情報管理ポリシーに基づき行う他、連絡の内容がすべて、ログとして長期にわたり保存され、後から検索可能なツールを選択すること。</p>
 
 </div>
 
@@ -284,15 +286,13 @@
 
 <h3 id="design-design-data">デザインデータ</h3>
 <div class="block-article-body">
-<p>基本的には Adobe 社の Photoshop を使用して作成するものとする。利用バージョンは Adobe CC を推奨するが、必須ではない。ただし、できる限り最新バージョンのソフトウェアを使用し、プロジェクトメンバー間でのデータ互換性による作業遅滞を避けるよう努めること。</p>
+<p>基本的には Adobe 社の Photoshop、もしくは Xd を使用して作成することを推奨する。利用バージョンは Adobe CC を推奨するが、必須ではない。ただし、できる限り最新バージョンのソフトウェアを使用し、プロジェクトメンバー間でのデータ互換性による作業遅滞を避けるよう努めること。また、メンバー間での同意が得られる場合は Figma の利用も可とする。</p>
 
 <p>デザインデータには必ず「指示」レイヤーを追加し、リンクカラー（通常、ホバー時、訪問済み、アクティブ時）の指定をはじめ、実装担当者向けの指示を記載するのもとする。</p>
 
 <p>ディレクター、およびデザイナーはデザインの進行、確定にあたり、実装面からの意見を必ず実装担当者に聞くこと。それにより実装時になってデザインの不具合により手戻りが発生するなどの無駄を省き、実装面の負荷を低減する。</p>
 
-<p>また、図版等によっては、SVG での書き出しを考慮し、Illustrator による作成を推奨する。</p>
-
-<p>デザインデータはクライアントに納品される。レイヤーの分け方や名前の付け方など、他の人が見てもわかりやすいように配慮すること。これは実装担当者の作業効率も向上させる。</p>
+<p>あらかじめ業務委託契約内での取り決めがある場合、デザインデータはクライアントに納品される。レイヤーの分け方や名前の付け方など、他の人が見てもわかりやすいように配慮すること。これは実装担当者の作業効率も向上させる。</p>
 
 </div>
 
@@ -316,7 +316,7 @@
 
 <h3 id="design-svg">SVG</h3>
 <div class="block-article-body">
-<p>アイコン、簡単な図版などに関しては、SVG の使用を推奨する。Illustrator でデータを作成し、SVG での書き出しは実装担当者が行う。実際のデザイン上での表示サイズなどはデザインデータ内で明確に指定すること。</p>
+<p>アイコン、簡単な図版などに関しては、SVG の使用を推奨する。SVG での書き出しは実装担当者が行う。実際のデザイン上での表示サイズなどはデザインデータ内で明確に指定すること。</p>
 
 </div>
 
@@ -324,9 +324,9 @@
 <div class="block-article-body">
 <h4>行間や行長</h4>
 
-<p>Web ページ内に表示するテキストの行間は 140〜190% （<code>line-height: 1.4;</code> ～ <code>line-height: 1.9;</code>）の値となるように調整する。</p>
+<p>Web ページ内に表示するテキストの行間は 140 ～ 190% （<code>line-height: 1.4;</code> ～ <code>line-height: 1.9;</code>）の値となるように調整する。</p>
 
-<p>1行あたりの文字数 （行長） は、最長で 30～40 文字程度になるよう調整することが読みやすさの点から望ましい。</p>
+<p>1行あたりの文字数 （行長） は、最長で 30 ～ 40 文字程度になるよう調整することが読みやすさの点から望ましい。</p>
 
 <p>上記はデザインの要件や文字サイズ等によって変動、もしくは Web ページを閲覧する環境に依存するため、あくまで基準とするが、1行あたりの文字数が極端に多すぎる場合、逆に少なすぎて改行が多すぎる場合などは可読性を低下させるため注意が必要。</p>
 
@@ -334,7 +334,7 @@
 
 <p>画像処理が適当である箇所を除いては、なるべくデバイスフォントを使用する前提でデザインすること。また、デザインデータ内では、画像処理すべきテキストとそうでないものが実装担当者にわかるよう、指示レイヤーに記述する。</p>
 
-<p>Web サイトのパフォーマンス、メンテナンス性や CMS の利用も考慮し、テキストの不要な画像化は避ける。</p>
+<p>Web サイトのパフォーマンス、メンテナンス性や CMS の利用も考慮し、バナーなど画像化が必然な場合を除き、テキストの画像化は原則として禁止する。</p>
 
 </div>
 
@@ -492,18 +492,20 @@
 <h4>パソコン</h4>
 
 <ul>
-<li>Internet Explorer 11 以降 （Microsoft Edge）</li>
+<li>Microsoft Edge（v16 Chromium 版以降）</li>
 <li>Google Chrome 最新版</li>
 <li>Mozilla Firefox 最新版</li>
 <li>Safari 最新版</li>
 </ul>
 
+<p>Internet Explorer 11 （IE11） への対応は原則として行わない。クライアントの要望により行う場合は別途 IE11 対応費用を請求すること。</p>
+
 <h4>スマートフォン</h4>
 
 <ul>
-<li>iOS Safari 9.x 以降 （iOS 9 以降）</li>
-<li>Android 4.4.x 以降 標準ブラウザ</li>
-<li>Android 4.4.x 以降 Chrome</li>
+<li>iOS Safari 13.x 以降 （iOS 13.x 以降）</li>
+<li>Android 9.x 以降 標準ブラウザ</li>
+<li>Android 9.x 以降 Chrome</li>
 </ul>
 
 <p>なお、Android OSのバージョンは、<a href="https://developer.android.com/about/dashboards/">グローバルなシェアデータ</a>に基づいて決定している。</p>
@@ -515,11 +517,10 @@
 <div class="module-text-example">
 <p>JavaScript、スタイルシート、画像表示が有効になっている下記のブラウザソフト</p>
 <ul>
-<li>Internet Explorer 11 以降 （Microsoft Edge 推奨）</li>
+<li>Microsoft Edge（v16 Chromium 版以降）</li>
 <li>Mozilla Firefox 最新版</li>
 <li>Google Chrome 最新版</li>
 <li>Safari 最新版</li>
-<li>Opera 最新版</li>
 </ul>
 </div>
 
@@ -737,13 +738,13 @@ color:blue;
 
 <p>HTML はメンテナンス性を考慮すること。各ブロックのモジュール化を意識し、CSS の記述と合わせて、あるブロックを他のページにそのまま移動したり、同一ブロック内で要素が多少変更されたとしても（ul 要素 → ol 要素や段落の追加など）、レイアウトや見た目が変化しないように考慮し、モジュールの使い回しを容易にすること。</p>
 
-<p>HTML5 で追加された新要素は適切に使用すること。ただし、旧ブラウザに配慮し、HTML5 要素をセレクタとしては原則として使用しないこと。また、input 要素の type 属性値などについても HTML5 から追加された属性値を用途に応じて適切に使い分けること（<code>type="mail"</code>、<code>type="number"</code>、<code>type="tel"</code>、<code>type="search"</code> など）。</p>
+<p>HTML Standard で追加された新要素は適切に使用すること。ただし、旧ブラウザに配慮し、HTML Standard 要素をセレクタとしては原則として使用しないこと。また、input 要素の type 属性値などについても HTML Standard から追加された属性値を用途に応じて適切に使い分けること（<code>type="mail"</code>、<code>type="number"</code>、<code>type="tel"</code>、<code>type="search"</code> など）。</p>
 
 <p>id 属性は適切に使用すること。セレクタとしての利用も特に制限しないが、多用しすぎてメンテナンス性や再利用性が妨げられてはならない。</p>
 
 <h4>バリデーション</h4>
 
-<p>各要素は、HTML5 のコンテンツモデルや使用できる文脈に基づき適切に記述すること。またアウトラインが適切かについて必ず確認すること。</p>
+<p>各要素は、HTML Standard のコンテンツモデルや使用できる文脈に基づき適切に記述すること。またアウトラインが適切かについて必ず確認すること。</p>
 
 <p>また、納品前の HTML ファイルは、必ず <a href="http://validator.w3.org/">The W3C Markup Validation Service</a> によるチェックを行うこと。特に HTML タグの閉じ忘れといったミスは避ける。なお、バリデーションはビルドツール等によって行っても構わない。</p>
 
@@ -803,9 +804,9 @@ color:blue;
 
 <h3 id="html-document-type-definition">文書型宣言</h3>
 <div class="block-article-body">
-<p>新規に作成する HTML 文書は、特別な指定がある場合を除いて HTML5 を使用すること。文書型宣言は <code>&lt;!DOCTYPE html&gt;</code> と記述。大文字小文字も左記の通りとする。</p>
+<p>新規に作成する HTML 文書は、特別な指定がある場合を除いて HTML Standard を使用すること。文書型宣言は <code>&lt;!DOCTYPE html&gt;</code> と記述。大文字小文字も左記の通りとする。</p>
 
-<p>MIME Type は <code>text/html</code> を指定すること。特別な指定がある場合を除いて、XHTML5 （<code>application/xhtml+xml</code>） は使用しないこと。</p>
+<p>MIME Type は <code>text/html</code> を指定すること。特別な指定がある場合を除いて、XHTML （<code>application/xhtml+xml</code>） は使用しないこと。</p>
 
 <p>ただし、HTML は記述統一の観点や、Movable Type から出力される XHTML との整合性等を考慮し、下記のルールに則って記述すること。</p>
 
@@ -855,7 +856,7 @@ color:blue;
 <h4>参考リンク （省略可能な要素）</h4>
 
 <ul>
-<li><a href="http://www.w3.org/TR/html5/syntax.html#optional-tags">8.1.2.4 Optional tags - HTML5</a></li>
+<li><a href="https://html.spec.whatwg.org/multipage/syntax.html#optional-tags">13.1.2.4 Optional tags - HTML Standard</a></li>
 </ul>
 
 </div>
@@ -945,12 +946,12 @@ color:blue;
 
 <pre class="badcode">
 &lt;!-- 非推奨 --&gt;
-&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
  type="text/javascript"&gt;&lt;/script&gt;
 </pre>
 
 <pre>&lt;!-- 推奨 --&gt;
-&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"&gt;&lt;/script&gt;
 </pre>
 
 </div>
@@ -1013,7 +1014,7 @@ color:blue;
 
 <h3 id="html-anchor-link">ページ上部へのアンカーリンク</h3>
 <div class="block-article-body">
-<p>ページ上部に移動するためのページ内リンク （所謂アンカーリンク） として使用する a 要素の href 属性値には <code>#top</code> を指定すること。HTML5 においては、<code>#top</code> を指定することで自動的にページ上部へのリンクとして機能する。</p>
+<p>ページ上部に移動するためのページ内リンク （所謂アンカーリンク） として使用する a 要素の href 属性値には <code>#top</code> を指定すること。HTML Standard においては、<code>#top</code> を指定することで自動的にページ上部へのリンクとして機能する。</p>
 
 <pre>
 &lt;a href=&quot;#top&quot;&gt;このページの上部へ&lt;/a&gt;
@@ -1022,7 +1023,7 @@ color:blue;
 <h4>参考リンク</h4>
 
 <ul>
-<li><a href="http://reference.hyper-text.org/html5/element/a/">a 要素 ： HTML5 タグリファレンス</a></li>
+<li><a href="http://reference.hyper-text.org/HTML Standard/element/a/">a 要素 ： HTML タグリファレンス</a></li>
 </ul>
 
 </div>
@@ -1296,17 +1297,18 @@ a:active {
 }
 </pre>
 
-<p>リンクの下線はデザイン要件により非表示にしてもよいが、文字色などで通常のテキストとの差異を明確にし、リンクがわかりやすいように配慮すること。</p>
+<p>リンクの下線はデザイン要件により非表示にしてもよいが、本文内など、通常のテキストとリンクテキストが混在する部分では、下線やアイコンを付与するなどして通常のテキストとの差異を明確にし、リンクがわかりやすいように配慮すること。</p>
 
 </div>
 
 <h3 id="css-font-family">font-family の指定</h3>
 <div class="block-article-body">
-<p>font-familyプロパティの指定は下記を標準とする。</p>
+<p>font-family プロパティの指定は下記を標準とする。</p>
 
 <pre>
 body {
-  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Sans-Serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+               "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 </pre>
 
@@ -1448,7 +1450,7 @@ $('div').add('&lt;p id=&quot;sample&quot;&gt;new paragraph&lt;/p&gt;').css('back
 <p>変数名 / 関数名は原則として、キャメルケースを使用する。変数名 / 関数名における「$」は使用禁止。</p>
 
 <pre>
-var firstName = 'taro';
+const firstName = 'taro';
 </pre>
 
 <pre>
@@ -1462,13 +1464,13 @@ function getListElement() {
 <p>コンストラクタ関数の名前の先頭は大文字とする。</p>
 
 <pre>
-var Person = function(name){
+const Person = function(name){
   this.name = name;
   this.age = age;
 };
 
-var taro = new Person('taro', 32);
-var jiro = new Person('jiro', 29);
+const taro = new Person('taro', 32);
+const jiro = new Person('jiro', 29);
 </pre>
 
 <h4>定数</h4>
@@ -1476,7 +1478,7 @@ var jiro = new Person('jiro', 29);
 <p>定数はすべて大文字で記述し、単語間をアンダースコア（_）で接続する。</p>
 
 <pre>
-var API_KEY = 'b6lC50HCr4mA';
+const API_KEY = 'b6lC50HCr4mA';
 </pre>
 
 </div>
@@ -1495,7 +1497,7 @@ if (x) {
 
 <pre>
 if (x) {
-  var foo = function() {}
+  const foo = function() {}
 }
 </pre>
 
@@ -1506,7 +1508,7 @@ if (x) {
 <p>jQuery を使用する場合は原則として 2.x 系の最新版を使用すること。jQuery の読み込みは <a href="https://developers.google.com/speed/libraries/devguide?hl=ja#jquery">Google Hosted Libraries</a> より行う。</p>
 
 <pre>
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js&quot;&gt;&lt;/script&gt;
 </pre>
 
 <p>開発中 bower 等を用いてローカルに必要なライブラリをインストールするといった手法に制約はない。リリース時に上記のルールに基づいてソースコードを修正すること。</p>
@@ -1550,24 +1552,24 @@ if (x) {
 
 <h3 id="cms-movable-type">Movable Type</h3>
 <div class="block-article-body">
-<p>Movable Type、およびその関連製品として案件で利用を推奨するプロダクト、およびバージョンは下記の通り。</p>
+<p>Movable Type、およびその関連製品として案件で利用を推奨するプロダクトは下記の通り。</p>
 
 <ul>
 <li>通常版ライセンス
 <ul>
-<li><strong>Movable Type 6 （ソフトウェア版）</strong></li>
-<li>Movable Type 6 （クラウド版）</li>
-<li>Movable Type 6 Mobile Pack 同梱版</li>
-<li>Movable Type for AWS</li>
+<li><strong>Movable Type （ソフトウェア版）</strong></li>
 </ul></li>
 <li>エンタープライズ向けライセンス
 <ul>
-<li>Movable Type Advanced（MT6 ベース）</li>
-<li>PowerCMS（MT6 ベース/アルファサード社）</li>
+<li>Movable Type Advanced</li>
+<li>PowerCMS</li>
+</ul></li>
+<li>SaaS
+<ul>
+<li>Movable Type クラウド版</li>
+<li>MovableType.net</li>
 </ul></li>
 </ul>
-
-<p>通常の案件に関しては、Movable Type 6 （ソフトウェア版）を使用する。</p>
 
 </div>
 
@@ -1606,7 +1608,7 @@ if (x) {
 <div class="block-article-body">
 <p>CMS インストール時のアカウント設定など、新規でアカウントを設定する際は推測されにくいアカウント名、および強固なパスワードを設定すること。</p>
 
-<p>パスワードは 12 桁以上が望ましいが、状況に応じて 8 桁以上であれば許容する。必ず英数字を混在させ、数字だけのパスワードや英単語によるパスワードは禁止する。また、同一のパスワードを複数のサービスやアカウントで使い回すことも禁止。</p>
+<p>パスワードは 32 桁以上が望ましいが、状況に応じて 16 桁以上であれば許容する。必ず英数字を混在させ、数字だけのパスワードや英単語によるパスワードは禁止する。また、同一のパスワードを複数のサービスやアカウントで使い回すことも禁止。</p>
 
 <p>上記は、クライアントの要望によらず厳守すること。</p>
 
@@ -1634,7 +1636,7 @@ if (x) {
 <h4>強固なパスワードの例</h4>
 
 <ul>
-<li><code>oGZ2BL0ZLjl@</code></li>
+<li><code>yrQpjO9BI4gx84a@</code></li>
 </ul>
 
 </div>
@@ -1668,10 +1670,10 @@ if (x) {
 
 <p>SSL を使用する場合、レンタルサーバ業者が提供するような所謂共有 SSL の利用は原則として不可。</p>
 
-<p>SSL サーバ証明書を発行する際に申請する証明書の公開鍵暗号は 2048bit RSA、ハッシュ関数は SHA-2 を選択する。また暗号化強度は 128bit 以上の信頼できる認証局発行 SSL 証明書を利用する。推奨する認証局は下記の通り。</p>
+<p>SSL サーバ証明書を発行する際に申請する証明書の公開鍵暗号は 2048bit RSA、ハッシュ関数は SHA-2 を基準として選択する。また暗号化強度は 128bit 以上の信頼できる認証局発行 SSL 証明書を利用する。推奨する認証局は下記の通り。</p>
 
 <ul>
-<li>シマンテック（旧ベリサイン）</li>
+<li>Let's Encrypt</li>
 <li>セコムトラストシステムズ（セコムパスポート）</li>
 <li>GMO グローバルサイン</li>
 <li>ジオトラスト</li>
@@ -1705,6 +1707,8 @@ UpgradeScript mt-upgrade-example.cgi
 DataAPIScript mt-data-api-example.cgi
 CheckScript mt-check-example.cgi
 </pre>
+
+<p>また、Web サイトの構築に不要な機能に関しては .cgi ファイルの実行権限を削除してもよい。</p>
 
 </div>
 
@@ -1754,6 +1758,8 @@ CheckScript mt-check-example.cgi
 </ul>
 
 <p>JPEG 画像は、retina 対応（表示サイズの 2 倍サイズで画像を用意）した上で、画像の圧縮率を高くするという方法が、見た目とファイルサイズのバランスで最もよい場合がある。（<a href="jpeg-retina-sample/">参考</a>）</p>
+
+<p>閲覧環境が許す場合は WebP 形式の画像を使用することも可能。</p>
 
 <h4>Grunt</h4>
 
@@ -1831,6 +1837,8 @@ CheckScript mt-check-example.cgi
 
 <p>サーバ側で HTTP/2 の利用が可能であれば利用する。SPDY の利用も効果があるが、HTTP/2 が利用できる Web サーバであれば、そちらを優先すること。サーバプッシュの設定なども含めて、クライアントサーバ管理担当者と協議。</p>
 
+<p>その他、CDN （Content Delivery Network） の利用など、サードパーティのサービスを利用する場合はクライアントと協議の上決定すること。</p>
+
 </div>
 
 <h3 id="performance-rel-subresource">rel=subresource</h3>
@@ -1843,7 +1851,6 @@ CheckScript mt-check-example.cgi
 
 <pre>
 &lt;link rel=&quot;stylesheet subresource&quot; href=&quot;style.css&quot; /&gt;
-&lt;!-- ただし、この指定 （rel=&quot;stylesheet subresource&quot;） は IE7 以前など旧ブラウザでスタイルが読み込まれない場合がある --&gt;
 </pre>
 
 <p>HTTP の Link: ヘッダによる指定でもよい。</p>
@@ -1858,7 +1865,7 @@ CheckScript mt-check-example.cgi
 
 <h3 id="performance-rel-prefetch">rel=prefetch</h3>
 <div class="block-article-body">
-<p>チュートリアルなど、連続して次のページを読んでいくようなコンテンツの場合、あるいは、ほぼ次に移動する静的なページが決まっているような場合は、Link prefetching の利用が効果的な場合がある。IE11 を含む主要ブラウザで利用可能。</p>
+<p>チュートリアルなど、連続して次のページを読んでいくようなコンテンツの場合、あるいは、ほぼ次に移動する静的なページが決まっているような場合は、Link prefetching の利用が効果的な場合がある。</p>
 
 <pre>
 &lt;link rel=&quot;next prefetch&quot; href=&quot;step-2.html&quot; /&gt;
@@ -1921,11 +1928,11 @@ CheckScript mt-check-example.cgi
 
 <h3 id="im-password-management">パスワード等の管理</h3>
 <div class="block-article-body">
-<p>業務で使用する Google Apps、Dropbox など Web サービスは 2 段階認証を必ず有効にすること。また、使用するパスワードは最低でも 8 桁、できれば 12 桁以上の強固なものを設定し、他サービス間での同じパスワードの使い回しは堅く禁じる。</p>
+<p>業務で使用する Google Apps、Dropbox など Web サービスは 2 要素認証を必ず有効にすること。また、使用するパスワードは最低でも 16 桁、できれば 32 桁以上の強固なものを設定し、他サービス間での同じパスワードの使い回しは堅く禁じる。</p>
 
-<p>また、パスワードを平文でメール送信することは禁止。どうしてもメールで伝える必要がある場合は、パスワードロックした圧縮ファイルや PDF ファイルに記載して送信した上で、解凍パスワードを別メールで送信するなど最低限の配慮をすること。その際の送信先はメーリングリストなど、複数の人が受信する可能性のあるアドレス宛は避け、必ずクライアント担当者個別に送信する。</p>
+<p>また、パスワードを平文でメール送信することは禁止。リモートで送付する必要がある場合は、チャット・プロジェクト管理ツール上など、関係者以外がアクセスできない場所で投稿、あるいは送信すること。ファイルの閲覧に受取手のログインが必須な設定であれば、Google ドライブや、Dropbox などの共有ドライブサービスを利用することも可能。</p>
 
-<p>社内での連絡であればパスワードのみチャットツール等で送信する方法でも良い。この場合でも、ログイン URL、ID、パスワードといったログインに必要な情報をひとまとめにして送ることは避けること。</p>
+<p>また、「パスワードを伝達する」 という目的を果たしたら、なるべく早めにファイルや投稿を削除し、いつまでもパスワード情報が放置されたままにしないこと。</p>
 
 <p>パスワード情報などを誰でも閲覧可能な場所に保存したりはしないこと。各自の手元でパスワードを管理する場合は、パスワード管理ソフトを使用し、適切に管理すること。</p>
 
@@ -1941,7 +1948,7 @@ CheckScript mt-check-example.cgi
 
 <h3 id="im-cloud-service">クラウドサービスの利用</h3>
 <div class="block-article-body">
-<p>Dropbox をはじめとした、データを外部サーバに預けるサービスの利用に関しては、2段階認証を行うなど、セキュリティの要件を満たしていれば特に制約はしないが、クライアントとの業務委託契約、あるいは機密保持契約の内容が優先される。</p>
+<p>Dropbox をはじめとした、データを外部サーバに預けるサービスの利用に関しては、2 要素認証を行うなど、セキュリティの要件を満たしていれば特に制約はしないが、クライアントとの業務委託契約、あるいは機密保持契約の内容が優先される。</p>
 
 <p>使用する場合でも、クライアント関連のデータは暗号化して保存するなど、データの取り扱いには注意すること。なお、機密情報と文書または口頭にて明示されたデータのクラウドサービスへのアップロードは原則として禁止する。</p>
 
@@ -2002,15 +2009,19 @@ CheckScript mt-check-example.cgi
 
 <h4>CSS プリプロセッサ</h4>
 
-<p>Sass + Compassを推奨。</p>
+<p>LESS を推奨。</p>
 
 <h4>ビルドツール</h4>
 
-<p>Grunt を推奨。</p>
+<p>Gulp を推奨。</p>
 
 <h4>バージョン管理</h4>
 
 <p>Git を推奨。リポジトリサービスは GitHub を使用を推奨するが、クライアント案件のソースコードをパブリックなリポジトリには保存しないこと。</p>
+
+<h4>JavaScript ライブラリ・フレームワーク</h4>
+
+<p>React、および Next.js を推奨。</p>
 
 </div>
 
@@ -2061,7 +2072,7 @@ CheckScript mt-check-example.cgi
 <li>リビジョン番号は誤字脱字の修正や文章の軽微な修正などが行われた場合に 1 ずつ増加する。メジャーバージョン番号、またはマイナーバージョン番号が変更された際は、0 にリセットされる。</li>
 </ol>
 
-<p>本ガイドラインの改訂履歴は下記、GitHub 上で確認できる。</p></p>
+<p>本ガイドラインの改訂履歴は下記、GitHub 上で確認できる。</p>
 
 <ul>
 <li><a href="https://github.com/burnworks/burnworks-guidelines/commits/master/index.shtml">History for index.shtml - burnworks/burnworks-guidelines</a></li>
@@ -2095,152 +2106,152 @@ CheckScript mt-check-example.cgi
 <div class="layout-sub" id="sub-menu">
 <div class="block-inner">
 
-<div class="module-sub-menu">
-<nav role="navigation">
+<div class="module-sub-menu" id="role-sub-menu">
+<nav>
 <h3 class="module-sub-menu-header">項目一覧</h3>
-<ul class="module-menu-list">
-<li class="module-go-top"><a href="#top">ページの上部へ移動</a></li>
-<li><a href="#section-direction">サイト設計・ディレクション</a>
+<ul class="nav module-menu-list">
+<li class="nav-item module-go-top"><a href="#top">ページの上部へ移動</a></li>
+<li class="nav-item"><a href="#section-direction">サイト設計・ディレクション</a>
 <ul>
-<li><a href="#direction-basic">基本</a></li>
-<li><a href="#direction-kickoff">プロジェクトキックオフ</a></li>
-<li><a href="#direction-member">社内プロジェクトメンバーのアサイン</a></li>
-<li><a href="#direction-document">ドキュメント</a></li>
-<li><a href="#direction-communication">プロジェクト進行における連絡手段</a></li>
-<li><a href="#direction-accessibility">アクセシビリティ</a></li>
-<li><a href="#direction-url">ページタイトルやURL</a></li>
-<li><a href="#direction-use-terms-consistently">文言の統一</a></li>
-<li><a href="#direction-access-analytics">アクセス解析</a></li>
-<li><a href="#direction-privacy-policy">個人情報保護方針</a></li>
-<li><a href="#direction-contract">サーバや外部サービスの契約</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-basic">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-kickoff">プロジェクトキックオフ</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-member">社内プロジェクトメンバーのアサイン</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-document">ドキュメント</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-communication">プロジェクト進行における連絡手段</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-accessibility">アクセシビリティ</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-url">ページタイトルやURL</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-use-terms-consistently">文言の統一</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-access-analytics">アクセス解析</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-privacy-policy">個人情報保護方針</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-contract">サーバや外部サービスの契約</a></li>
 </ul>
 </li>
-<li><a href="#section-design">デザイン関連</a>
+<li class="nav-item"><a href="#section-design">デザイン関連</a>
 <ul>
-<li><a href="#design-accessibility">アクセシビリティ</a></li>
-<li><a href="#design-design-data">デザインデータ</a></li>
-<li><a href="#design-style-guide">スタイルガイド</a></li>
-<li><a href="#design-stock-photo">画像素材のライセンス</a></li>
-<li><a href="#design-svg">SVG</a></li>
-<li><a href="#design-text">長いテキストの可読性など</a></li>
-<li><a href="#design-favicon">Favicon</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-accessibility">アクセシビリティ</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-design-data">デザインデータ</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-style-guide">スタイルガイド</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-stock-photo">画像素材のライセンス</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-svg">SVG</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-text">長いテキストの可読性など</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-favicon">Favicon</a></li>
 </ul>
 </li>
-<li><a href="#section-smartphone">スマートフォン関連</a>
+<li class="nav-item"><a href="#section-smartphone">スマートフォン関連</a>
 <ul>
-<li><a href="#smartphone-basic">基本</a></li>
-<li><a href="#smartphone-touch-device">タッチデバイス</a></li>
-<li><a href="#smartphone-breakpoint">ブレイクポイント</a></li>
-<li><a href="#smartphone-retina">高精細ディスプレイ対応</a></li>
+<li class="nav-item"><a class="nav-link" href="#smartphone-basic">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#smartphone-touch-device">タッチデバイス</a></li>
+<li class="nav-item"><a class="nav-link" href="#smartphone-breakpoint">ブレイクポイント</a></li>
+<li class="nav-item"><a class="nav-link" href="#smartphone-retina">高精細ディスプレイ対応</a></li>
 </ul>
 </li>
-<li><a href="#section-coding">コーディング全般</a>
+<li class="nav-item"><a href="#section-coding">コーディング全般</a>
 <ul>
-<li><a href="#coding-basic">基本</a></li>
-<li><a href="#coding-server-path">ディレクトリ構成</a></li>
-<li><a href="#coding-file-name">ファイル名の基本ルール</a></li>
-<li><a href="#coding-browser-version">動作検証ブラウザ</a></li>
-<li><a href="#coding-charset">文字コード</a></li>
-<li><a href="#coding-indent">インデントルール</a></li>
-<li><a href="#coding-letter">大文字小文字</a></li>
-<li><a href="#coding-comment">コメント</a></li>
-<li><a href="#coding-viewport">viewport</a></li>
-<li><a href="#coding-scheme">スキームの記述</a></li>
-<li><a href="#coding-ｌibrary">ライブラリ・フレームワーク</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-basic">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-server-path">ディレクトリ構成</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-file-name">ファイル名の基本ルール</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-browser-version">動作検証ブラウザ</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-charset">文字コード</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-indent">インデントルール</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-letter">大文字小文字</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-comment">コメント</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-viewport">viewport</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-scheme">スキームの記述</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-ｌibrary">ライブラリ・フレームワーク</a></li>
 </ul>
 </li>
-<li><a href="#section-html">HTMLコーディング</a>
+<li class="nav-item"><a href="#section-html">HTMLコーディング</a>
 <ul>
-<li><a href="#html-validation">基本・バリデーション</a></li>
-<li><a href="#html-accessibility">アクセシビリティ</a></li>
-<li><a href="#html-document-type-definition">文書型宣言</a></li>
-<li><a href="#html-tag">要素や終了タグの省略</a></li>
-<li><a href="#html-semantics">セマンティクス</a></li>
-<li><a href="#html-include">CSS や JavaScript ファイルの読み込み</a></li>
-<li><a href="#html-type-attribute">type 属性</a></li>
-<li><a href="#html-structured-data">構造化データ</a></li>
-<li><a href="#html-ogp">メタデータや OGP</a></li>
-<li><a href="#html-conditional-comment">条件付きコメント</a></li>
-<li><a href="#html-anchor-link">ページ上部へのアンカーリンク</a></li>
-<li><a href="#html-svg">SVG</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-validation">基本・バリデーション</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-accessibility">アクセシビリティ</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-document-type-definition">文書型宣言</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-tag">要素や終了タグの省略</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-semantics">セマンティクス</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-include">CSS や JavaScript ファイルの読み込み</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-type-attribute">type 属性</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-structured-data">構造化データ</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-ogp">メタデータや OGP</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-conditional-comment">条件付きコメント</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-anchor-link">ページ上部へのアンカーリンク</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-svg">SVG</a></li>
 </ul>
 </li>
-<li><a href="#section-css">CSSコーディング</a>
+<li class="nav-item"><a href="#section-css">CSSコーディング</a>
 <ul>
-<li><a href="#css-basic">基本・バリデーション</a></li>
-<li><a href="#css-normalize">デフォルトスタイルシートのノーマライズ</a></li>
-<li><a href="#css-selector-name">セレクタの命名規則</a></li>
-<li><a href="#css-shorthand">ショートハンド</a></li>
-<li><a href="#css-media-rule">@media 規則</a></li>
-<li><a href="#css-unit">単位などの省略</a></li>
-<li><a href="#css-link-color">リンクの文字色</a></li>
-<li><a href="#css-font-family">font-family の指定</a></li>
-<li><a href="#css-z-index">z-index の値</a></li>
-<li><a href="#css-web">Web フォントやアイコンフォントの利用</a></li>
-<li><a href="#css-css3">CSS3 プロパティやセレクタ</a></li>
-<li><a href="#css-css-hack">CSSハック</a></li>
-<li><a href="#css-halfway">中間制作物</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-basic">基本・バリデーション</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-normalize">デフォルトスタイルシートのノーマライズ</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-selector-name">セレクタの命名規則</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-shorthand">ショートハンド</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-media-rule">@media 規則</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-unit">単位などの省略</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-link-color">リンクの文字色</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-font-family">font-family の指定</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-z-index">z-index の値</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-web">Web フォントやアイコンフォントの利用</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-css3">CSS3 プロパティやセレクタ</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-css-hack">CSSハック</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-halfway">中間制作物</a></li>
 </ul>
 </li>
-<li><a href="#section-javascript">JavaScript</a>
+<li class="nav-item"><a href="#section-javascript">JavaScript</a>
 <ul>
-<li><a href="#javascript-basic">基本・バリデーション</a></li>
-<li><a href="#javascript-quotation-mark">シングルクォーテーションとダブルクォーテーション</a></li>
-<li><a href="#javascript-semicolon">セミコロン</a></li>
-<li><a href="#javascript-function">変数 / 関数の命名規則</a></li>
-<li><a href="#javascript-function-declaration">ブロックの中での関数宣言</a></li>
-<li><a href="#javascript-jquery">jQuery</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-basic">基本・バリデーション</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-quotation-mark">シングルクォーテーションとダブルクォーテーション</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-semicolon">セミコロン</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-function">変数 / 関数の命名規則</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-function-declaration">ブロックの中での関数宣言</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-jquery">jQuery</a></li>
 </ul>
 </li>
-<li><a href="#section-cms">CMS</a>
+<li class="nav-item"><a href="#section-cms">CMS</a>
 <ul>
-<li><a href="#cms-product">プロダクトの選定</a></li>
-<li><a href="#cms-movable-type">Movable Type</a></li>
-<li><a href="#cms-plugin">プラグイン</a></li>
+<li class="nav-item"><a class="nav-link" href="#cms-product">プロダクトの選定</a></li>
+<li class="nav-item"><a class="nav-link" href="#cms-movable-type">Movable Type</a></li>
+<li class="nav-item"><a class="nav-link" href="#cms-plugin">プラグイン</a></li>
 </ul>
 </li>
-<li><a href="#section-security">セキュリティ</a>
+<li class="nav-item"><a href="#section-security">セキュリティ</a>
 <ul>
-<li><a href="#security-post">基本</a></li>
-<li><a href="#security-password">強固なパスワード</a></li>
-<li><a href="#security-password-protect">管理画面のパスワード保護</a></li>
-<li><a href="#security-ssl">SSL の利用</a></li>
-<li><a href="#security-ftp">FTP</a></li>
-<li><a href="#security-movable-type">Movable Type</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-post">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-password">強固なパスワード</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-password-protect">管理画面のパスワード保護</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-ssl">SSL の利用</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-ftp">FTP</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-movable-type">Movable Type</a></li>
 </ul>
 </li>
-<li><a href="#section-performance">パフォーマンス</a>
+<li class="nav-item"><a href="#section-performance">パフォーマンス</a>
 <ul>
-<li><a href="#performance-basic">基本</a></li>
-<li><a href="#performance-imagemin">画像の最適化</a></li>
-<li><a href="#performance-cssmin">CSS の最適化</a></li>
-<li><a href="#performance-javascriptmin">JavaScript の最適化</a></li>
-<li><a href="#performance-server">サーバサイドでの設定</a></li>
-<li><a href="#performance-rel-subresource">rel=subresource</a></li>
-<li><a href="#performance-rel-prefetch">rel=prefetch</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-basic">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-imagemin">画像の最適化</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-cssmin">CSS の最適化</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-javascriptmin">JavaScript の最適化</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-server">サーバサイドでの設定</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-rel-subresource">rel=subresource</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-rel-prefetch">rel=prefetch</a></li>
 </ul>
 </li>
-<li><a href="#section-im">情報管理体制</a>
+<li class="nav-item"><a href="#section-im">情報管理体制</a>
 <ul>
-<li><a href="#im-basic">基本</a></li>
-<li><a href="#im-pc-security">パソコンのセキュリティ</a></li>
-<li><a href="#im-password-management">パスワード等の管理</a></li>
-<li><a href="#im-data-management">機密情報の管理</a></li>
-<li><a href="#im-cloud-service">クラウドサービスの利用</a></li>
+<li class="nav-item"><a class="nav-link" href="#im-basic">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#im-pc-security">パソコンのセキュリティ</a></li>
+<li class="nav-item"><a class="nav-link" href="#im-password-management">パスワード等の管理</a></li>
+<li class="nav-item"><a class="nav-link" href="#im-data-management">機密情報の管理</a></li>
+<li class="nav-item"><a class="nav-link" href="#im-cloud-service">クラウドサービスの利用</a></li>
 </ul>
 </li>
-<li><a href="#section-other">その他</a>
+<li class="nav-item"><a href="#section-other">その他</a>
 <ul>
-<li><a href="#other-copyright">他者の著作権</a></li>
-<li><a href="#other-license">ライセンス</a></li>
-<li><a href="#other-buildtool">ビルドツール等</a></li>
+<li class="nav-item"><a class="nav-link" href="#other-copyright">他者の著作権</a></li>
+<li class="nav-item"><a class="nav-link" href="#other-license">ライセンス</a></li>
+<li class="nav-item"><a class="nav-link" href="#other-buildtool">ビルドツール等</a></li>
 </ul>
 </li>
-<li><a href="#section-guidelines">本ガイドラインについて</a>
+<li class="nav-item"><a href="#section-guidelines">本ガイドラインについて</a>
 <ul>
-<li><a href="#guidelines-purpose">ガイドラインの目的</a></li>
-<li><a href="#guidelines-version">ガイドラインの改定</a></li>
-<li><a href="#guidelines-license">ガイドラインの公開とライセンス</a></li>
+<li class="nav-item"><a class="nav-link" href="#guidelines-purpose">ガイドラインの目的</a></li>
+<li class="nav-item"><a class="nav-link" href="#guidelines-version">ガイドラインの改定</a></li>
+<li class="nav-item"><a class="nav-link" href="#guidelines-license">ガイドラインの公開とライセンス</a></li>
 </ul>
 </li>
 </ul>
@@ -2254,15 +2265,20 @@ CheckScript mt-check-example.cgi
 <!-- //.layout-container --></div>
 
 <div class="block-page-footer">
-<footer role="contentinfo">
-<p>burnworks Inc. Ver.1.3.1 (2016-08-09)</p>
+<footer>
+<p>burnworks Inc. Ver.1.4.0 (2021-12-09)</p>
 <p class="module-license"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.</a></p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#role-sub-menu'
+})
+</script>
 <script src="js/function.js"></script>
 
 </body>
