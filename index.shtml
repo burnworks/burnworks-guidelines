@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.4.0 (Last modified 2021-12-09)
+  Burnworks Inc. Web Development Guidelines Ver.1.4.0 (Last modified 2021-12-17)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2021-12-09T14:17:59+09:00">2021-12-09</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2021-12-17T08:45:52+09:00">2021-12-17</time></span></p>
 </div>
 
 <div class="block-section">
@@ -1030,33 +1030,7 @@ color:blue;
 
 <h3 id="html-svg">SVG</h3>
 <div class="block-article-body">
-<p>スクリプトを伴わない SVG データに関しては img 要素での埋め込みを推奨する。スクリプトを伴う場合は、iframe、もしくは object 要素による埋め込みを推奨。文書内への svg 要素による直接記述は、メンテナンス性の面から推奨しない。</p>
-
-<p>ただし、IE9 以降、および Android 4.0 以降しか SVG の表示に対応していないため、旧 Android が動作検証対象に入る場合はフォールバックを用意する。ただし、完全に装飾目的で使用された SVG であればこの限りではない。</p>
-
-<h4>フォールバックの手法</h4>
-
-<p>標準的なフォールバックの方法としては下記の方法を用いる。</p>
-
-<ul>
-<li>フォールバック用の画像を SVG と同ファイル名の .png 形式で用意し、SVG と同階層に設置する</li>
-<li><a href="http://modernizr.com/download/#-svg">Modernizr Download Builder</a> から SVG 判別ライブラリをダウンロード</li>
-<li>上記を modernizr-svg.js として保存し、ページに読み込み</li>
-<li>下記のソースコードを modernizr-svg.js の後ろで読み込み （jQuery を使用している場合）</li>
-</ul>
-
-<pre>
-/* Modernizr を使用し、SVG に未対応の場合は同名の .png ファイルに置き換える */
-$(function(){
-  if (!Modernizr.svg){
-    $('img').each(function() {
-      $(this).attr('src', $(this).attr('src').replace(/\.svg/gi,'.png'));
-    });
-  }
-});
-</pre>
-
-<p>フォールバックの手法は他にもあるが、メンテナンス性やパフォーマンスの関係から上記の方法を標準とする。</p>
+<p>スクリプトを伴わない SVG データに関しては img 要素での埋め込みを推奨する。スクリプトを伴う場合は、iframe、もしくは object 要素による埋め込みを推奨。文書内への svg 要素による直接記述は、メンテナンス性の面から積極的には推奨しないが、状況によって判断する。</p>
 
 </div>
 
@@ -1140,7 +1114,7 @@ h3 {
 
 <h4>バリデーション</h4>
 
-<p><a href="http://jigsaw.w3.org/css-validator/">W3C CSS 検証サービス</a>によるバリデーションを行うこと。特にスペルミスや記述ミスは確実にチェックし、排除すること。プリプロセッサやビルドツールを用いたバリデーションでも構わない。</p>
+<p><a href="http://jigsaw.w3.org/css-validator/">W3C CSS 検証サービス</a>によるバリデーションを行うこと。特にスペルミスや記述ミスは確実にチェックし、排除すること。なお、プリプロセッサやビルドツールを用いたバリデーション、あるいはエディタの機能として提供されている機能を利用したバリデーションでも構わない。</p>
 
 </div>
 
@@ -2266,7 +2240,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer>
-<p>burnworks Inc. Ver.1.4.0 (2021-12-09)</p>
+<p>burnworks Inc. Ver.1.4.0 (2021-12-17)</p>
 <p class="module-license"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.</a></p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
