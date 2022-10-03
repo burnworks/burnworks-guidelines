@@ -20,7 +20,7 @@
 <meta property="og:type" content="website" />
 
 <!-- ********************************************************************************************
-  Burnworks Inc. Web Development Guidelines Ver.1.4.0 (Last modified 2021-12-17)
+  Burnworks Inc. Web Development Guidelines Ver.1.4.0 (Last modified 2022-10-03)
   https://burnworks.com/docs/guidelines/
   by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
 
@@ -47,7 +47,7 @@
 
 <div class="block-summary">
 <p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
-<p class="module-modified-date"><span>Last modified <time datetime="2021-12-17T08:45:52+09:00">2021-12-17</time></span></p>
+<p class="module-modified-date"><span>Last modified <time datetime="2022-10-03T13:49:30+09:00">2022-10-03</time></span></p>
 </div>
 
 <div class="block-section">
@@ -492,18 +492,20 @@
 <h4>パソコン</h4>
 
 <ul>
-<li>Microsoft Edge（v16 Chromium 版以降）</li>
+<li>Microsoft Edge（Chromium 版）</li>
 <li>Google Chrome 最新版</li>
-<li>Mozilla Firefox 最新版</li>
 <li>Safari 最新版</li>
+<li>Mozilla Firefox 最新版</li>
 </ul>
 
 <p>Internet Explorer 11 （IE11） への対応は原則として行わない。クライアントの要望により行う場合は別途 IE11 対応費用を請求すること。</p>
 
 <h4>スマートフォン</h4>
 
+<p>スマートフォンOSに関しては、原則としてプロジェクト開始時点における最新リリースから2バージョン前までを動作確認対象とする。</p>
+
 <ul>
-<li>iOS Safari 13.x 以降 （iOS 13.x 以降）</li>
+<li>iOS Safari 14.x 以降 （iOS 14.x 以降）</li>
 <li>Android 9.x 以降 標準ブラウザ</li>
 <li>Android 9.x 以降 Chrome</li>
 </ul>
@@ -517,10 +519,10 @@
 <div class="module-text-example">
 <p>JavaScript、スタイルシート、画像表示が有効になっている下記のブラウザソフト</p>
 <ul>
-<li>Microsoft Edge（v16 Chromium 版以降）</li>
-<li>Mozilla Firefox 最新版</li>
+<li>Microsoft Edge（Chromium 版）</li>
 <li>Google Chrome 最新版</li>
 <li>Safari 最新版</li>
+<li>Mozilla Firefox 最新版</li>
 </ul>
 </div>
 
@@ -746,7 +748,7 @@ color:blue;
 
 <p>各要素は、HTML Standard のコンテンツモデルや使用できる文脈に基づき適切に記述すること。またアウトラインが適切かについて必ず確認すること。</p>
 
-<p>また、納品前の HTML ファイルは、必ず <a href="http://validator.w3.org/">The W3C Markup Validation Service</a> によるチェックを行うこと。特に HTML タグの閉じ忘れといったミスは避ける。なお、バリデーションはビルドツール等によって行っても構わない。</p>
+<p>また、納品前の HTML ファイルは、必ず <a href="https://validator.w3.org/nu/">The W3C Markup Validation Service</a> によるチェックを行うこと。特に HTML タグの閉じ忘れといったミスは避ける。なお、バリデーションはビルドツール等によって行っても構わない。</p>
 
 </div>
 
@@ -1479,10 +1481,10 @@ if (x) {
 
 <h3 id="javascript-jquery">jQuery</h3>
 <div class="block-article-body">
-<p>jQuery を使用する場合は原則として 2.x 系の最新版を使用すること。jQuery の読み込みは <a href="https://developers.google.com/speed/libraries/devguide?hl=ja#jquery">Google Hosted Libraries</a> より行う。</p>
+<p>jQuery は原則として推奨はしないが、要件により使用する場合は 3.x 系の最新版を使用すること。jQuery の読み込みは <a href="https://developers.google.com/speed/libraries/devguide?hl=ja#jquery">Google Hosted Libraries</a> より行う。</p>
 
 <pre>
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js&quot;&gt;&lt;/script&gt;
 </pre>
 
 <p>開発中 bower 等を用いてローカルに必要なライブラリをインストールするといった手法に制約はない。リリース時に上記のルールに基づいてソースコードを修正すること。</p>
@@ -1979,15 +1981,15 @@ CheckScript mt-check-example.cgi
 
 <h3 id="other-buildtool">ビルドツール等</h3>
 <div class="block-article-body">
-<p>開発環境については各担当者の裁量で選択することができるが、複数人でのメンテナンス等を考慮し、下記に推奨ツールを記載する。</p>
+<p>開発環境については各担当者の裁量で選択することができるが、複数人でのメンテナンス等を考慮し、下記に推奨ツールを記載する。特定のOSに依存するようなツールは使用しないこと。</p>
 
 <h4>CSS プリプロセッサ</h4>
 
-<p>LESS を推奨。</p>
+<p>Sass、もしくは LESS を推奨する。</p>
 
 <h4>ビルドツール</h4>
 
-<p>Gulp を推奨。</p>
+<p>npm-scripts の使用を推奨する。ただし、要件や開発の特性に応じてタスクランナーの使用も可能。その場合は Gulp を推奨。</p>
 
 <h4>バージョン管理</h4>
 
@@ -1995,7 +1997,7 @@ CheckScript mt-check-example.cgi
 
 <h4>JavaScript ライブラリ・フレームワーク</h4>
 
-<p>React、および Next.js を推奨。</p>
+<p>React、および Next.js を推奨。原則として TypeScript を導入すること。</p>
 
 </div>
 
@@ -2240,7 +2242,7 @@ CheckScript mt-check-example.cgi
 
 <div class="block-page-footer">
 <footer>
-<p>burnworks Inc. Ver.1.4.0 (2021-12-17)</p>
+<p>burnworks Inc. Ver.1.4.0 (2022-10-03)</p>
 <p class="module-license"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.</a></p>
 <p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
 </footer>
