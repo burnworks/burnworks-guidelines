@@ -1,0 +1,2288 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8" />
+
+<title>制作ガイドライン - バーンワークス株式会社</title>
+
+<link rel="stylesheet subresource" href="css/s.min.css" />
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png" sizes="144x144" />
+<link rel="icon" type="image/png" href="img/favicon.png" sizes="64x64" />
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" sizes="16x16 32x32 64x64" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。" />
+<meta property="og:title" content="制作ガイドライン" />
+<meta property="og:site_name" content="バーンワークス株式会社" />
+<meta property="og:url" content="https://burnworks.com/docs/guidelines/" />
+<meta property="og:description" content="本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。" />
+<meta property="og:image" content="https://burnworks.com/static/img/ico/bw.png" />
+<meta property="og:type" content="website" />
+
+<!-- ********************************************************************************************
+  Burnworks Inc. Web Development Guidelines Ver.1.5.1 (Last modified 2023-09-30)
+  https://burnworks.com/docs/guidelines/
+  by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
+
+  This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.
+  https://creativecommons.org/licenses/by-nc/4.0/
+******************************************************************************************** -->
+
+</head>
+
+<body id="top" class="guideline" data-bs-spy="scroll" data-bs-target="#role-sub-menu" data-offset="30">
+
+<div class="block-header">
+<header>
+<h1 class="module-page-title"><a href="./" title="制作ガイドライン - バーンワークス株式会社">Web Development Guidelines</a></h1>
+<p class="module-m-menu-btn module-swing"><a href="#sub-menu" title="メニューに移動">Menu</a></p>
+</header>
+</div>
+
+<div class="layout-container">
+<div class="block-inner">
+
+<div class="layout-main">
+<main>
+
+<div class="block-summary">
+<p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。</p>
+<p class="module-modified-date"><span>Last modified <time datetime="2023-09-30T10:29:35+09:00">2023-09-30</time></span></p>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-direction">サイト設計・ディレクション</h2>
+<div class="block-section-body">
+
+<h3 id="direction-basic">基本</h3>
+<div class="block-article-body">
+<p>ディレクターはクライアントから指定の Web サイト要件を満たし、Web サイトのビジネスゴールを達成するため、適切な情報提供、提案を行う、また Web サイトの情報設計からプロジェクトの進行管理、プロジェクトメンバーの業務管理、納品物の品質管理を適切に行うものとする。</p>
+
+<p>ディレクターはクライアントを含めプロジェクトメンバー間でのコミュニケーションを積極的に取ることで円滑なプロジェクト進行を心がける。また、クライアントに対しては進捗の報告、情報共有を適時、および明確に行い、信頼関係の構築に努める。</p>
+
+</div>
+
+<h3 id="direction-kickoff">プロジェクトキックオフ</h3>
+<div class="block-article-body">
+<p>新規 Web サイト制作案件が立ち上げに際して行われるキックオフミーティングについては、下記の要領を基本として開催する。クライアントとの間では現状の把握、ゴールイメージの共有、プロジェクト進行におけるスケジュールを含めた認識の共有を主な目的とする。</p>
+
+<p>また、社内のプロジェクトメンバー間においては、現状の把握、ゴールイメージの共有、スケジュールの共有の他、要件の確認に伴い、事前の意見交換を目的とする。これは例えば「事前に実装担当者、デザイナー、プログラマが知っていればもっと効率よくやる方法があった」「こうしておいてくれればもっと作業がしやすかった」といった無駄をなくすことで、生産性を高め、納期の短縮や品質の向上でクライアントに還元する。</p>
+
+<h4>クライアントと行うキックオフ</h4>
+
+<ul>
+<li>プロジェクトの要件確認
+<ul>
+<li>求められる動作環境や検収条件などの確認</li>
+<li>納品物の内容や納品形態についての確認</li>
+<li>開発言語、環境の指定やその他要件の確認</li>
+</ul></li>
+<li>プロジェクトの対象となる Web サイト等のユーザー層、ターゲット層の理解（必要に応じて下記を実施）
+<ul>
+<li>ユーザーのセグメンテーションとペルソナ</li>
+<li>ユーザーインタビュー</li>
+<li>カスタマージャーニーマップ</li>
+<li>既存 Web サイトが存在する場合はその分析
+<ul>
+<li>アクセスデータ解析</li>
+<li>ヒューリスティック評価</li>
+<li>ユーザビリティテスト</li>
+</ul></li>
+</ul></li>
+<li>クライアントビジネスの理解</li>
+<li>スケジュールの共有</li>
+<li>議事録の作成 （プロジェクトメンバー間で共有すべき決定事項などは 「ヒアリングシート」 としてまとめる）</li>
+</ul>
+
+<h4>社内キックオフ</h4>
+
+<ul>
+<li>プロジェクトの要件確認
+<ul>
+<li>求められる動作環境や検収条件などの確認</li>
+<li>納品物の内容や納品形態についての確認</li>
+<li>開発言語、環境の指定やその他要件の確認</li>
+</ul></li>
+<li>プロジェクトの対象となる Web サイト等のユーザー層、ターゲット層の理解</li>
+<li>既存 Web サイトが存在する場合はその分析結果の共有</li>
+<li>クライアントビジネスの理解</li>
+<li>スケジュールの共有</li>
+<li>議事録の作成</li>
+</ul>
+
+</div>
+
+<h3 id="direction-member">社内プロジェクトメンバーのアサイン</h3>
+<div class="block-article-body">
+<p>社内におけるプロジェクトメンバーのアサインは Web サイト制作事業の責任者権限で行う。リソース管理の観点から、ディレクターが現場の独自判断でメンバーをアサインしたりすることは禁止する。</p>
+
+<p>守秘義務契約、及び業務委託契約を結んでいない外部の個人事業主、及び企業へのプロジェクト情報の開示や作業の依頼は当然ながら一切禁止する。</p>
+
+</div>
+
+<h3 id="direction-document">ドキュメント</h3>
+<div class="block-article-body">
+<p>制作過程でディレクターが作成する標準的なドキュメントは下記の通りとする。フォーマットは問わないが、クライアント環境で問題なく閲覧ができること。当然、プロジェクトに応じて必要なドキュメントは変化する。</p>
+
+<ul>
+<li>ヒアリングシート （キックオフミーティング時に確定した内容などをまとめたもの）</li>
+<li>スケジュール案</li>
+<li>サイト構成図</li>
+<li>ワイヤーフレーム</li>
+<li>Movable Type など導入プロダクトの操作マニュアル（状況に応じて）</li>
+</ul>
+
+<p>Movable Type など導入プロダクトのマニュアルに関しては通常作成不要。開発元の公式ドキュメントがある場合はそれで代用できる。</p>
+
+<p>例えば Movable Type の場合、カスタムフィールドを用いた特殊な入力画面をクライアントに提供するなど、開発元が提供する公式ドキュメントでは対応できない場合などに、簡易なものを作成する前提とする。</p>
+
+</div>
+
+<h3 id="direction-communication">プロジェクト進行における連絡手段</h3>
+<div class="block-article-body">
+<p>プロジェクト進行中のクライアントを含むプロジェクトメンバーとの連絡・情報共有の手段は、クライアントと協議の上、Backlog、Slack、Chatwork をはじめとしたチャット・プロジェクト管理ツールを利用するが、原則として Backlog の利用を推奨する。ただし、クライアントがすでに Slack、もしくは Chatwork を利用している場合など、Backlog よりもそちらを利用した方が効率がよいと考えられる場合はこの限りではない。</p>
+
+<p>プロジェクトのキックオフがされた後、ディレクターによってチャット・プロジェクト管理ツールに当該プロジェクト用のスペースが開設され、プロジェクトメンバーが招待される。</p>
+
+<p>なお、クライアントの要望や、プロジェクトの特性、要件に応じて、連絡・情報共有用のツールは前述したサービス以外にも最適なものを選択できる。ただし、情報管理の観点から、使用ツールの選定はクライアント、および当社の情報管理ポリシーに基づき行う他、連絡の内容がすべて、ログとして長期にわたり保存され、後から検索可能なツールを選択すること。</p>
+
+</div>
+
+<h3 id="direction-accessibility">アクセシビリティ</h3>
+<div class="block-article-body">
+<p>設計段階からアクセシビリティに配慮する。</p>
+
+<p>例えばカルーセルパネル（数秒ごとに画像や要素がスライド等で差し替わる UI ）は数秒間で要素内に記述されたテキストを把握できない可能性や要素が切り替わるまでの間に正しく操作できない可能性もあり、重要なナビゲーション機能をカルーセルに持たせるべきではないと考える。</p>
+
+<p>あるいはナビゲーション機能を持たせるのであればカルーセルパネルの動作を一時停止できる仕組みを持たせるなど配慮が必要である。</p>
+
+<p>また、色に依存したナビゲーション、文章の使用は禁止する。例えば「下記の赤い方のボタンを押してください」「文章内の赤い文字は重要項目です」などの表記、あるいは色を選択させるような際にカラーパレットのみで色名のラベルがない等の UI は、一部の色覚障がい者にとっては認識できない可能性がある。UI や文章作成時には配慮するものとする。</p>
+
+<h4>操作性</h4>
+
+<p>特別、スマートフォン等、画面サイズの小さいデバイスへの対応を行わない場合でも、マルチデバイスで操作しやすい UI を意識して設計する。「スマートフォンサイトではないのでスマートフォンでの操作が困難でも仕方ない」ということはない。</p>
+
+<h4>文字サイズの変更ボタン</h4>
+
+<p>Web ページ内の文字サイズ変更を Web サイト側で提供する所謂「文字サイズ変更ボタン」の提供は原則として行わない。文字サイズの変更はブラウザ UI に任せるべきで、必要であれば操作方法をヘルプページ等に表記するものとする。</p>
+
+</div>
+
+<h3 id="direction-url">ページタイトルやURL</h3>
+<div class="block-article-body">
+<p>各ページのタイトル、およびディレクトリ名やファイル名はディレクターが実装担当に指示すること。実装担当者が勝手に決めたりはしない。</p>
+
+<p>ページ一覧（各ページタイトルや URL を記載した）をワイヤーフレームと同一ファイル内などに作成し、実装担当者はそれを基準に各ページを作成する。</p>
+
+<p>必要に応じて、ページ内に記述する <code>&lt;meta name="description" /&gt;</code> の値なども決められる場合は記述しておく。</p>
+
+<p>なお、この一覧に CSS や JavaScript 等、ページで読み込まれる各リソースのパス指定などは不要（これらに関しては別途 <a href="#section-coding">コーディング関連のセクション</a> で定める）。</p>
+
+</div>
+
+<h3 id="direction-use-terms-consistently">文言の統一</h3>
+<div class="block-article-body">
+<p>案件の状況やクライアントの要望により異なるものの、原則的には下記のように Web サイト内で使用する文言を統一する。表記のブレによる品質の低下を防ぐ。</p>
+
+<p>特にクライアントからの明確な指定がなく、迷ったときは、例えば下記を参考に統一する。</p>
+
+<ul>
+<li>Webサイトのトップページに移動するリンクのラベル： <strong>トップページ</strong> （×ホームページ、×トップ）</li>
+<li>ページ上部に移動するページ内リンクのラベル： <strong>このページの上部へ</strong> （×ページトップ、×トップ）</li>
+<li><strong>お問い合わせ</strong> （×お問合せ、×お問い合せ）</li>
+<li><strong>メールアドレス</strong> （×Mailアドレス、×アドレス、×email、△E-mail）</li>
+<li>英数字は原則半角、URLや数値、英単語を全角で記述しない</li>
+<li>文章内の全角スペースは半角に統一</li>
+</ul>
+
+<p>その他、サイト内で複数の文言が混在しないように注意すること。</p>
+
+<ul>
+<li>例）弊社|当社、貴社|御社、お客様|クライアント、～します|～いたします ...etc</li>
+</ul>
+
+</div>
+
+<h3 id="direction-access-analytics">アクセス解析</h3>
+<div class="block-article-body">
+<p>制作する Web サイトに対して、アクセス解析ツールの導入は必須と考える。なお、クライアントからの特別な指定がない場合のアクセス解析ツールとしては、Google Analysis を導入する前提とする。</p>
+
+<p>ディレクターは、Web サイト公開前に必ず Web サイトへの Google Analytics トラッキングコードの設置、及び設定 （主にゴール設定） が行われていることを確認する。</p>
+
+<p>また、Web サイトには必ず個人情報保護方針 （プライバシーポリシー） を掲載し、その中で、Google Analysis の使用、およびクッキー （Cookie） を使用したアクセスログ収集に関する掲示を行うものとする。その際、Google 社のプライバシーポリシーページへのリンクもあわせて掲載すること。（詳しくは <a href="#direction-privacy-policy">個人情報保護方針のセクション</a> を参照） </p>
+
+</div>
+
+<h3 id="direction-privacy-policy">個人情報保護方針</h3>
+<div class="block-article-body">
+<p>Web サイトには個人情報保護方針 （プライバシーポリシー） のページを必ず用意する。クライアントによってすでに個人情報保護方針が策定されている場合はそれに準じるが、アクセス解析に Google Analysis を用いる場合は、必ず Google Analysis の利用規約に則り、クッキー （Cookie） を使用したアクセスログ収集に関する掲示を追加で行うものとする。</p>
+
+<p>その際、Google 社のプライバシーポリシーページへのリンクもあわせて掲載すること。下記の記述をサンプルとして利用できる。</p>
+
+<div class="module-text-example">
+<p><strong>アクセス解析について</strong></p>
+<p>当サイトにおけるアクセスログの収集、および解析には Google Analytics を使用しています。Google Analytics ではクッキー（Cookie） を使用してアクセスログを収集しますが、これは個人を特定する情報を含みません。</p>
+<p>なお、収集されるアクセスログは Google 社のプライバシーポリシーに基づいて管理されます。</p>
+<p>Google Analytics で収集したアクセスログに関するプライバシーポリシーについては、下記をご確認ください（外部サイト）。</p>
+<ul>
+<li><a href="http://www.google.com/policies/privacy/partners/">ユーザーが Google パートナーのサイトやアプリを使用する際の Google によるデータ使用</a></li>
+<li><a href="http://www.google.com/intl/ja/policies/privacy/">Google 社のプライバシー ポリシー</a></li>
+</ul>
+</div>
+
+<p>上記サンプル文章は、下記ページの内容を参考にしたもの。</p>
+
+<ul>
+<li><a href="https://burnworks.com/privacy/">個人情報保護方針 ： バーンワークス株式会社</a></li>
+</ul>
+
+</div>
+
+<h3 id="direction-contract">サーバや外部サービスの契約</h3>
+<div class="block-article-body">
+<p>クライアントから新規のサーバ契約やその他外部サービス（ドメイン取得、ASP の利用等）の利用を求められた場合は、当社にてその選定や申し込みの代行を行うなど、最大限協力するものとする。しかし、実際の契約自体はクライアントとサービス提供元間での直接契約とし、当社が代理契約をすることは原則として行わない。</p>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-design">デザイン関連</h2>
+<div class="block-section-body">
+
+<h3 id="design-accessibility">アクセシビリティ</h3>
+<div class="block-article-body">
+<p>デザイン時にもアクセシビリティに配慮すること。</p>
+
+<p>背景色とテキストのコントラスト、色覚障がい者向けの配色等に考慮する。JIS X 8341-3:2016 における該当箇所は下記引用の通り。</p>
+
+<blockquote>
+  <p><strong>1.4.3 コントラスト（最低限レベル）の達成基準</strong></p>
+
+<p>テキスト及び文字画像の視覚的提示には，少なくとも 4.5:1 のコントラスト比がある。ただし，次の場合は除く（レベル AA）。 <br />
+<strong>a) 大きな文字</strong>　サイズの大きなテキスト及びサイズの大きな文字画像には，少なくとも 3:1 のコントラスト比がある。 <br />
+<strong>b) 附随的</strong>　テキスト又は文字画像において，次の場合はコントラストの要件はない。アクティブではないユーザインタフェース コンポーネントの一部である，純粋な装飾である，誰も視覚的に確認できない，又は重要な他の視覚的なコンテンツを含む写真の一部分である。 <br />
+<strong>c) ロゴタイプ</strong>　ロゴ又はブランド名の一部である文字には，最低限のコントラストの要件はない。  </p>
+
+<p>JIS X 8341-3:2016「1.4 判別可能のガイドライン」から引用</p>
+</blockquote>
+
+<p>コントラストのチェックに関しては、下記のツール等を推奨。</p>
+
+<ul>
+<li><a href="https://www.tpgi.com/color-contrast-checker/">Colour Contrast Analyzer (CCA)</a></li>
+</ul>
+
+<h4>フォントサイズやボタンサイズ</h4>
+
+<p>フォントサイズは、最小サイズを 12px 相当とする。ただし、重要でない注釈等に関しては 10px 相当まで許容する。現在のディスプレイサイズ等を考慮すれば、標準的なフォントサイズは本文で 14px 相当～ 18px 相当が妥当と考える。その他、ボタンサイズ等については <a href="#smartphone-touch-device">タッチデバイスのセクション</a> を参照。</p>
+
+</div>
+
+<h3 id="design-design-data">デザインデータ</h3>
+<div class="block-article-body">
+<p>基本的には Adobe 社の Xd もしくは Figma を使用して作成することを推奨する。インストール版ソフトウェアの場合は、できる限り最新バージョンのソフトウェアを使用し、プロジェクトメンバー間でのデータ互換性による作業遅滞を避けるよう努めること。</p>
+
+<p>デザインデータには必ず「指示」レイヤーを追加し、リンクカラー（通常、ホバー時、訪問済み、アクティブ時）の指定をはじめ、実装担当者向けの指示を記載するのもとする。</p>
+
+<p>ディレクター、およびデザイナーはデザインの進行、確定にあたり、実装面からの意見を必ず実装担当者に聞くこと。それにより実装時になってデザインの不具合により手戻りが発生するなどの無駄を省き、実装面の負荷を低減する。</p>
+
+<p>原則としてデザインデータのクライアントへの提供は行わないが、あらかじめ業務委託契約内などでの取り決めがある場合、デザインデータはクライアントに納品される。レイヤーの分け方や名前の付け方など、他の人が見てもわかりやすいように配慮すること。これは実装担当者の作業効率も向上させる。</p>
+
+</div>
+
+<h3 id="design-style-guide">スタイルガイド</h3>
+<div class="block-article-body">
+<p>スタイルガイドの作成を行う。ワイヤーフレームに特に指示がなかった場合でも、各見出しレベルのデザイン（h1～h6）、リスト（ul, ol, dl）、表組み（table）、引用（blockquote）など、頻繁に使用される HTML 要素のデザインはスタイルガイドとして用意する。</p>
+
+<p>また、各要素が配置された際の他要素とのマージンなどもスタイルガイド内に明記する。この際、例えば同じレベルの見出しにもかかわらず、配置される場所によってマージンが異なるなど、1つの要素に複数のスタイルが混在するような事態は避けること。</p>
+
+<p>加えて、デザイン内で使用している基本カラーの一覧、および使用フォントの一覧もスタイルガイド内に記載すること。</p>
+
+</div>
+
+<h3 id="design-stock-photo">画像素材のライセンス</h3>
+<div class="block-article-body">
+<p>画像の著作権には十分配慮し、著作権、モデルリリース等の権利関係がクリアされていない、あるいは明確にされていない画像素材の使用は一切禁止。また、画像の使用にあたり、提供元サイトへのリンクが必須の素材 （所謂リンクツール）、およびサービスの利用も禁止とする。</p>
+
+<p>素材として使用する画像のライセンスは、原則として「ロイヤリティフリー」のものとする。ただし、クライアントの許可を得た上で、「ライツマネージドライセンス」 の画像素材を購入することは問題ない。その際の契約は素材提供業者とクライアント間で行い、当社が代理で契約することはしない。</p>
+
+</div>
+
+<h3 id="design-svg">SVG</h3>
+<div class="block-article-body">
+<p>アイコン、簡単な図版などに関しては、SVG の使用を推奨する。SVG での書き出しは実装担当者が行う。実際のデザイン上での表示サイズなどはデザインデータ内で明確に指定すること。</p>
+
+</div>
+
+<h3 id="design-text">長いテキストの可読性など</h3>
+<div class="block-article-body">
+<h4>行間や行長</h4>
+
+<p>Web ページ内に表示するテキストの行間や各段落の間隔などは下記を基準とする。</p>
+
+<ul>
+<li>行の間隔をフォントサイズの少なくとも 1.5 倍に設定する（例： <code>line-height: 1.5;</code>）</li>
+<li>段落ごとの間隔をフォントサイズの少なくとも 2 倍に設定する（例： <code>* + * {margin-top: 2rem;}</code>）</li>
+<li>文字の間隔をフォントサイズの少なくとも 0.12 倍に設定する (原則として <code>letter-spacing: normal</code> を推奨)</li>
+<li>単語の間隔をフォントサイズの少なくとも 0.16 倍に設定する (日本語の場合はあまり関係しないが、原則として <code>word-spacing: normal;</code> を推奨)</li>
+</ul>
+
+<p>なお、1行あたりの文字数 （行長） は、最長で 30 ～ 40 文字程度になるよう調整することが読みやすさの点から望ましい。</p>
+
+<p>上記はデザインの要件や文字サイズ等によって変動、もしくは Web ページを閲覧する環境に依存するため、あくまで基準とするが、1行あたりの文字数が極端に多すぎる場合、逆に少なすぎて改行が多すぎる場合などは可読性を低下させるため注意が必要。</p>
+
+<h4>デバイスフォントの利用</h4>
+
+<p>画像処理が適当である箇所を除いては、なるべくデバイスフォントを使用する前提でデザインすること。また、デザインデータ内では、画像処理すべきテキストとそうでないものが実装担当者にわかるよう、指示レイヤーに記述する。</p>
+
+<p>Web サイトのパフォーマンス、メンテナンス性や CMS の利用も考慮し、バナーなど画像化が必然な場合を除き、テキストの画像化は原則として禁止する。</p>
+
+</div>
+
+<h3 id="design-favicon">Favicon</h3>
+<div class="block-article-body">
+<p>新規構築の Web サイトに関して、デザインには Favicon のデータも含めること。既存のデータがある場合はそれを使用する。サイズは最低限、下記を実装担当者が生成する前提でデザインを用意すること。基本的にはすべて同じデザインとするため、最小サイズでも認識しやすいようにデザインする。</p>
+
+<ul>
+<li>favicon.ico （16×16, 32×32, 48×48）</li>
+<li>favicon.png （64×64）</li>
+<li>apple-touch-icon.png （152×152）</li>
+</ul>
+
+<p>favicon.png は 64×64 の画像を作成せず apple-touch-icon.png （152px×152px）のファイル名だけ変更して同じ画像を使用してもよい。</p>
+
+<p>実装担当者は上記サイズの画像をデザイナーのデータを基に生成する。例えばビルドツールを使用する場合、下記などがある。</p>
+
+<ul>
+<li><a href="https://github.com/gleero/grunt-favicons">gleero/grunt-favicons</a></li>
+</ul>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-smartphone">スマートフォン関連</h2>
+<div class="block-section-body">
+
+<h3 id="smartphone-basic">基本</h3>
+<div class="block-article-body">
+<p>明確にスマートフォン対応が要件に含まれていない案件においても、スマートフォンやタブレットによる操作を想定したデザインや実装が求められる。特に後述するタッチデバイスの特性に関しては十分配慮すること。</p>
+
+<p>画面サイズが小さいデバイスでは、モーダルウィンドウ形式の UI は操作性を著しく低下させる可能性があるため避ける。あるいは画面サイズが小さい場合は無効にするなどの配慮が必要。</p>
+
+</div>
+
+<h3 id="smartphone-touch-device">タッチデバイス</h3>
+<div class="block-article-body">
+<p>タッチ操作を考慮したデザインや実装を行うこと。マウスオーバーに依存した UI は避ける他、タッチ操作により表示非表示を切り替える所謂アコーディオン形式の UI は、数が多くなると操作が煩わしくなるため、はじめからすべて開いた状態にするなど配慮する。</p>
+
+<p>画面の縦サイズが長くなることよりもタッチ操作が多くなりすぎないことを重視すること。</p>
+
+<p>また、タップ可能な要素（ボタンやリンク）には、最低でも 44px × 44px 以上のサイズを持たせること。もし視覚的にそのサイズを持たせることが難しい場合はタップ可能領域を広げるなどして対応する。また、タップ可能な要素同士の間には十分な余白をもたせること（ただし十分にサイズが大きいタップ可能要素同士であれば問題はない）。</p>
+
+<p>タップ可能な要素は視覚的にわかりやすいよう配慮する。</p>
+
+</div>
+
+<h3 id="smartphone-breakpoint">ブレイクポイント</h3>
+<div class="block-article-body">
+<p>要件説明時に特別な指定がないレスポンシブ Web デザイン対応案件では、ブレイクポイントを 1つ、768px に設定 （初期 iPad / 縦表示を基準） することを基準とする。スマートフォンの最小画面サイズは横幅 320px とし、768px までの間は横サイズの可変で対応する。</p>
+
+<p>ディスプレイの横サイズ 768px 以上のデバイスに関しては PC 向けレイアウトを表示する。</p>
+
+<p>ただし、上記はプロジェクトの要件によって変動する場合がある。</p>
+
+</div>
+
+<h3 id="smartphone-retina">高精細ディスプレイ対応</h3>
+<div class="block-article-body">
+<p>所謂 Retina 対応。</p>
+
+<p>前提として、スマートフォン向けページのデザインに際しては、レイアウトの基準は、最小横幅を 320px での表示とし、そのサイズで文字サイズやレイアウトが最適化されていること。</p>
+
+<p><a href="#smartphone-breakpoint">ブレイクポイント</a> のセクションで指定されているとおり、複数のブレイクポイントを指定しない案件におけるスマートフォン向けデザインの最大サイズは横幅 768px での表示となるため、320px ～ 768px までの間でデザインの整合性がとれるように配慮する事（この間の画面サイズによってレイアウトが変わるような指定は禁止。要素のサイズ可変で対応する）。</p>
+
+<p>よって、Retina 対応が必要なスマートフォンサイトのデザインデータの作成は、ブレイクポイントとなる 768px の 2 倍の横サイズ（1,536px）で行うこととなる。その際、アイコンフォントや CSS を利用し、極力画像の使用を避けるデザインを心がけることで実装時の負担を低減する。また、Web サイトの表示速度面も配慮すること。</p>
+
+<p>PC 向け Web ページに関しては、Retina 対応は不要とする。対応する場合は画像のファイルサイズ増加に十分注意すること。</p>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-coding">コーディング全般</h2>
+<div class="block-section-body">
+
+<h3 id="coding-basic">基本</h3>
+<div class="block-article-body">
+<p>納品は、クライアントが Git および GitHub の使用、操作に慣れている場合は、プロジェクトで使用しているリポジトリに、クライアント担当者を招待することで引き継ぎを行う。そのまま運用・更新を当該リポジトリで行う場合は、別途ブランチの作成ルール、コミットやプルリクエストのルールなどを事前にクライアントとの間で決めておくこと。</p>
+
+<p>納品後に希望される場合は、リポジトリの移管も可能。その場合は移管先リポジトリをクライアントに用意して頂いた上で、手順に基づいて移管する。</p>
+
+<p>上記以外で、クライアントが Git および GitHub を使用できない事情がある場合は、HTML、CSS、JavaScript 等ファイル、及び画像を含む、Web サイトを構成するリソース一式を、クライアントサーバにアップロードした状態で納品とする。</p>
+
+<p>Git 管理外にある、例えば外部 CDN から直接読み込まれた JavaScript ライブラリ や Movable Type 等、CMS、および使用プラグインに関してはその情報を 1つのドキュメントにまとめてディレクターに提出すること。</p>
+
+<p>また、クライアントサーバへのアップロードにて納品する場合、Sass ファイルや、プリプロセスされた中間制作物一式 （<a href="#css-halfway">中間制作物のセクション</a> を参照） は、特に要望がない限りはクライアントへは納品しない。元のファイル群が Git 管理されていることをクライアントに説明し、納品物への直接の編集は、差分や修正履歴の把握が難しくなることを前提として共有すること。</p>
+
+</div>
+
+<h3 id="coding-git">バージョン管理</h3>
+<div class="block-article-body">
+<p>バージョン管理には Git、および GitHub を使用する。新規リポジトリの作成に当たっては別途定める社内ルールに基づいてディレクターが申請を行うこと。プロジェクトに使用されるリポジトリはすべてプライベートリポジトリとし、会社契約以外の個人リポジトリをプロジェクトに使用することなどは一切禁止する。</p>
+
+<p>ただし、クライアントからの指定で、クライアントが管理するリポジトリでの作業を行う場合などは、クライアントからの指示、要望に従って対応すること。</p>
+
+<p>なお、デザインデータに関しては、GitHub にはアップロードしないこと。</p>
+
+</div>
+
+<h3 id="coding-server-path">ディレクトリ構成</h3>
+<div class="block-article-body">
+<p>既存の Web サイトを踏襲する場合やクライアントからの指定がある場合等を除き、基本的なディレクトリ構成は下記の通りとする。</p>
+
+<ul>
+<li>htdocs
+<ul>
+<li>index.html</li>
+<li>css
+<ul>
+<li>style.css</li>
+</ul></li>
+<li>img
+<ul>
+<li>share
+<ul>
+<li>logo.png</li>
+</ul></li>
+<li>service(example)
+<ul>
+<li>image.png</li>
+</ul></li>
+</ul></li>
+<li>inc
+<ul>
+<li>header.inc</li>
+</ul></li>
+<li>js
+<ul>
+<li>function.js</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>スタイルシートは css ディレクトリへ、同様に、画像、インクルード用ファイル、JavaScript ファイルをそれぞれのディレクトリに格納する。画像は全ページ共通で使用するものを share ディレクトリへ、その他は使用するページのディレクトリ構成に合わせて格納する。</p>
+
+</div>
+
+<h3 id="coding-file-name">ファイル名の基本ルール</h3>
+<div class="block-article-body">
+<p>画像などのファイル名は下記の基本ルールに則って付ける。</p>
+
+<ul>
+<li>区切り文字はハイフン （-） を使用する。</li>
+<li>大文字小文字を混ぜず、すべて小文字で付ける。</li>
+<li>同じ種別のファイルは頭に同じ接頭辞を付ける。例えば、バナー関連なら <code>bnr-</code> など。</li>
+<li>背景画像は頭に <code>bg-</code> という接頭辞を付ける。</li>
+<li>例えば同じ内容の画像でサイズが異なる場合はサイズを入れたり （例： <code>example-200x50.png</code>）、デバイスピクセル比を入れたりしてわかりやすくする （例： <code>example-x2.png</code>）。</li>
+<li>ある class 名に対応する画像は、class 名と同じファイル名を付けるなどわかりやすくするとよい （例： <code>bg-module-section-header.png</code>）。</li>
+</ul>
+
+<p><a href="#coding-server-path">ディレクトリ構成のルール</a>とあわせて、第三者が見てもわかりやすいファイル名を心がけること。</p>
+
+</div>
+
+<h3 id="coding-browser-version">動作検証ブラウザ</h3>
+<div class="block-article-body">
+<p>当社が標準で保証する動作環境ブラウザは下記の通りとする。このセクションは 6ヶ月ごとに見直される。</p>
+
+<h4>パソコン</h4>
+
+<ul>
+<li>Microsoft Edge（Chromium 版）</li>
+<li>Google Chrome 最新版</li>
+<li>Safari 最新版</li>
+<li>Mozilla Firefox 最新版</li>
+</ul>
+
+<p>Internet Explorer 11 （IE11） への対応は原則として行わない。クライアントの要望により行う場合は別途 IE11 対応費用を請求すること。</p>
+
+<h4>スマートフォン</h4>
+
+<p>スマートフォンOSに関しては、原則としてプロジェクト開始時点における最新リリースから2バージョン前までを動作確認対象とする。</p>
+
+<ul>
+<li>iOS Safari 14.x 以降 （iOS 14.x 以降）</li>
+<li>Android 11.x 以降 標準ブラウザ</li>
+<li>Android 11.x 以降 Chrome</li>
+</ul>
+
+<h4>その他</h4>
+
+<p>ヘルプページ等に対応ブラウザ（推奨環境）を記載する場合は、上記動作検証ブラウザを踏まえ、下記の記述を基本とする。</p>
+
+<div class="module-text-example">
+<p>JavaScript、スタイルシート、画像表示が有効になっている下記のブラウザソフト</p>
+<ul>
+<li>Microsoft Edge（Chromium 版）</li>
+<li>Google Chrome 最新版</li>
+<li>Safari 最新版</li>
+<li>Mozilla Firefox 最新版</li>
+</ul>
+</div>
+
+<h4>プログレッシブエンハンスメント</h4>
+
+<p>上記、動作検証ブラウザに含まれない旧式ブラウザに関しても、最低限必要な操作、情報の取得ができるよう、スタイルシートを無効にした場合の構造には配慮すること。例えばある CSS プロパティが解釈されなかったときに、重要な情報が表示されない、といったことが起こらないように最低限の配慮は必要。一方で多少のレイアウト崩れや装飾目的の画像の表示がされないといった問題に関しては気にする必要はない。旧式ブラウザとは主に IE11 や Android 4.1.x や Android 4.2.x 系の標準ブラウザを指す。</p>
+
+<p><a href="#html-accessibility">HTML コーディング -&gt; アクセシビリティのセクション</a> や、<a href="#javascript-basic">JavaScruipt -&gt; 基本・バリデーションのセクション</a> 等もあわせて参照のこと。</p>
+
+</div>
+
+<h3 id="coding-charset">文字コード</h3>
+<div class="block-article-body">
+<p>Web サイトの文字コードは、特別な指定がない限り UTF-8 (no BOM) を使用すること。HTML 文書においては、<code>&lt;meta charset=&quot;utf-8&quot; /&gt;</code> を head 要素内の可能な限り上部 （基本的には最初の子要素として） に記述すること。</p>
+
+</div>
+
+<h3 id="coding-indent">インデントルール</h3>
+<div class="block-article-body">
+<p>インデントを行う場合、タブ文字は使用しないこと。エディタの設定等で <strong>1タブ = 2半角スペース</strong> に設定し、1階層の字下げは 2半角スペースを基準とする。HTML のインデントは任意。CSS は宣言ブロック部分に必ずインデントを入れること。</p>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<pre>
+/* 推奨 */
+.example {
+  color: red;
+}
+</pre>
+
+<pre class="badcode">
+/* 非推奨 */
+.example {color: red;}
+.example{
+color:blue;
+}
+</pre>
+
+<p>CSS においては、@media 規則内に記述した規則集合を、すべて 1階層インデントすること。</p>
+
+<pre>
+/* 推奨 */
+@media (min-width: 1200px) {
+  .block-container {
+    max-width: 970px;
+  }
+}
+</pre>
+
+<p>ただし、プリプロセッサやビルドツールを使用する場合においては、最終的な納品物からインデントや改行が削除されていてもよい。元のコーディングファイル、あるいは中間制作物はこのフォーマットに従うこと。</p>
+
+</div>
+
+<h3 id="coding-letter">大文字小文字</h3>
+<div class="block-article-body">
+<p>HTML の要素名、属性名、および CSS 内のカラーコード等はすべて小文字で統一すること。また、画像をはじめとしたファイル名などでも大文字小文字を混在させたりしないこと。</p>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;A HREF="/sample/"&gt;&lt;IMG SRC="sampleImage.png" ALT="Sample" /&gt;&lt;/A&gt;
+</pre>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;a href="/sample/"&gt;&lt;img src="sample-image.png" alt="Sample" /&gt;&lt;/a&gt;
+</pre>
+
+<pre class="badcode">
+/* 非推奨 */
+.example {
+  color: #E5E5E5;
+}
+</pre>
+
+<pre>
+/* 推奨 */
+.example {
+  color: #e5e5e5;
+}
+</pre>
+
+</div>
+
+<h3 id="coding-comment">コメント</h3>
+<div class="block-article-body">
+<p>HTML、CSS、JavaScript 共にわかりやすくコメントを付けること。ただし、プリプロセッサやビルドツールを使用する場合においては、最終的な納品物にコメントが含まれなくてもよい。元のコーディングファイル、あるいは中間制作物にコメントが残るようにすること。</p>
+
+<p>HTML において、要素の閉じタグを認識するためにコメントを入れる場合は、下記のように「//」に続けて該当する要素の class 名、id 名を記述するルールに従う。</p>
+
+<pre>
+&lt;div class=&quot;example&quot;&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;!--//.example--&gt;&lt;/div&gt;
+</pre>
+
+<pre>
+&lt;div id=&quot;example&quot;&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;!--//#example--&gt;&lt;/div&gt;
+</pre>
+
+<p>また、HTML 文書内で不要になった要素ブロックや、CSS ファイル内の不要なスタイル宣言等を、一時的な場合を除いてコメントアウトで長い期間運用することは推奨しない。</p>
+
+</div>
+
+<h3 id="coding-viewport">viewport</h3>
+<div class="block-article-body">
+<p>viewport に関しては、原則として下記の記述を標準とする。</p>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot; /&gt;
+</pre>
+
+<p>ユーザーによる拡大縮小ができなくなるため、下記の記述は推奨されない。</p>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0,user-scalable=no&quot; /&gt;
+</pre>
+
+<h4>補足</h4>
+
+<p>なお、ページ幅が固定されている Web ページの場合、viewport meta を記述しない、もしくは</p>
+
+<pre>
+&lt;meta name=&quot;viewport&quot; content=&quot;width=640px&quot; /&gt;
+</pre>
+
+<p>などと数値を指定して記述する。</p>
+
+<p>一方で画面サイズが固定されていない Web ページの場合（リキッドレイアウトやレスポンシブ Web デザイン）、本来は下記のように initial-scale のみの記述で問題ないが、Windows Phone の IE など、一部の initial-scale に対応しないブラウザに配慮して、上記推奨コードの通り、両方の指定を行う。</p>
+
+<pre>
+&lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1.0&quot; /&gt;
+</pre>
+
+</div>
+
+<h3 id="coding-scheme">スキームの記述</h3>
+<div class="block-article-body">
+<p>外部 CDN からの JavaScript ライブラリ読み込み等を行う場合、URI のスキーム（http: / https:）はすべて <code>https://</code> から記述すること。</p>
+
+<p>ただし、読み込むファイルが HTTPS で提供されていない等、状況によってはこの限りではないが、原則として HTTPS で提供されない第三者サーバからのライブラリの読み込みは禁止する。また配信先ドメイン所有者の信頼性については事前に確認すること。</p>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+</pre>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+</pre>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+</pre>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"&gt;&lt;/script&gt;
+</pre>
+
+<pre class="badcode">
+/* 非推奨 */
+@font-face {
+  url(http://www.example.com/fonts/example) format('woff');
+}
+</pre>
+
+<pre class="badcode">
+/* 非推奨 */
+@font-face {
+  url(//www.example.com/fonts/example) format('woff');
+}
+</pre>
+
+<pre>
+/* 推奨 */
+@font-face {
+  url(https://www.google.com/fonts/example) format('woff');
+}
+</pre>
+
+</div>
+
+<h3 id="coding-ｌibrary">ライブラリ・フレームワーク</h3>
+<div class="block-article-body">
+<p>CSS / JavaScript ライブラリやフレームワークの利用はプロジェクトの要件に応じて選択可能。ただし、使用するライブラリやフレームワークに関してはメンテナンスが継続されていること、バグフィックスや脆弱性への対応等が、適切に行われていることを重視して選択すること。また、各ライブラリ、フレームワークの利用規約、ライセンスは必ず確認し、不明な点がある場合はディレクターに相談すること。</p>
+
+<p>OSS については Fork した上で、クライアントの要望に合わせて利用することも可能だが、継続的なメンテナンスが可能、かつ会社としてメリットがある場合のみとする。</p>
+
+<p>また、使用したライブラリ・フレームワークは一覧できるように別途ドキュメントに記載すること。</p>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-html">HTMLコーディング</h2>
+<div class="block-section-body">
+
+<h3 id="html-validation">基本・バリデーション</h3>
+<div class="block-article-body">
+<h4>基本的な考え方</h4>
+
+<p>HTML はメンテナンス性を考慮すること。各ブロックのモジュール化を意識し、CSS の記述と合わせて、あるブロックを他のページにそのまま移動したり、同一ブロック内で要素が多少変更されたとしても（ul 要素 → ol 要素や段落の追加など）、レイアウトや見た目が変化しないように考慮し、モジュールの使い回しを容易にすること。</p>
+
+<p>HTML Standard で追加された新要素は適切に使用すること。ただし、旧ブラウザに配慮し、HTML Standard 要素をセレクタとしては原則として使用しないこと。また、input 要素の type 属性値などについても HTML Standard から追加された属性値を用途に応じて適切に使い分けること（<code>type="mail"</code>、<code>type="number"</code>、<code>type="tel"</code>、<code>type="search"</code> など）。</p>
+
+<p>id 属性は適切に使用すること。セレクタとしての利用も特に制限しないが、多用しすぎてメンテナンス性や再利用性が妨げられてはならない。</p>
+
+<h4>バリデーション</h4>
+
+<p>各要素は、HTML Standard のコンテンツモデルや使用できる文脈に基づき適切に記述すること。またアウトラインが適切かについて必ず確認すること。</p>
+
+<p>また、納品前の HTML ファイルは、必ず <a href="https://validator.w3.org/nu/">The W3C Markup Validation Service</a> によるチェックを行うこと。特に HTML タグの閉じ忘れといったミスは避ける。なお、バリデーションはビルドツール等によって行っても構わない。</p>
+
+</div>
+
+<h3 id="html-accessibility">アクセシビリティ</h3>
+<div class="block-article-body">
+<p>JIS X 8341-3:2016 の、<strong>適合レベル A</strong> に準拠することを社内基準とする。ただし、Web サイトの特性や要件によっては、適合レベル A 対象となる全項目にわたる準拠を必須とするものではなく、また逆に 適合レベル AA、適合レベル AAA 項目を無視してよいということではない。JIS X 8341-3:2016 の全項目に関して適切な知識を持って制作にあたる。</p>
+
+<p>最低限、下記の事柄についてはクリアすること。</p>
+
+<ul>
+<li>各ページにはページの内容を推測しやすい適切なタイトルを必ず付けること。ページ分割等を行う場合も、（1/2ページ）などとページ数表記を入れるなどして、ページタイトルは Web サイト内で重複しないようにすること</li>
+<li>画像には適切な代替テキストを付与する。代替テキストは、画像の内容を具体的に示すものとする（下記サンプル 1）</li>
+<li>文字間隔の調整を空白文字を用いて行ってはならない</li>
+<li>英単語をすべて大文字で記述することは避けること。<code>text-transform: uppercase;</code> などを適切に使用すること。</li>
+<li>略称にはなるべく正式名称を abbr 要素を用いて付与する （下記サンプル 2）。</li>
+<li>背景色と文字色には適切なコントラスト比を持たせる。</li>
+<li>ブラウザによる文字サイズの変更が可能なように実装すること。また、10px 以下のサイズの文字は重要でない注釈等を除いて原則として使用しないことが望ましい。</li>
+<li>文字サイズ変更ボタンを Web ページ側で独自に提供しないこと（ブラウザの UI に任せる）。</li>
+<li>JavaScript が無効な環境を常に配慮すること。アコーディオンメニューなど、JavaScript によって開閉するような UI については、JavaScript が無効だった場合には開いた状態になるなど、重要な操作が JavaScript の無効によって不可能になるような実装は行わない。</li>
+<li>リンクアンカーとなるテキストは適切に選択すること。アンカーテキストに制約がある場合は、title 属性を併用すること （下記サンプル 3）。</li>
+<li>リンク領域、ボタンのサイズ等は適切なサイズを考慮すること。また、各リンクのマージンは適切にとり、誤クリックを誘発するような実装は行わないこと。</li>
+<li>PDF ファイルなど、HTML 以外のフォーマットへのリンクを提供する場合は、そのリンク先のフォーマットやファイルサイズがわかるようにしておくことが望ましい。</li>
+<li>フォームコントロールは、label 要素を適切に用いてラベルとの関連づけを行うこと。</li>
+<li>キーボードによる操作を考慮した実装を行うこと。</li>
+</ul>
+
+<pre>
+&lt;!-- サンプル 1 --&gt;
+&lt;img
+  src=&quot;photo.jpg&quot;
+  alt=&quot;熱海に行ったときに撮影した写真。海をバックに白壁の民家とペットの黒猫が写っています。&quot;
+ /&gt;
+</pre>
+
+<pre>
+&lt;!-- サンプル 2 --&gt;
+&lt;p&gt;
+ &lt;abbr title=&quot;World Wide Web Consortium&quot;&gt;W3C&lt;/abbr&gt; は World Wide Web で使用される各種技術の標準化を推進する為に設立された標準化団体です。
+&lt;/p&gt;
+</pre>
+
+<pre class="badcode">
+&lt;!-- サンプル 3 非推奨 --&gt;
+資料のダウンロードは&lt;a href=&quot;/dl/&quot;&gt;こちら&lt;/a&gt;から
+</pre>
+
+<pre>
+&lt;!-- サンプル 3 推奨 --&gt;
+&lt;a href=&quot;/dl/&quot;&gt;資料のダウンロードはこちらから&lt;/a&gt;
+</pre>
+
+<p>また、ある要素 （例えばナビゲーションなど） の位置固定表示 （e.g. <code>position: fixed;</code>） を行う場合は、画面サイズが小さいときなどに画面外に要素がはみ出して閲覧できなくなるなどの可能性を十分に配慮する。</p>
+
+</div>
+
+<h3 id="html-document-type-definition">文書型宣言</h3>
+<div class="block-article-body">
+<p>新規に作成する HTML 文書は、特別な指定がある場合を除いて HTML Standard を使用すること。文書型宣言は <code>&lt;!DOCTYPE html&gt;</code> と記述。大文字小文字も左記の通りとする。</p>
+
+<p>MIME Type は <code>text/html</code> を指定すること。特別な指定がある場合を除いて、XHTML （<code>application/xhtml+xml</code>） は使用しないこと。</p>
+
+<p>HTML は記述統一の観点から下記のルールに則って記述すること。</p>
+
+<ul>
+<li>閉じタグは省略しないこと</li>
+<li>空要素は必ず閉じること。<code class="badcode">&lt;br&gt;</code> → <code>&lt;br /&gt;</code></li>
+<li>属性値は必ず <code>&quot; &quot;</code> で囲むこと</li>
+<li>論理属性は必ず 属性名=&quot;属性値&quot; という記述にすること。<code class="badcode">&lt;input type=&quot;check&quot; checked /&gt;</code> → <code>&lt;input type=&quot;check&quot; checked=&quot;checked&quot; /&gt;</code></li>
+<li>URL内やテキストノード内の &amp; は <code>&amp;amp;</code> と文字参照で記述すること</li>
+</ul>
+
+<p>ただし、静的サイトジェネレーターなど、フレームワークを使用した場合に空要素が閉じられなかったり、論理属性が属性名のみになるなど、フレームワーク側のデフォルト設定、あるいは仕様により避けられない場合は問題ない。一方でページによって記述方法にばらつきが出るようなことはないように注意すること。</p>
+
+</div>
+
+<h3 id="html-tag">要素や終了タグの省略</h3>
+<div class="block-article-body">
+<p>HTML における省略可能な要素、あるいは終了タグの省略は原則として行わないこと。</p>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;title&gt;example page&lt;/title&gt;
+&lt;article&gt;
+  &lt;h1&gt;Example 1
+  &lt;p&gt;This is example page.
+</pre>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;example page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;article&gt;
+      &lt;h1&gt;Example 1&lt;/h1&gt;
+      &lt;p&gt;This is example page.&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>本セクションにおける 「省略可能な要素」 とは、ある要素のコンテンツモデル上は必須だが、条件を満たすことで記述を省略することができるとされている要素 （html 要素、head 要素、body 要素） がその対象となる （詳しくは下記参考リンクを参照）。記述が任意の要素、例えば table 要素内における thead 要素、tbody 要素などはこの限りではない。</p>
+
+<p>なお、要素に関わらず、終了タグの省略は禁止する。</p>
+
+<h4>参考リンク （省略可能な要素）</h4>
+
+<ul>
+<li><a href="https://html.spec.whatwg.org/multipage/syntax.html#optional-tags">13.1.2.4 Optional tags - HTML Standard</a></li>
+</ul>
+
+</div>
+
+<h3 id="html-semantics">セマンティクス</h3>
+<div class="block-article-body">
+<p>要素の意味と異なる動作を与えたりしないこと。例えば div 要素や p 要素をクリックすることでリンクとして機能させたりといったことは行わない。リンクを設定したい場合は a 要素を使用すること。</p>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;div onclick=&quot;allEntries();&quot;&gt;すべての記事一覧へ&lt;/div&gt;
+</pre>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;a href=&quot;/all/&quot;&gt;すべての記事一覧へ&lt;/a&gt;
+</pre>
+
+<p>また、class 名や id 名を要素に付与する際も命名規則にはセマンティクスを意識すること。</p>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;span class=&quot;red&quot;&gt;注意してください&lt;/span&gt;
+</pre>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;span class=&quot;elm-coution&quot;&gt;注意してください&lt;/span&gt;
+</pre>
+
+<p>class 名や id 名の命名規則に関して詳しくは <a href="#css-selector-name">セレクタの命名規則セクション</a> を参照。</p>
+
+</div>
+
+<h3 id="html-include">CSS や JavaScript ファイルの読み込み</h3>
+<div class="block-article-body">
+<p>CSS を外部ファイルとして読み込む場合、パフォーマンスを考慮して 1ファイルにまとめること。また、link 要素に対する media 属性の使用は原則として行わず、CSS ファイル内に @media規則を用いて記述すること。また、原則として CSS ファイル内での @import 規則の使用、および HTML 文書内でのインライン・スタイルの記述は禁止する。</p>
+
+<p>JacaScript の読み込みは、script 要素を body 要素の終了タグ直前に記述する。また、可能な場合は async 属性や defer 属性を付与してレンダリングブロックを避ける。なお、「Google タグマネージャ」が使用できる場合は、導入することが望ましい。</p>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;link rel="stylesheet" href="base.css" media="screen" /&gt;
+&lt;link rel="stylesheet" href="grid.css" media="screen" /&gt;
+&lt;link rel="stylesheet" href="print.css" media="print" /&gt;
+</pre>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;link rel="stylesheet" href="style.css" /&gt;
+</pre>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;head&gt;
+  &lt;script src="plugin.js"&gt;&lt;/script&gt;
+  &lt;script src="function.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</pre>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+  &lt;script src="plugin.js" async="async" defer="defer"&gt;&lt;/script&gt;
+  &lt;script src="function.js" async="async" defer="defer"&gt;&lt;/script&gt;
+&lt;/body&gt;
+</pre>
+
+<p>ただし、async 属性、defer 属性はスクリプトの依存関係等によって正常に動作しなくなる場合があるため、スクリプトの動作を優先してよい。</p>
+
+<p><a href="#section-performance">パフォーマンスのセクション</a> もあわせて参照のこと。</p>
+
+</div>
+
+<h3 id="html-type-attribute">type 属性</h3>
+<div class="block-article-body">
+<p>link 要素による CSS の読み込み時や、script 要素に対して type 属性は付与せず省略する。</p>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;link rel="stylesheet" href="style.css" type="text/css" /&gt;
+</pre>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;link rel="stylesheet" href="style.css" /&gt;
+</pre>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+ type="text/javascript"&gt;&lt;/script&gt;
+</pre>
+
+<pre>&lt;!-- 推奨 --&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"&gt;&lt;/script&gt;
+</pre>
+
+</div>
+
+<h3 id="html-structured-data">構造化データ</h3>
+<div class="block-article-body">
+<p>HTML 文書に対する構造化データの付与は、Microdata、もしくは RDFa Lite を用い、語彙は <a href="https://schema.org/">schema.org</a> を原則として使用すること。ただし、構造化データの付与自体は必須ではない。</p>
+
+<p>構造化データのテストツールとしては、Google の <a href="https://developers.google.com/webmasters/structured-data/testing-tool/">構造化データテストツール</a> を推奨する。</p>
+
+</div>
+
+<h3 id="html-ogp">メタデータや OGP</h3>
+<div class="block-article-body">
+<h4>メタデータ</h4>
+
+<p><code>&lt;meta name=&quot;description&quot; /&gt;</code> に関しては、主要なページでは設定しておく事。その際、重複が発生しないように注意。主要でないページで description が重複するくらいであれば最初から記述しない事。</p>
+
+<p><code>&lt;meta name=&quot;keywords&quot; /&gt;</code> に関しては記述不要。クライアントから別予算をもって求められない限り原則として対応しない（IE11 対応と同様の扱いとする）。</p>
+
+<h4>OGP</h4>
+
+<p>トップページに関しては原則として OGP の記述を入れておく事。その他、商品ページなど重要なページに関してはクライアントとの取り決め、もしくはディレクター、実装担当者の判断で記述する。下記に標準的な OGP 設定のサンプルを示す。</p>
+
+<pre>
+&lt;!-- トップページへの記述例（MT タグ使用例） --&gt;
+&lt;meta property=&quot;og:title&quot; content=&quot;&lt;$mt:BlogName$&gt;&quot; /&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;&lt;$mt:BlogURL$&gt;&quot; /&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;&lt;$mt:BlogDescription$&gt;&quot; /&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;http://example.com/img/1200x630.png&quot; /&gt;
+&lt;meta property=&quot;og:type&quot; content=&quot;website&quot; /&gt;
+</pre>
+
+<pre>
+&lt;!-- 個別ページ（商品ページやニュース記事）への記述例（MT タグ使用例） --&gt;
+&lt;meta property=&quot;og:title&quot; content=&quot;&lt;$mt:EntryTitle encode_html=&quot;1&quot;$&gt;&quot; /&gt;
+&lt;meta property=&quot;og:url&quot; content=&quot;&lt;$mt:EntryPermalink$&gt;&quot; /&gt;
+&lt;meta property=&quot;og:site_name&quot; content=&quot;&lt;$mt:BlogName$&gt;&quot; /&gt;
+&lt;meta property=&quot;og:description&quot; content=&quot;&lt;$mt:EntryExcerpt encode_html=&quot;1&quot;$&gt;&quot; /&gt;
+&lt;meta property=&quot;og:image&quot; content=&quot;http://example.com/img/article/1200x630.png&quot; /&gt;
+&lt;meta property=&quot;og:type&quot; content=&quot;article&quot; /&gt;
+</pre>
+
+</div>
+
+<h3 id="html-conditional-comment">条件付きコメント</h3>
+<div class="block-article-body">
+<p>条件付きコメントの使用は原則として禁止する。</p>
+
+<pre class="badcode">
+&lt;!-- 非推奨 --&gt;
+&lt;!--[if IE 8]&gt;
+ ...
+&lt;![endif]--&gt;
+</pre>
+
+<p>ただし、要件上どうしても旧式のブラウザ向けにポリフィルを読み込まなければならない場合など、やむを得ない場合は使用可能。</p>
+
+</div>
+
+<h3 id="html-anchor-link">ページ上部へのアンカーリンク</h3>
+<div class="block-article-body">
+<p>ページ上部に移動するためのページ内リンク （所謂アンカーリンク） として使用する a 要素の href 属性値には <code>#top</code> を指定すること。HTML Standard においては、<code>#top</code> を指定することで自動的にページ上部へのリンクとして機能する。</p>
+
+<pre>
+&lt;a href=&quot;#top&quot;&gt;このページの上部へ&lt;/a&gt;
+</pre>
+
+<h4>参考リンク</h4>
+
+<ul>
+<li><a href="http://reference.hyper-text.org/HTML Standard/element/a/">a 要素 ： HTML タグリファレンス</a></li>
+</ul>
+
+</div>
+
+<h3 id="html-svg">SVG</h3>
+<div class="block-article-body">
+<p>スクリプトを伴わない SVG データに関しては img 要素での埋め込みを推奨する。スクリプトを伴う場合は、iframe、もしくは object 要素による埋め込みを推奨。文書内への svg 要素による直接記述は、メンテナンス性の面から積極的には推奨しないが、状況によって判断する。</p>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-css">CSSコーディング</h2>
+<div class="block-section-body">
+
+<h3 id="css-basic">基本・バリデーション</h3>
+<div class="block-article-body">
+<h4>基本的な考え方</h4>
+
+<p>CSS はメンテナンス性と再利用性を考慮すること。各ブロックのモジュール化を意識し、HTML の記述と合わせて、あるブロックを他のページにそのまま移動したり、同一ブロック内で要素が多少変更されたとしても（ul 要素 → ol 要素や段落の追加など）、レイアウトや見た目が変化しないように考慮し、モジュールの使い回しを容易にすること。</p>
+
+<p>セレクタによる詳細度を極力高くしないように心がけ、単一セレクタによる記述を基本とする。また、要素セレクタの使用はなるべく避け、HTML 側の変更によって CSS の変更まで行わなければならなくなる事態を極力避けるよう配慮すること。</p>
+
+<pre class="badcode">
+/* 非推奨 */
+.block-header ul.block-main-nav li a {...}
+</pre>
+
+<pre>
+/* 推奨 */
+.block-main-nav a {...}
+</pre>
+
+<p>ベンダプレフィックスは、コーディング時に最新となる各ブラウザのバージョンから、2 世代前を基準に、有無を判断する。また、仮にサポートするブラウザが存在しない場合でも、必ず標準仕様に基づいた記述も併記すること。</p>
+
+<h4>フォーマット</h4>
+
+<ul>
+<li>CSSは宣言ブロック部分に必ずインデントを入れること。</li>
+<li>セレクタと "{" の間には半角スペースを1つ入れる。さらに、プロパティと ":" は続けて記述し、その後ろに半角スペースを1つ入れた上で、値を記述する。</li>
+<li>すべての宣言ブロック末尾には ";" を付与すること。</li>
+<li>規則集合ごとに1行改行を入れて記述する。</li>
+<li>複数のセレクタをカンマ区切りで記述する場合は、セレクタごとに改行する。</li>
+<li>プリプロセッサやビルドツールによる最終納品物からの改行やインデント等の自動削除は問題ない。</li>
+</ul>
+
+<pre class="badcode">
+/* 非推奨 */
+.example {
+color:red;
+margin:0
+}
+.sample{color:red;margin:0}
+</pre>
+
+<pre>
+/* 推奨 */
+.example {
+  color: red;
+}
+
+.sample {
+  ...
+}
+</pre>
+
+<pre class="badcode">
+/* 非推奨 */
+h1,h2,h3 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+</pre>
+
+<pre>
+/* 推奨 */
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  line-height: 1.2;
+}
+</pre>
+
+<h4>バリデーション</h4>
+
+<p><a href="http://jigsaw.w3.org/css-validator/">W3C CSS 検証サービス</a>によるバリデーションを行うこと。特にスペルミスや記述ミスは確実にチェックし、排除すること。なお、プリプロセッサやビルドツールを用いたバリデーション、あるいはエディタの機能として提供されている機能を利用したバリデーションでも構わない。</p>
+
+</div>
+
+<h3 id="css-normalize">デフォルトスタイルシートのノーマライズ</h3>
+<div class="block-article-body">
+<p>デフォルトスタイルシートのノーマライズには <a href="http://necolas.github.io/normalize.css/">Normalize.css</a> を使用する。また、リセット CSS の使用は非推奨とする。</p>
+
+</div>
+
+<h3 id="css-selector-name">セレクタの命名規則</h3>
+<div class="block-article-body">
+<p>セレクタとなる class 属性名、id 属性名は、セマンティクスを意識した命名規則を用いること。また、キャメルケースは用いず、"-"（ハイフン）による連結を原則とする。</p>
+
+<pre class="badcode">
+/* 非推奨 */
+.blockHeader {...}
+.mainNavigation {...}
+
+.red {...}
+.h1 {...}
+</pre>
+
+<p>また、レイアウト、モジュール、テキストへの意味づけ等、用途別に先頭文字列を分類するなど、class 名や id 名からセレクタの用途がある程度推測できるなどが望ましい。セレクタの命名規則に関しては、下記を基準とする。</p>
+
+<dl>
+<dt><code>layout-</code><dt>
+<dd>Web ページ内のレイアウトに用いられる要素には <code>layout-</code> から始まる class 名を使用する。</dd>
+<dt><code>block-</code><dt>
+<dd>各ページに共通の要素ブロックなどは <code>block-</code> から始まる class 名を使用する。原則として <code>layout-</code> の子要素のみに使用する。</dd>
+<dt><code>module-</code><dt>
+<dd><code>block-</code> 内でそのまま他の場所に抜き出しても意味が通じる程度のまとまりとなった要素ブロックに付ける。原則として <code>block-</code> の子要素のみに使用する。</dd>
+<dt><code>elm-</code><dt>
+<dd><code>module-</code> 内で単一の要素にスタイルを当てるために使用する class 名は <code>elm-</code> から始める。原則として <code>module-</code> の子要素のみに使用する。</dd>
+<dt>状態の変化<dt>
+<dd><code>block-</code> や <code>module-</code>、<code>elm-</code> がスクリプトなどによって変化した状態を示すマークアップは、WAI-ARIA / state を利用することが望ましい。ただし、WAI-ARIA / state では語彙が足りない場合 （active など） に関しては <code>state-</code> から始まる class 名を使用する</dd>
+</dl>
+
+<pre>
+/* 推奨 */
+.layout-main-content {...}
+.layout-sub-content {...}
+
+.block-header {...}
+.block-main-nav {...}
+.block-section {...}
+
+.module-section-header {...}
+.module-page-title {...}
+
+.elm-pub-time {...}
+.elm-coution {...}
+</pre>
+
+<pre>
+&lt;!-- 推奨 --&gt;
+&lt;ul class=&quot;module-sub-menu&quot; aria-expanded=&quot;true&quot;&gt;
+ &lt;li class=&quot;state-active&quot;&gt;
+ ...略...
+</pre>
+
+<pre>
+/* 推奨 */
+.module-sub-menu[aria-expanded=&quot;true&quot;] {...}
+.state-active {...}
+</pre>
+
+</div>
+
+<h3 id="css-shorthand">ショートハンド</h3>
+<div class="block-article-body">
+<p>極力ショートハンドプロパティを使用する。</p>
+
+<pre class="badcode">
+/* 非推奨 */
+font-family: "Hiragino Kaku Gothic ProN", Sans-Serif;
+font-size: 100%;
+font-style: normal;
+font-weight: bold;
+line-height: 1.6;
+margin-bottom: 1em;
+margin-left: 1em;
+margin-right: 1em;
+margin-top: 1em;
+padding-bottom: 2em;
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 0;
+</pre>
+
+<pre>
+/* 推奨 */
+font: normal bold 100%/1.6 "Hiragino Kaku Gothic ProN", Sans-Serif;
+margin: 1em;
+padding: 0 1em 2em;
+</pre>
+
+<p>ただし、font 関連プロパティのショートハンドに関しては、記述順などが煩雑なことや、スタイルの継承が複雑になる場合もあるため、メンテナンス性や記述ミスのリスクを考慮して、無理に使用する必要はない。body 要素に対しての指定のみにとどめるなど、実装時に判断する。</p>
+
+</div>
+
+<h3 id="css-media-rule">@media 規則</h3>
+<div class="block-article-body">
+<p>HTML ガイドラインにて、link 要素に対する media 属性の使用は原則として禁止しているため、メディアクエリに関しては CSS ファイル内での @media 規則のみ許可する。</p>
+
+<p>ただし、プリント用 CSS を記述する場合は、CSS ファイルの末尾に記述すること。また、原則として CSS ファイル内での @import 規則の使用は禁止する。</p>
+
+</div>
+
+<h3 id="css-unit">単位などの省略</h3>
+<div class="block-article-body">
+<p>値が 0 となるプロパティに関しては、単位を省略して記述すること。</p>
+
+<pre>
+margin: 0;
+padding: 0;
+</pre>
+
+<p>また、line-height プロパティの値も原則として単位を省略して記述すること。</p>
+
+<pre>
+line-height: 1.5;
+</pre>
+
+<p>値が 0 以下の数値となる場合、0 は省略して記述すること。</p>
+
+<pre>
+opacity: .8;
+font-size: .875em;
+</pre>
+
+</div>
+
+<h3 id="css-link-color">リンクの文字色</h3>
+<div class="block-article-body">
+<p>リンクの文字色は、<code>:link</code>、<code>:visited</code>、<code>:hover</code> それぞれに必ず異なる文字色を設定すること。</p>
+
+<pre>
+a {
+  color: #52a437;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #428bca;
+}
+
+a:hover {
+  color: #fc4f00;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #fc4f00;
+}
+</pre>
+
+<p>リンクの下線はデザイン要件により非表示にしてもよいが、本文内など、通常のテキストとリンクテキストが混在する部分では、下線やアイコンを付与するなどして通常のテキストとの差異を明確にし、リンクがわかりやすいように配慮すること。</p>
+
+</div>
+
+<h3 id="css-font-family">font-family の指定</h3>
+<div class="block-article-body">
+<p>font-family プロパティの指定は下記を標準とする。</p>
+
+<pre>
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+               "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
+}
+</pre>
+
+</div>
+
+<h3 id="css-z-index">z-index の値</h3>
+<div class="block-article-body">
+<p>z-index プロパティの値は下記の範囲、及びルールに従い指定する。</p>
+
+<ul>
+<li>使用可能な数値の範囲： <strong>0～5000 まで、10 刻み</strong> を基本とする。
+<ul>
+<li>10 刻みとする理由はメンテナンス等でどうしても既存要素の中間となる値を指定しないといけなくなった場合に備えて。</li>
+</ul></li>
+<li>スタート数値はある要素群の役割ごとに変えてもよい。例えばロールオーバーする要素は 1000 番台から始めるなど。</li>
+<li>オーバーレイなど、確実に他の要素より上部に表示されないと困る要素群に対しては 4000 以上の値を指定する。</li>
+<li>大規模サイトで上記ルールでは数値が足りなそうなことが想定される場合はこの限りではない。</li>
+</ul>
+
+</div>
+
+<h3 id="css-web">Web フォントやアイコンフォントの利用</h3>
+<div class="block-article-body">
+<p>Web フォントやアイコンフォントの利用は可能。特にアイコンフォントに関しては、<a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> を推奨する。</p>
+
+<p>第三者が提供するフォントを使用する場合は、<a href="#other-license">ライセンスのセクション</a> も確認すること。</p>
+
+</div>
+
+<h3 id="css-css3">CSS3 プロパティやセレクタ</h3>
+<div class="block-article-body">
+<p>CSS3 で追加された新しいプロパティなどは積極的に利用して構わないが、多くのブラウザにおいてベンダプレフィックス付きで先行実装されている機能については仕様の変更などの事態に配慮し、慎重に判断すること。</p>
+
+<p>例えば、<code>border-radius</code>、<code>text-shadow</code>、<code>box-shadow</code>、<code>linear-gradient</code> などについては、ブラウザのサポートも一般的になっているため、特に問題なく使用可能。</p>
+
+<p>なお、サポート対象ブラウザよりも古いバージョンのブラウザに関しては、未対応のプロパティやセレクタを使用することで、閲覧に支障が出るほどレイアウトが大きく崩れたり、アクセシビリティを損ねるような状態になることが予想される場合には、フォールバックを用意すること。</p>
+
+</div>
+
+<h3 id="css-css-hack">CSSハック</h3>
+<div class="block-article-body">
+<p>CSS ハックは原則として使用しないこと。やむを得ない場合のみ使用できるが、CSS ファイル内の末尾などにまとめて記述し、標準的なスタイルの記述と混ぜないこと。</p>
+
+</div>
+
+<h3 id="css-halfway">中間制作物</h3>
+<div class="block-article-body">
+<p>ビルドツールやプリプロセッサを使用する場合、最終納品物（Web サイトで読み込まれる CSS ファイル）と、実際に編集している Sass ファイル等の間に、改行、コメントを残し、1ファイルにまとめた CSS ファイルを中間制作物として必ず出力するようにすること。CSS によるコードレビューが必要な場合などに配慮して。</p>
+
+<p>通常は、中間制作物となる CSS ファイルからコメント、改行等を取り除いた（Minify した）ものが最終納品物となる。</p>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-javascript">JavaScript</h2>
+<div class="block-section-body">
+
+<h3 id="javascript-basic">基本・バリデーション</h3>
+<div class="block-article-body">
+<h4>基本的な考え方</h4>
+
+<p>操作、および情報の取得に影響する部分については、常に JavaScript が無効な環境を考慮すること。それらに影響のない、装飾的な部分に関してはその限りではない。</p>
+
+<p>Web サイトのパフォーマンスを重視し、本質的でない不要な処理を入れないこと。例えば古いブラウザ向けに <code>box-shadow</code> を適用させたいからと言って JavaScript で処理するようなことは無駄と考える。</p>
+
+<p>また、jQuery の場合、セレクタの記述でパフォーマンスに影響が出るケースがある。文書内で唯一の要素を操作するのであれば id セレクタを使った方が高速な可能性が高い、またセレクタはシンプルに記述すること。</p>
+
+<pre class="badcode">
+$('div.sample ul li#item');
+</pre>
+
+<pre>
+$('#item');
+</pre>
+
+<h4>バリデーション</h4>
+
+<p>JSHint による構文チェックを推奨する。</p>
+
+<h5>.jshintrcの設定例</h5>
+
+<pre>
+{
+  &quot;camelcase&quot;: true,
+  &quot;curly&quot;: true,
+  &quot;eqeqeq&quot;: true,
+  &quot;forin&quot;: true,
+  &quot;immed&quot;: true,
+  &quot;indent&quot;: 2,
+  &quot;latedef&quot;: true,
+  &quot;newcap&quot;: true,
+  &quot;noarg&quot;: true,
+  &quot;noempty&quot;: true,
+  &quot;nonew&quot;: true,
+  &quot;plusplus&quot;: true,
+  &quot;quotmark&quot;: true,
+  &quot;regexp&quot;: true,
+  &quot;undef&quot;: true,
+  &quot;unused&quot;: true,
+  &quot;strict&quot;: true,
+  &quot;trailing&quot;: true,
+  &quot;browser&quot; : true,
+  &quot;devel&quot; : true,
+  &quot;globals&quot;: {
+    &quot;jQuery&quot;: false
+  }
+}
+</pre>
+
+</div>
+
+<h3 id="javascript-quotation-mark">シングルクォーテーションとダブルクォーテーション</h3>
+<div class="block-article-body">
+<p>統一感の問題から、シングルクォーテーションを基本とする。</p>
+
+<pre>
+$('div').add('p').css('background-color', 'red');
+</pre>
+
+<pre>
+$('div').add('&lt;p id=&quot;sample&quot;&gt;new paragraph&lt;/p&gt;').css('background-color', 'red');
+</pre>
+
+</div>
+
+<h3 id="javascript-semicolon">セミコロン</h3>
+<div class="block-article-body">
+<p>セミコロンの省略は行わないこと。JavaScript ではセミコロンの省略が許されるが、セミコロンの挿入を処理系に任せた結果、自動補完が意図せず行われたり、または行われないことでエラーが発生し、デバッグが困難になる等の問題が想定されるため。</p>
+
+</div>
+
+<h3 id="javascript-function">変数 / 関数の命名規則</h3>
+<div class="block-article-body">
+<p>変数名 / 関数名は原則として、キャメルケースを使用する。変数名 / 関数名における「$」は使用禁止。</p>
+
+<pre>
+const firstName = 'taro';
+</pre>
+
+<pre>
+function getListElement() {
+ ...
+}
+</pre>
+
+<h4>コンストラクタ関数</h4>
+
+<p>コンストラクタ関数の名前の先頭は大文字とする。</p>
+
+<pre>
+const Person = function(name){
+  this.name = name;
+  this.age = age;
+};
+
+const taro = new Person('taro', 32);
+const jiro = new Person('jiro', 29);
+</pre>
+
+<h4>定数</h4>
+
+<p>定数はすべて大文字で記述し、単語間をアンダースコア（_）で接続する。</p>
+
+<pre>
+const API_KEY = 'b6lC50HCr4mA';
+</pre>
+
+</div>
+
+<h3 id="javascript-function-declaration">ブロックの中での関数宣言</h3>
+<div class="block-article-body">
+<p>ECMAScript（ECMA-262）では、if や while などのブロック内における関数宣言を認めていない。将来的な互換性を確保するため、この仕様に準じる。</p>
+
+<pre class="badcode">
+if (x) {
+  function foo() {}
+}
+</pre>
+
+<p>ブロック内で関数を定義したい場合は、関数式を使用する。</p>
+
+<pre>
+if (x) {
+  const foo = function() {}
+}
+</pre>
+
+</div>
+
+<h3 id="javascript-jquery">jQuery</h3>
+<div class="block-article-body">
+<p>jQuery は原則として推奨はしないが、要件により使用する場合は 3.x 系の最新版を使用すること。jQuery の読み込みは <a href="https://developers.google.com/speed/libraries/devguide?hl=ja#jquery">Google Hosted Libraries</a> より行う。</p>
+
+<pre>
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+<p>開発中 bower 等を用いてローカルに必要なライブラリをインストールするといった手法に制約はない。リリース時に上記のルールに基づいてソースコードを修正すること。</p>
+
+<h4>プラグイン</h4>
+
+<p>jQuery プラグインの利用に特に制限はないが、メンテナンスが継続されていること、軽量であることを重視して選択すること。また動作検証ブラウザにおいてプラグインを使用しなくても実装可能な方法があればそちらを優先すること。</p>
+
+<p>また、アクセシビリティやユーザビリティに影響のない範囲での表示誤差 （角丸やグラデーションの有無） のためだけにプラグインを使用するようなことは避ける他、例えばフォームのプレースホルダは placeholder 属性を使用するなど、HTML で実現可能な機能にプラグインを使用したりしない。</p>
+
+<p>プラグインの動作を理由に読み込む jQuery のバージョンを下げることは禁止する。最新の jQuery で動作しないプラグインは利用不可。</p>
+
+<p>また、使用したライブラリは一覧できるように別途ドキュメントに記載すること。</p>
+
+<h4>jquery-latest.js</h4>
+
+<p>jquery-latest.js の使用は禁止する。必ずバージョンを明示して呼び出すこと。（<a href="http://hyper-text.org/archives/2014/07/dont_use_jquery_latest_js.shtml">参考記事</a>）</p>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-cms">CMS</h2>
+<div class="block-section-body">
+
+<h3 id="cms-product">プロダクトの選定</h3>
+<div class="block-article-body">
+<p>使用するプロダクトはサポート体制、および開発元が定めるプロダクトライフサイクルポリシー（主に旧製品のメンテナンス継続期間や後方互換性の確保に関するポリシー）を考慮する。</p>
+
+<p>オープンソースプロダクトは、クライアントが保守対応可能な部署、人材を自社で持つ場合は問題ないが、そうでない場合はサポートの提供方法について事前に十分配慮する。</p>
+
+<p>「無料」であることを理由にオープンソースプロダクトを選択するようなことはしない。クライアントに対してはプロダクトのサポート体制やプロダクトライフサイクルポリシーについて説明を怠らない。</p>
+
+<p>上記を踏まえ、当社では原則として SixApart 社の Movable Type、およびその関連プロダクトを選択肢の第一候補とするが、プロダクト選定はクライアントの要件、ビジネスゴールの達成に対してそのプロダクトが最適であるかが前提となる。</p>
+
+</div>
+
+<h3 id="cms-movable-type">Movable Type</h3>
+<div class="block-article-body">
+<p>Movable Type、およびその関連製品として案件で利用を推奨するプロダクトは下記の通り。</p>
+
+<ul>
+<li>通常版ライセンス
+<ul>
+<li><strong>Movable Type （ソフトウェア版）</strong></li>
+</ul></li>
+<li>エンタープライズ向けライセンス
+<ul>
+<li>Movable Type Advanced</li>
+<li>PowerCMS</li>
+</ul></li>
+<li>SaaS
+<ul>
+<li>Movable Type クラウド版</li>
+<li>MovableType.net</li>
+</ul></li>
+</ul>
+
+</div>
+
+<h3 id="cms-plugin">プラグイン</h3>
+<div class="block-article-body">
+<p>Movable Type や WordPress など CMS のプラグイン利用に特に制限はないが、メンテナンスが継続されていること、脆弱性など、不具合への対応が適切に行われていることを重視して選択すること。</p>
+
+<p>プラグインの動作を理由に CMS のバージョンを下げること、あるいは CMS 本体のプログラムの改変を行うことは禁止する。最新のバージョンで動作しないプラグインは利用不可。</p>
+
+<p>また、使用したプラグインは一覧できるように別途ドキュメントに記載すること。</p>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-security">セキュリティ</h2>
+<div class="block-section-body">
+
+<h3 id="security-post">基本</h3>
+<div class="block-article-body">
+<p>Webサイト、及び Webアプリケーションの実装にあたって参考とすべき外部のガイドラインとしては、IPA 独立行政法人 情報処理推進機構が公開する、「安全なウェブサイトの作り方（改訂第7版）」を参考とすること。</p>
+
+<ul>
+<li><a href="https://www.ipa.go.jp/security/vuln/websecurity.html">安全なウェブサイトの作り方 ： IPA 独立行政法人 情報処理推進機構</a></li>
+</ul>
+
+<p>また、納品物として Webアプリケーションのセキュリティ実装の実施状況を確認する必要がある場合は、同ガイドライン付属の「セキュリティ実装 チェックリスト」を利用、あるいは参考の上、クライアントの要望に応じたチェックリストを作成する。</p>
+
+</div>
+
+<h3 id="security-password">強固なパスワード</h3>
+<div class="block-article-body">
+<p>CMS インストール時のアカウント設定など、新規でアカウントを設定する際は推測されにくいアカウント名、および強固なパスワードを設定すること。</p>
+
+<p>パスワードは 32 桁以上が望ましいが、状況に応じて 16 桁以上であれば許容する。必ず英数字を混在させ、数字だけのパスワードや英単語によるパスワードは禁止する。また、同一のパスワードを複数のサービスやアカウントで使い回すことも禁止。</p>
+
+<p>上記は、クライアントの要望によらず厳守すること。</p>
+
+<h4>推測されやすいアカウント名の例</h4>
+
+<ul>
+<li><code class="badcode">admin</code></li>
+<li><code class="badcode">root</code></li>
+</ul>
+
+<h5>改善案</h5>
+
+<ul>
+<li><code>example-admin</code>（"example" 部分はクライアントに応じて変えるなど）</li>
+</ul>
+
+<h4>不適切なパスワードの例</h4>
+
+<ul>
+<li><code class="badcode">12345</code>（数字のみ/桁数も不足）</li>
+<li><code class="badcode">companyname</code>（社名そのままなど）</li>
+<li><code class="badcode">0312345678</code>（電話番号など外部からわかりやすいもの）</li>
+</ul>
+
+<h4>強固なパスワードの例</h4>
+
+<ul>
+<li><code>yrQpjO9BI4gx84a@</code></li>
+</ul>
+
+</div>
+
+<h3 id="security-password-protect">管理画面のパスワード保護</h3>
+<div class="block-article-body">
+<p>Movable Type をはじめ、サーバに設置した管理画面をもつプログラムへのログインページは、可能な限りパスワードによって保護する。認証方法はベーシック認証でよい。状況に応じて IP アドレスでのアクセス制限なども検討、実施する。</p>
+
+<p>例として、Movable Type 管理画面にベーシック認証を設定する場合は、下記のような .htaccess の記述が考えられる。</p>
+
+<pre>
+&lt;Files mt.cgi&gt;
+  AuthUserFile /var/www/html/.htpasswd
+  AuthGroupFile /dev/null
+  AuthName &quot;Please enter your ID and password&quot;
+  AuthType Basic
+  require valid-user
+  order deny,allow
+&lt;/Files&gt;
+</pre>
+
+<p><code>&lt;Files mt.cgi&gt;</code> の部分は、主要な実行ファイルのリネームを行っている場合は適時変更する。</p>
+
+<p>ディレクトリ単位で認証をかけても問題ない場合は、そのように対処する。Movable Type 等の場合、インストールディレクトリ全体に認証をかけてしまうと、コメントや検索用プログラム等を外部から利用できなくなるので注意が必要。</p>
+
+</div>
+
+<h3 id="security-ssl">SSL の利用</h3>
+<div class="block-article-body">
+<p>問い合わせフォームなど、個人情報を伴うデータをブラウザ・サーバ間で受け渡すプログラムに関してはその通信を SSL（TLS） で保護する。サーバへの SSL 導入をクライアントに提案し、暗号化されていない状態でのデータ送信は原則として行わないこと。</p>
+
+<p>SSL を使用する場合、レンタルサーバ業者が提供するような所謂共有 SSL の利用は原則として不可。</p>
+
+<p>SSL サーバ証明書を発行する際に申請する証明書の公開鍵暗号は 2048bit RSA、ハッシュ関数は SHA-2 を基準として選択する。また暗号化強度は 128bit 以上の信頼できる認証局発行 SSL 証明書を利用する。推奨する認証局は下記の通り。</p>
+
+<ul>
+<li>Let's Encrypt</li>
+<li>セコムトラストシステムズ（セコムパスポート）</li>
+<li>GMO グローバルサイン</li>
+<li>ジオトラスト</li>
+</ul>
+
+</div>
+
+<h3 id="security-ftp">FTP</h3>
+<div class="block-article-body">
+<p>サーバへのファイル転送に関して、FTP の使用は禁止する。SFTP（SSH File Transfer Protocol）、もしくは FTPS （File Transfer Protocol over SSL/TLS） を利用し、FTP クライアントに関しては、これらに対応していないものの使用は禁止。</p>
+
+<p>SFTP/FTPS 対応クライアントとして、Windows 環境であれば、WinSCP、NextFTP の利用を推奨。</p>
+
+</div>
+
+<h3 id="security-movable-type">Movable Type</h3>
+<div class="block-article-body">
+<p>Movable Type プログラムは、下記の通り主要な実行ファイルのリネーム、および設定ファイルへの追記を行うこと。リネームのルールは別途定めているため下記は参考。</p>
+
+<ul>
+<li>mt.cgi → <strong>mt-example-example.cgi</strong></li>
+<li>mt-upgrade.cgi → <strong>mt-upgrade-example.cgi</strong></li>
+<li>mt-data-api.cgi → <strong>mt-data-api-example.cgi</strong></li>
+<li>mt-check.cgi → <strong>mt-check-example.cgi</strong></li>
+</ul>
+
+<pre>
+#mt-config.cgiに追記
+AdminScript mt-example-example.cgi
+UpgradeScript mt-upgrade-example.cgi
+DataAPIScript mt-data-api-example.cgi
+CheckScript mt-check-example.cgi
+</pre>
+
+<p>また、Web サイトの構築に不要な機能に関しては .cgi ファイルの実行権限を削除してもよい。</p>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-performance">パフォーマンス</h2>
+<div class="block-section-body">
+
+<h3 id="performance-basic">基本</h3>
+<div class="block-article-body">
+<p>Web ページの表示速度、反応速度に関して、フロントエンド側で対応できる部分に関しては可能な限り配慮すること。</p>
+
+<h4>HTML 側での配慮</h4>
+
+<p>HTML での配慮については、<a href="#html-include">CSS や JavaScript ファイルの読み込みのセクション</a> を参照のこと。</p>
+
+<h4>パフォーマンスチェック</h4>
+
+<p><a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a> によるパフォーマンスチェックを必須とする。目安は PC で 85 点以上、モバイルで 80 点以上。</p>
+
+<p>ただしこれを下回った場合でも、すでにやるべきことができているのであれば問題はない。特にスマートフォン向けに最適化されていないサイトのモバイル項目の数値は低く出るので、実機テストにおいて著しく操作性が低いといった問題がない場合は不問。</p>
+
+<h4>パフォーマンス向上のヒント</h4>
+
+<p>以下のセクションで説明する。</p>
+
+</div>
+
+<h3 id="performance-imagemin">画像の最適化</h3>
+<div class="block-article-body">
+<p>画像は基本的に PNG 形式（8ビットカラー / アルファチャンネル可）の画像を使用すること。ただし、写真に関してはJPEG形式を使用。画像は、下記の最適化ツールを用いて、必ずファイルサイズの最適化を行う。</p>
+
+<h4>PNG</h4>
+
+<ul>
+<li><a href="https://tinypng.com/">TinyPNG</a></li>
+</ul>
+
+<h4>JPEG</h4>
+
+<ul>
+<li><a href="http://www.jpegmini.com/">JPEGmini</a></li>
+</ul>
+
+<p>JPEG 画像は、retina 対応（表示サイズの 2 倍サイズで画像を用意）した上で、画像の圧縮率を高くするという方法が、見た目とファイルサイズのバランスで最もよい場合がある。（<a href="jpeg-retina-sample/">参考</a>）</p>
+
+<p>閲覧環境が許す場合は WebP 形式の画像を使用することも可能。</p>
+
+<h4>Grunt</h4>
+
+<p>ビルドツールを使用する場合、例えば Grunt 向けなら下記のようなツールがある。</p>
+
+<ul>
+<li><a href="https://github.com/gruntjs/grunt-contrib-imagemin">gruntjs/grunt-contrib-imagemin</a></li>
+<li><a href="https://github.com/zauni/pngmin">zauni/pngmin</a>（.png のみ）</li>
+<li><a href="https://github.com/marrone/grunt-tinypng">marrone/grunt-tinypng</a>（.png のみ / APIキー必須）</li>
+</ul>
+
+</div>
+
+<h3 id="performance-cssmin">CSS の最適化</h3>
+<div class="block-article-body">
+<p>CSS は必ず1ファイルにまとめ、CSS ファイル内での @import 規則は使用しないこと。また、セレクタは簡略に記述し、スタイルの上書きが頻繁に行われないように配慮することでパフォーマンスは向上する。</p>
+
+<p>Sass 等を使用する場合は、ネストが深くなりすぎないように注意。またはメディアクエリが複数の場所に分散したりしないように配慮すること。また、実際にページで読み込まれる CSS は必ず Minify すること。</p>
+
+<p>また、メンテナンス等により、使われていないスタイル宣言が大量に残ったままになるなど、ファイルサイズを無駄に肥大化させる記述は、ツールなどを用いてなるべく早期に排除するよう心がける。</p>
+
+</div>
+
+<h3 id="performance-javascriptmin">JavaScript の最適化</h3>
+<div class="block-article-body">
+<p>jQuery プラグインを複数使用する場合は、なるべく 1 ファイルにまとめること。実際に読み込まれる JavaScript は必ず Minify し、ファイルサイズを最適化すること。</p>
+
+<p>Google Analysis のトラッキングコード、各 SNS のシェアボタン系コードなどは、必ず最新のコードを使用すること。また、<a href="#html-include">CSS や JavaScript ファイルの読み込みのセクション</a> を参照し、async / defer 属性を可能な限り使用する。</p>
+
+<h4>Google タグマネージャ</h4>
+
+<p>可能な限り、Google タグマネージャの利用を推奨する。Google Analysis のトラッキングコードも Google タグマネージャから配信すれば個別にコードをページに入れる必要はない。（<a href="http://hyper-text.org/archives/2013/11/google_tagmanager_get_start.shtml">参考記事</a>）</p>
+
+</div>
+
+<h3 id="performance-server">サーバサイドでの設定</h3>
+<div class="block-article-body">
+<p>下記の設定がサーバ側で可能な場合はできる限り行うこと。</p>
+
+<h4>圧縮転送</h4>
+
+<p>gzip によるファイル圧縮は、Web サーバ側で mod_deflate が有効であれば .htaccess に下記の記述で有効にできる。</p>
+
+<pre>
+&lt;ifModule mod_deflate.c&gt;
+  SetOutputFilter DEFLATE
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+  SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|ico)$ no-gzip dont-vary
+  SetEnvIfNoCase Request_URI _\.utxt$ no-gzip
+&lt;/ifModule&gt;
+</pre>
+
+<h4>キャッシュ設定</h4>
+
+<p>Web サーバ側で mod_expires が有効であれば .htaccess に下記の記述で有効にできる。画像など、一度公開されれば変更される可能性が低いファイルはキャッシュを長めに設定する。</p>
+
+<pre>
+&lt;ifModule mod_expires.c&gt;
+  ExpiresActive On
+&lt;Files ~ &quot;¥.(gif|jpg|png|ico)$&quot;&gt;
+  ExpiresDefault &quot;access 1 months&quot;
+&lt;/Files&gt;
+  ExpiresByType text/css &quot;access 10 days&quot;
+  ExpiresByType text/javascript &quot;access 10 days&quot;
+  ExpiresByType application/javascript &quot;access 10 days&quot;
+  ExpiresByType image/svg+xml &quot;access 1 months&quot;
+  ExpiresByType font/ttf &quot;access 1 months&quot;
+  ExpiresByType font/x-woff &quot;access 1 months&quot;
+&lt;/ifModule&gt;
+</pre>
+
+<h4>HTTP/2</h4>
+
+<p>サーバ側で HTTP/2 の利用が可能であれば利用する。SPDY の利用も効果があるが、HTTP/2 が利用できる Web サーバであれば、そちらを優先すること。サーバプッシュの設定なども含めて、クライアントサーバ管理担当者と協議。</p>
+
+<p>その他、CDN （Content Delivery Network） の利用など、サードパーティのサービスを利用する場合はクライアントと協議の上決定すること。</p>
+
+</div>
+
+<h3 id="performance-rel-subresource">rel=subresource</h3>
+<div class="block-article-body">
+<p>CSS ファイルやページのレンダリングに影響のある JavaScript ファイル に <code>rel=&quot;subresource&quot;</code> を付与することで、Chrome では該当リソースを優先的にダウンロードしキャッシュするため、レンダリング速度が向上する可能性がある。</p>
+
+<pre>
+&lt;script src=&quot;plugin.js&quot; rel=&quot;subresource&quot;&gt;&lt;/script&gt;
+</pre>
+
+<pre>
+&lt;link rel=&quot;stylesheet subresource&quot; href=&quot;style.css&quot; /&gt;
+</pre>
+
+<p>HTTP の Link: ヘッダによる指定でもよい。</p>
+
+<p>詳細は下記を参照。</p>
+
+<ul>
+<li><a href="http://www.chromium.org/spdy/link-headers-and-server-hint/link-rel-subresource">LINK rel=subresource ： The Chromium Projects</a></li>
+</ul>
+
+</div>
+
+<h3 id="performance-rel-prefetch">rel=prefetch</h3>
+<div class="block-article-body">
+<p>チュートリアルなど、連続して次のページを読んでいくようなコンテンツの場合、あるいは、ほぼ次に移動する静的なページが決まっているような場合は、Link prefetching の利用が効果的な場合がある。</p>
+
+<pre>
+&lt;link rel=&quot;next prefetch&quot; href=&quot;step-2.html&quot; /&gt;
+</pre>
+
+<p>HTTP の Link: ヘッダによる指定でもよい。</p>
+
+<p>詳細は下記を参照。</p>
+
+<ul>
+<li><a href="https://developer.mozilla.org/ja/docs/Link_prefetching_FAQ">Link prefetching FAQ ： MDN</a></li>
+</ul>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-im">情報管理体制</h2>
+<div class="block-section-body">
+
+<h3 id="im-basic">基本</h3>
+<div class="block-article-body">
+<p>情報管理の意識を常に持ち、適切な管理を行うことで情報漏洩を防止する。</p>
+
+<p>事例としての紹介許可を得ているかいないかに関わらず、クライアント名やプロジェクトの内容、その他、プロジェクトに関連する情報を、公共の場所など、不特定多数が集まる場で話題にしたりすることを一切禁止する。</p>
+
+<p>例えば、食事の最中、電車などでの移動中の会話などでクライアント名や案件の内容を出したりしない。これは家族や友人、知人などに対しても同様とする。クライアントの情報やプロジェクトの内容を不用意に第三者に話したりしないこと。これは機密情報とされるもの以外も含めすべての情報が該当する。</p>
+
+<h4>外出先での電話</h4>
+
+<p>やむを得ず、外出先などで携帯電話でクライアント、もしくは社内スタッフとプロジェクトの内容などについての会話をしなければならない場合、会話の内容が第三者に聞こえていないか十分に注意すること。</p>
+
+<p>駅の構内や人通りの多い路上など、不特定多数が往来する場所での通話は禁止する。</p>
+
+<h4>パソコンや携帯電話の管理</h4>
+
+<p>業務で使用するパソコンや携帯電話 （スマートフォン） の管理は厳重に行い、必ずパスワード等にてロックすること。また、画面ロックを解除したまま席を外したり、他人にそれらを貸したり、使わせたりはしないこと。（<a href="#im-pc-security">パソコンのセキュリティセクション</a> も参照）</p>
+
+<h4>メールアドレス</h4>
+
+<p>クライアント情報やプロジェクト関連のファイルを、@gmail.com など、フリーのアドレス （不特定多数が @ 以降を共用しているアドレス） 宛に送信することを禁止する。仮にクライアントからそのような要望があったとしても不可。メールアドレス間違いによる外部への情報漏洩を防止するため。</p>
+
+<h4>SNS やブログ</h4>
+
+<p>個人としての SNS の利用やブログの開設、運営は原則として禁止しないが、クライアントやプロジェクトの内容に関してそれらに投稿することは一切禁止する。これはアカウントが非公開になっている場合も含む。</p>
+
+</div>
+
+<h3 id="im-pc-security">パソコンのセキュリティ</h3>
+<div class="block-article-body">
+<p>デスクトップ、モバイルを問わず、使用するパソコンには必ずパスワードによるロックをかけること。また、画面ロックをしないまま PC の前を離れたり、第三者にパソコンを貸したりはしないこと （どうしても一時的に貸さなければならない場合はゲストアカウントを使用し、目の届く範囲で使用させること）。</p>
+
+<p>カフェなど、複数の人間が周囲にいる状況で会社やクライアントの重要な情報が記載されたファイルを開くことを禁止する。また、公衆無線 LAN など、安全でないネットワーク上において、さらに通信が暗号化されていない状況で重要なファイルをメール送信したり、受け取ったりしないこと。</p>
+
+</div>
+
+<h3 id="im-password-management">パスワード等の管理</h3>
+<div class="block-article-body">
+<p>業務で使用する Google Apps、Dropbox など Web サービスは 2 要素認証を必ず有効にすること。また、使用するパスワードは最低でも 16 桁、できれば 32 桁以上の強固なものを設定し、他サービス間での同じパスワードの使い回しは堅く禁じる。</p>
+
+<p>また、パスワードを平文でメール送信することは禁止。リモートで送付する必要がある場合は、チャット・プロジェクト管理ツール上など、関係者以外がアクセスできない場所で投稿、あるいは送信すること。ファイルの閲覧に受取手のログインが必須な設定であれば、Google ドライブや、Dropbox などの共有ドライブサービスを利用することも可能。</p>
+
+<p>また、「パスワードを伝達する」 という目的を果たしたら、なるべく早めにファイルや投稿を削除し、いつまでもパスワード情報が放置されたままにしないこと。</p>
+
+<p>パスワード情報などを誰でも閲覧可能な場所に保存したりはしないこと。各自の手元でパスワードを管理する場合は、パスワード管理ソフトを使用し、適切に管理すること。</p>
+
+</div>
+
+<h3 id="im-data-management">機密情報の管理</h3>
+<div class="block-article-body">
+<p>クライアントから提供された機密情報は、担当者の責任において厳重に管理する。</p>
+
+<p>また、紙で提供された情報は、不用意に書類ケースに放置したり、シュレッダーにかけずに廃棄したりするようなことがないように注意すること。</p>
+
+</div>
+
+<h3 id="im-cloud-service">クラウドサービスの利用</h3>
+<div class="block-article-body">
+<p>Dropbox をはじめとした、データを外部サーバに預けるサービスの利用に関しては、2 要素認証を行うなど、セキュリティの要件を満たしていれば特に制約はしないが、クライアントとの業務委託契約、あるいは機密保持契約の内容が優先される。</p>
+
+<p>使用する場合でも、クライアント関連のデータは暗号化して保存するなど、データの取り扱いには注意すること。なお、機密情報と文書または口頭にて明示されたデータのクラウドサービスへのアップロードは原則として禁止する。</p>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-other">その他</h2>
+<div class="block-section-body">
+
+<h3 id="other-copyright">他者の著作権</h3>
+<div class="block-article-body">
+<p>映像、写真、音楽など、他者が創作したものを Web サイトで使用する場合は著作権の侵害を行わないよう十分に注意すること。映像や音楽等、他者が創作したものを公の場で利用する場合は、原則として創作者に対する利用許諾が必要なため、クライアントから提供された素材だとしても、必ず著作権の問題がクリアされているかを確認の上、使用する。</p>
+
+<p>その他、フレームワークやライブラリをはじめとしたプログラムのソースコード等、ライセンスに則った適切な利用を行うこと。詳しくは <a href="#other-license">ライセンスのセクション</a> を参照。</p>
+
+</div>
+
+<h3 id="other-license">ライセンス</h3>
+<div class="block-article-body">
+<p>案件で使用する JavaScript （jQueryプラグイン等）、CSS （Normalize.css等）、アイコンライブラリのライセンスは必ず確認し、ライセンスの元に正しく使用すること。また、ソースコードに記載されたライセンス表記は削除しないように注意すること。</p>
+
+<p>ビルドツールなどを使用する場合にコメントの自動削除が適用されてしまう場合があるので <code>/*! ... */</code> 形式のコメントになっていることを確認する。</p>
+
+<p>なお、リンクツール （利用にあたり、作者ページへのリンクが必須のライブラリ等） は使用不可とする。</p>
+
+<h4>ブランドロゴ等の利用</h4>
+
+<p>Web サービスなど、ブランドロゴをバナーやボタンに使用する際は、各ブランドロゴの利用規約、ガイドラインを必ず確認し、それに従って利用する事。下記に代表的なブランドロゴの利用規約を挙げる（一部は素材画像やロゴデータのダウンロード時に規約が表示される）。</p>
+
+<ul>
+<li><a href="https://about.twitter.com/ja/press/brand-assets">Twitterのブランドガイドライン</a></li>
+<li><a href="https://www.facebookbrand.com/">Using Facebook Brand Assets</a></li>
+<li><a href="http://deployment-ja.googleapps.com/Home/user-resources/google-icons-and-logos/guidelines-for-using-google-brand-features">Guidelines for Using Google Brand Features</a>
+<ul>
+<li><a href="http://deployment-ja.googleapps.com/Home/user-resources/google-icons-and-logos">アイコンとロゴのダウンロード</a></li>
+<li><a href="https://developers.google.com/+/branding-guidelines">Google+ Platform - ブランディングに関するガイドライン</a></li>
+</ul></li>
+<li><a href="http://developer.android.com/distribute/tools/promote/brand.html">Android Brand Guidelines</a>
+<ul>
+<li>はめ込み画像を作成したい場合： <a href="http://developer.android.com/distribute/tools/promote/device-art.html">Device Art Generator</a></li>
+</ul></li>
+<li><a href="http://www.apple.com/jp/pr/products/">Apple 製品の画像と情報</a></li>
+<li><a href="http://www.mozilla.jp/press/images/">Firefox（Mozilla）ロゴとワードマークの使用について</a></li>
+<li><a href="http://hatenacorp.jp/press/resource">はてなロゴデータ等素材集</a></li>
+<li><a href="http://line.me/logo/ja">LINEロゴの利用について</a></li>
+</ul>
+
+</div>
+
+<h3 id="other-buildtool">ビルドツール等</h3>
+<div class="block-article-body">
+<p>開発環境については各担当者の裁量で選択することができるが、複数人でのメンテナンス等を考慮し、下記に推奨ツールを記載する。特定のOSに依存するようなツールは使用しないこと。</p>
+
+<h4>CSS プリプロセッサ</h4>
+
+<p>Sass、もしくは LESS を推奨する。</p>
+
+<h4>CSS フレームワーク</h4>
+
+<p>クライアントと協議の上、問題ない場合は、Tailwind CSS を使用してもよい。</p>
+
+<h4>ビルドツール</h4>
+
+<p>npm-scripts の使用を推奨する。ただし、要件や開発の特性に応じてタスクランナーの使用も可能。その場合は Gulp を推奨。</p>
+
+<h4>バージョン管理</h4>
+
+<p>Git を推奨。リポジトリサービスは GitHub を使用を推奨するが、クライアント案件のソースコードをパブリックなリポジトリには保存しないこと。</p>
+
+<h4>JavaScript ライブラリ・フレームワーク</h4>
+
+<p>React、および Next.js、静的サイトジェネレーターについては Astro.js を推奨。原則として TypeScript を導入すること。</p>
+
+</div>
+
+</div>
+</section>
+</div>
+
+<div class="block-section">
+<section>
+<h2 class="module-block-header" id="section-guidelines">本ガイドラインについて</h2>
+<div class="block-section-body">
+
+<h3 id="guidelines-purpose">ガイドラインの目的</h3>
+<div class="block-article-body">
+<p>本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものであり、当社が本ガイドラインに基づいた Web サイト制作を行うことで、クライアントに対して常に安定した品質の納品物を提供するために策定されている。</p>
+
+<p>本ガイドラインはプロジェクトの開始から納品までの各段階について、プロジェクトメンバーが考慮すべき、または守るべき指標をまとめたものであり、クライアントに対して当社の制作ガイドラインを示す際にも使用される。各プロジェクトメンバーは本ガイドラインに基づいた制作を行い、クライアントに対する一連のサービス提供、及び納品物の品質にばらつきが生じないよう努める必要がある。</p>
+
+<p>なお、本ガイドラインによって策定された内容も、クライアントとの協議の結果、もしくはプロジェクトの円滑な進行、クライアントのビジネスゴール達成のためにより最適な方法がある場合は必ずしも順守する必要はない。ただし、その決断に至った経緯や結果に関しては必ず社内にて情報共有し、必要に応じてガイドラインの改善に役立てるものとする。</p>
+
+<h4>本ガイドラインで扱わない内容</h4>
+
+<p>就業規則やビジネスマナーに関するガイドライン、パートナー企業・フリーランスに関する規定、及びより細かな情報管理ルール等は別途定めているため、本ガイドラインの対象外としている。</p>
+
+<p>また、コーディングにおいて、HTML や CSS をはじめとした Web 標準技術は W3C の各仕様に基づいて正しく使用することを前提としており、本ガイドライン内のコーディング規則ではその詳細について取り扱わない。</p>
+
+</div>
+
+<h3 id="guidelines-version">ガイドラインの改定</h3>
+<div class="block-article-body">
+<p>必要に応じて本ガイドラインは適時更新、改訂される。</p>
+
+<h4>バージョン ナンバリングのルール</h4>
+
+<p>本ガイドラインのバージョン番号は、</p>
+
+<ul>
+<li>[メジャーバージョン番号].[マイナーバージョン番号].[リビジョン番号]</li>
+</ul>
+
+<p>という 3つの番号の組み合わせで構成される。公開版の最初のバージョン番号は、1.0.0 である。</p>
+
+<p>本ガイドラインは、下記のルールに則って、更新、改訂ごとにバージョン番号が変更される。</p>
+
+<ol>
+<li>メジャーバージョン番号は、大幅な構成の変更など、前バージョンと別のドキュメントとして扱うのが妥当なほどの変更が行われた場合に 1 ずつ増加する。</li>
+<li>マイナーバージョン番号は、項目、項目内のセクションの追加が行われた場合に 1 ずつ増加する。</li>
+<li>リビジョン番号は誤字脱字の修正や文章の軽微な修正などが行われた場合に 1 ずつ増加する。メジャーバージョン番号、またはマイナーバージョン番号が変更された際は、0 にリセットされる。</li>
+</ol>
+
+<p>本ガイドラインの改訂履歴は下記、GitHub 上で確認できる。</p>
+
+<ul>
+<li><a href="https://github.com/burnworks/burnworks-guidelines/commits/master/index.shtml">History for index.shtml - burnworks/burnworks-guidelines</a></li>
+</ul>
+
+</div>
+
+<h3 id="guidelines-license">ガイドラインの公開とライセンス</h3>
+<div class="block-article-body">
+<p>本ガイドラインは、下記のライセンスで一般に公開される。</p>
+
+<ul>
+<li><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ja">Creative Commons -- 表示 - 非営利 4.0 国際 -- CC BY-NC 4.0</a></li>
+</ul>
+
+<p>本ガイドラインの HTML ファイル一式は下記から取得可能。</p>
+
+<ul>
+<li><a href="https://github.com/burnworks/burnworks-guidelines">burnworks/burnworks-guidelines</a></li>
+</ul>
+
+</div>
+
+</div>
+</section>
+</div>
+
+</main>
+<!-- //.layout-main --></div>
+
+<div class="layout-sub" id="sub-menu">
+<div class="block-inner">
+
+<div class="module-sub-menu" id="role-sub-menu">
+<nav>
+<h3 class="module-sub-menu-header">項目一覧</h3>
+<ul class="nav module-menu-list">
+<li class="nav-item module-go-top"><a href="#top">ページの上部へ移動</a></li>
+<li class="nav-item"><a href="#section-direction">サイト設計・ディレクション</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#direction-basic">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-kickoff">プロジェクトキックオフ</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-member">社内プロジェクトメンバーのアサイン</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-document">ドキュメント</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-communication">プロジェクト進行における連絡手段</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-accessibility">アクセシビリティ</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-url">ページタイトルやURL</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-use-terms-consistently">文言の統一</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-access-analytics">アクセス解析</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-privacy-policy">個人情報保護方針</a></li>
+<li class="nav-item"><a class="nav-link" href="#direction-contract">サーバや外部サービスの契約</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-design">デザイン関連</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#design-accessibility">アクセシビリティ</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-design-data">デザインデータ</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-style-guide">スタイルガイド</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-stock-photo">画像素材のライセンス</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-svg">SVG</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-text">長いテキストの可読性など</a></li>
+<li class="nav-item"><a class="nav-link" href="#design-favicon">Favicon</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-smartphone">スマートフォン関連</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#smartphone-basic">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#smartphone-touch-device">タッチデバイス</a></li>
+<li class="nav-item"><a class="nav-link" href="#smartphone-breakpoint">ブレイクポイント</a></li>
+<li class="nav-item"><a class="nav-link" href="#smartphone-retina">高精細ディスプレイ対応</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-coding">コーディング全般</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#coding-basic">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-git">バージョン管理</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-server-path">ディレクトリ構成</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-file-name">ファイル名の基本ルール</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-browser-version">動作検証ブラウザ</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-charset">文字コード</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-indent">インデントルール</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-letter">大文字小文字</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-comment">コメント</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-viewport">viewport</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-scheme">スキームの記述</a></li>
+<li class="nav-item"><a class="nav-link" href="#coding-ｌibrary">ライブラリ・フレームワーク</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-html">HTMLコーディング</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#html-validation">基本・バリデーション</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-accessibility">アクセシビリティ</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-document-type-definition">文書型宣言</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-tag">要素や終了タグの省略</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-semantics">セマンティクス</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-include">CSS や JavaScript ファイルの読み込み</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-type-attribute">type 属性</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-structured-data">構造化データ</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-ogp">メタデータや OGP</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-conditional-comment">条件付きコメント</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-anchor-link">ページ上部へのアンカーリンク</a></li>
+<li class="nav-item"><a class="nav-link" href="#html-svg">SVG</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-css">CSSコーディング</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#css-basic">基本・バリデーション</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-normalize">デフォルトスタイルシートのノーマライズ</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-selector-name">セレクタの命名規則</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-shorthand">ショートハンド</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-media-rule">@media 規則</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-unit">単位などの省略</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-link-color">リンクの文字色</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-font-family">font-family の指定</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-z-index">z-index の値</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-web">Web フォントやアイコンフォントの利用</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-css3">CSS3 プロパティやセレクタ</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-css-hack">CSSハック</a></li>
+<li class="nav-item"><a class="nav-link" href="#css-halfway">中間制作物</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-javascript">JavaScript</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#javascript-basic">基本・バリデーション</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-quotation-mark">シングルクォーテーションとダブルクォーテーション</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-semicolon">セミコロン</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-function">変数 / 関数の命名規則</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-function-declaration">ブロックの中での関数宣言</a></li>
+<li class="nav-item"><a class="nav-link" href="#javascript-jquery">jQuery</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-cms">CMS</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#cms-product">プロダクトの選定</a></li>
+<li class="nav-item"><a class="nav-link" href="#cms-movable-type">Movable Type</a></li>
+<li class="nav-item"><a class="nav-link" href="#cms-plugin">プラグイン</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-security">セキュリティ</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#security-post">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-password">強固なパスワード</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-password-protect">管理画面のパスワード保護</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-ssl">SSL の利用</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-ftp">FTP</a></li>
+<li class="nav-item"><a class="nav-link" href="#security-movable-type">Movable Type</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-performance">パフォーマンス</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#performance-basic">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-imagemin">画像の最適化</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-cssmin">CSS の最適化</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-javascriptmin">JavaScript の最適化</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-server">サーバサイドでの設定</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-rel-subresource">rel=subresource</a></li>
+<li class="nav-item"><a class="nav-link" href="#performance-rel-prefetch">rel=prefetch</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-im">情報管理体制</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#im-basic">基本</a></li>
+<li class="nav-item"><a class="nav-link" href="#im-pc-security">パソコンのセキュリティ</a></li>
+<li class="nav-item"><a class="nav-link" href="#im-password-management">パスワード等の管理</a></li>
+<li class="nav-item"><a class="nav-link" href="#im-data-management">機密情報の管理</a></li>
+<li class="nav-item"><a class="nav-link" href="#im-cloud-service">クラウドサービスの利用</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-other">その他</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#other-copyright">他者の著作権</a></li>
+<li class="nav-item"><a class="nav-link" href="#other-license">ライセンス</a></li>
+<li class="nav-item"><a class="nav-link" href="#other-buildtool">ビルドツール等</a></li>
+</ul>
+</li>
+<li class="nav-item"><a href="#section-guidelines">本ガイドラインについて</a>
+<ul>
+<li class="nav-item"><a class="nav-link" href="#guidelines-purpose">ガイドラインの目的</a></li>
+<li class="nav-item"><a class="nav-link" href="#guidelines-version">ガイドラインの改定</a></li>
+<li class="nav-item"><a class="nav-link" href="#guidelines-license">ガイドラインの公開とライセンス</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+
+</div>
+<!-- //.layout-sub --></div>
+
+</div>
+<!-- //.layout-container --></div>
+
+<div class="block-page-footer">
+<footer>
+<p>burnworks Inc. Ver.1.5.1 (2023-09-30)</p>
+<p class="module-license"><a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.</a></p>
+<p class="module-go-top"><a href="#top" title="ページの上部へ移動">Back to top</a></p>
+</footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#role-sub-menu'
+})
+</script>
+<script src="js/function.js"></script>
+
+</body>
+</html>
