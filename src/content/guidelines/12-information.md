@@ -1,7 +1,7 @@
 ---
 title: "情報管理体制"
 sectionId: "section-im"
-order: 11
+order: 12
 subsections:
   - id: "im-basic"
     title: "基本"

@@ -1,7 +1,7 @@
 ---
 title: "その他"
 sectionId: "section-other"
-order: 12
+order: 13
 subsections:
   - id: "other-copyright"
     title: "他者の著作権"

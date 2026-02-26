@@ -1,7 +1,7 @@
 ---
 title: "本ガイドラインについて"
 sectionId: "section-guidelines"
-order: 13
+order: 14
 subsections:
   - id: "guidelines-purpose"
     title: "ガイドラインの目的"
