@@ -1,0 +1,91 @@
+---
+interface Subsection {
+  id: string;
+  title: string;
+}
+
+interface Section {
+  sectionId: string;
+  title: string;
+  subsections?: Subsection[];
+}
+
+interface Props {
+  sections: Section[];
+}
+
+const { sections } = Astro.props;
+---
+
+<!-- Mobile overlay -->
+<div id="sidebar-overlay" class="hidden fixed inset-0 z-40 bg-black/50 lg:hidden"></div>
+
+<!-- Sidebar -->
+<aside
+  id="sidebar"
+  class="fixed top-14 right-0 bottom-0 z-40 w-72 bg-gray-50 border-l border-gray-200 overflow-y-auto
+         lg:left-auto lg:right-0 lg:top-14 lg:w-64 lg:border-l lg:border-r-0
+         lg:fixed lg:block"
+  aria-label="目次"
+>
+  <nav class="p-4">
+    <h2 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3 px-2">項目一覧</h2>
+    <ul class="space-y-1">
+      <li>
+        <a href="#top" class="block px-2 py-1 text-xs text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded transition-colors"> ↑ ページの上部へ </a>
+      </li>
+      {
+        sections.map((section) => (
+          <li class="mt-2">
+            <a
+              href={`#${section.sectionId}`}
+              data-section-link={section.sectionId}
+              class="block px-2 py-1.5 text-sm font-semibold text-gray-800 hover:text-blue-800 hover:bg-blue-50 rounded transition-colors"
+            >
+              {section.title}
+            </a>
+            {section.subsections && section.subsections.length > 0 && (
+              <ul class="ml-3 mt-1 space-y-0.5 border-l border-gray-200 pl-3">
+                {section.subsections.map((sub) => (
+                  <li>
+                    <a href={`#${sub.id}`} data-subsection-link={sub.id} class="block py-0.5 text-xs text-gray-600 hover:text-blue-800 hover:bg-blue-50 rounded px-1 transition-colors leading-snug">
+                      {sub.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</aside>
+
+<script>
+  // Intersection Observer for active section tracking
+  const sections = document.querySelectorAll<HTMLElement>("section[data-section-id]");
+  const sectionLinks = document.querySelectorAll<HTMLAnchorElement>("a[data-section-link]");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = (entry.target as HTMLElement).dataset.sectionId;
+          sectionLinks.forEach((link) => {
+            const isActive = link.dataset.sectionLink === id;
+            link.classList.toggle("nav-link-active", isActive);
+            link.classList.toggle("text-blue-700", isActive);
+            link.classList.toggle("bg-blue-50", isActive);
+          });
+        }
+      });
+    },
+    {
+      rootMargin: "-10% 0px -80% 0px",
+      threshold: 0,
+    },
+  );
+
+  sections.forEach((section) => observer.observe(section));
+</script>

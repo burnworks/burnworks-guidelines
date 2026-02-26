@@ -1,0 +1,28 @@
+---
+import pkg from '../../package.json';
+const version = pkg.version;
+const lastModified = new Date().toISOString().slice(0, 10);
+---
+
+<footer class="mt-16 py-8 px-6 border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+  <div class="max-w-4xl">
+    <p class="mb-3">
+      burnworks Inc. Ver.{version} (<time datetime={lastModified}>{lastModified}</time>)
+    </p>
+    <p class="mb-3">
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" class="inline-flex items-center gap-2 hover:text-blue-700 transition-colors">
+        <img src="https://i.creativecommons.org/l/by-nc/2.1/jp/88x31.png" alt="Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" width="88" height="31" loading="lazy" />
+        <span>CC BY-NC 4.0</span>
+      </a>
+    </p>
+    <p class="text-xs text-gray-500">
+      This work is licensed under a{" "}
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" class="underline hover:text-blue-700 transition-colors">
+        Creative Commons Attribution-NonCommercial 4.0 International License
+      </a>.
+    </p>
+    <p class="mt-4">
+      <a href="#top" class="text-gray-500 hover:text-blue-700 transition-colors text-xs"> ↑ このページの上部へ </a>
+    </p>
+  </div>
+</footer>

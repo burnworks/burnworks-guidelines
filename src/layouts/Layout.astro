@@ -1,0 +1,48 @@
+---
+import "../styles/global.css";
+import "@fontsource-variable/noto-sans-jp";
+import "@fontsource-variable/source-code-pro";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "制作ガイドライン - バーンワークス株式会社",
+  description = "本ガイドラインは、バーンワークス株式会社が行う Web サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。",
+} = Astro.props;
+
+const ogUrl = Astro.site?.toString() ?? "https://burnworks.com/docs/guidelines/";
+---
+
+<!doctype html>
+<html lang="ja" dir="ltr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content="制作ガイドライン" />
+    <meta property="og:site_name" content="バーンワークス株式会社" />
+    <meta property="og:url" content={ogUrl} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://burnworks.com/static/img/ogp-image.png" />
+    <meta property="og:image:secure_url" content="https://burnworks.com/static/img/ogp-image.png" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" href="/static/img/favicon/icon-192x192.png" />
+    <link rel="apple-touch-icon" type="image/png" href="/static/img/favicon/apple-touch-icon-180x180.png" />
+    <!--
+    Burnworks Inc. Web Development Guidelines Ver.2.0.0
+    https://burnworks.com/docs/guidelines/
+    by Yoshiki Kato @burnworks - First Published 2014-01-20 Ver.0.1.0
+
+    This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) License.
+    https://creativecommons.org/licenses/by-nc/4.0/
+  -->
+  </head>
+  <body class="bg-white text-gray-900 font-sans antialiased">
+    <slot />
+  </body>
+</html>

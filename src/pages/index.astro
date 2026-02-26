@@ -1,0 +1,76 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Footer from "../components/Footer.astro";
+
+const allEntries = await getCollection("guidelines");
+allEntries.sort((a, b) => a.data.order - b.data.order);
+
+const renderedEntries = await Promise.all(
+  allEntries.map(async (entry) => {
+    const { Content } = await render(entry);
+    return { entry, Content };
+  }),
+);
+
+const sections = allEntries.map((e) => ({
+  sectionId: e.data.sectionId,
+  title: e.data.title,
+  subsections: e.data.subsections,
+}));
+
+import pkg from "../../package.json";
+const version = pkg.version;
+const lastModified = new Date().toISOString().slice(0, 10);
+---
+
+<Layout>
+  <div id="top" class="min-h-screen">
+    <Header />
+
+    <!-- Mobile sidebar overlay handled in Sidebar component -->
+    <Sidebar sections={sections} />
+
+    <!-- Page layout: main content + sidebar -->
+    <div class="flex pt-14">
+      <!-- Main content -->
+      <main class="flex-1 min-w-0 lg:mr-64 px-4 md:px-8 py-10 max-w-4xl mx-auto lg:mx-0">
+        <!-- Summary -->
+        <div class="mb-10 p-5 bg-blue-50 border border-blue-200 rounded-lg text-sm leading-relaxed text-gray-700">
+          <p>
+            本ガイドラインは、バーンワークス株式会社が行う Web
+            サイト制作全般においての品質を保持するために定めたものである。当社は本ガイドラインに基づいた制作を行い、クライアントに対して常に安定した品質のサービス、及び納品物を提供する。
+          </p>
+          <p class="mt-2 text-xs text-gray-600">
+            Last modified <time datetime={lastModified}>{lastModified}</time> — Ver.{version}
+          </p>
+        </div>
+
+        <!-- Sections -->
+        {
+          renderedEntries.map(({ entry, Content }) => (
+            <section id={entry.data.sectionId} data-section-id={entry.data.sectionId} class="mb-16 scroll-mt-16">
+              <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b-2 border-gray-900">{entry.data.title}</h2>
+              <div
+                class="prose prose-gray max-w-none
+                        prose-headings:scroll-mt-16
+                        prose-h3:text-lg prose-h3:font-semibold prose-h3:text-gray-800 prose-h3:mt-8 prose-h3:mb-3
+                        prose-h4:text-base prose-h4:font-semibold prose-h4:text-gray-700
+                        prose-p:text-gray-700 prose-p:leading-relaxed
+                        prose-li:text-gray-700
+                        prose-a:text-blue-800 prose-a:underline hover:prose-a:text-blue-900
+                        prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:text-sm prose-pre:leading-relaxed
+                        prose-blockquote:border-l-4 prose-blockquote:border-blue-400 prose-blockquote:bg-blue-50 prose-blockquote:py-1 prose-blockquote:pr-4 prose-blockquote:text-sm prose-blockquote:not-italic"
+              >
+                <Content />
+              </div>
+            </section>
+          ))
+        }
+      </main>
+    </div>
+    <Footer />
+  </div>
+</Layout>

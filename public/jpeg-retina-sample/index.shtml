@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<title>Retina 対応サンプル</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/s.css" />
+</head>
+<body>
+<h1>Retina 対応サンプル</h1>
+
+<section>
+<h2>jpg / 高画質（画質 80, ファイルサイズ 17.9KB） / 通常</h2>
+<p><img src="img/sample_80_normal.jpg" /></p>
+</section>
+
+<section>
+<h2>jpg / 高画質（画質 80, ファイルサイズ 61.8KB） / Retina 対応</h2>
+<p><img src="img/sample_80_retina.jpg" width="300" /></p>
+</section>
+
+<section>
+<h2>jpg / 低画質（画質 60, ファイルサイズ 10.9KB） / 通常</h2>
+<p><img src="img/sample_60_normal.jpg" /></p>
+</section>
+
+<section>
+<h2>jpg / 低画質（画質 60, ファイルサイズ 37.2KB） / Retina 対応</h2>
+<p><img src="img/sample_60_retina.jpg" width="300" /></p>
+</section>
+
+<section>
+<h2>jpg / 超低画質（画質 30, ファイルサイズ 3.2KB） / 通常</h2>
+<p><img src="img/sample_30_normal.jpg" /></p>
+</section>
+
+<section>
+<h2>jpg / 超低画質（画質 30, ファイルサイズ 10.5KB） / Retina 対応</h2>
+<p><img src="img/sample_30_retina.jpg" width="300" /></p>
+</section>
+
+</body>
+</html>

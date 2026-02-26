@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: 'Noto Sans JP Variable', sans-serif;
+  --font-mono: 'Source Code Pro Variable', monospace;
+  --color-brand-dark: #1a1a2e;
+  --color-brand: #16213e;
+  --color-accent: #0f3460;
+}
+
+/* Bad code example: red left border */
+.prose pre.badcode {
+  border-left: 4px solid var(--color-red-400, #f87171);
+  background-color: var(--color-red-50, #fef2f2);
+}
+
+/* Good code example: green left border */
+.prose pre:not(.badcode) {
+  border-left: 4px solid var(--color-green-400, #4ade80);
+}
+
+/* Inline bad code */
+.prose code.badcode {
+  background-color: var(--color-red-100, #fee2e2);
+  color: var(--color-red-700, #b91c1c);
+}
+
+/* Nav active link */
+.nav-link-active {
+  font-weight: 700;
+  color: var(--color-blue-700, #1d4ed8);
+}
+
+/* Sidebar mobile slide-in */
+@media (max-width: 1023px) {
+  #sidebar {
+    transform: translateX(100%);
+    transition: transform 0.25s ease-in-out;
+  }
+  #sidebar.open {
+    transform: translateX(0);
+  }
+}
