@@ -119,14 +119,14 @@ SFTP/FTPS 対応クライアントとして、Windows 環境であれば、WinSC
 
 Movable Type プログラムは、下記の通り主要な実行ファイルのリネーム、および設定ファイルへの追記を行うこと。リネームのルールは別途定めているため下記は参考。
 
-- mt.cgi → **mt-example-example.cgi**
+- mt.cgi → **mt-example.cgi**
 - mt-upgrade.cgi → **mt-upgrade-example.cgi**
 - mt-data-api.cgi → **mt-data-api-example.cgi**
 - mt-check.cgi → **mt-check-example.cgi**
 
 ```
 #mt-config.cgiに追記
-AdminScript mt-example-example.cgi
+AdminScript mt-example.cgi
 UpgradeScript mt-upgrade-example.cgi
 DataAPIScript mt-data-api-example.cgi
 CheckScript mt-check-example.cgi
