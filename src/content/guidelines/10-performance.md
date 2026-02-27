@@ -15,8 +15,8 @@ subsections:
     title: "JavaScript の最適化"
   - id: "performance-server"
     title: "サーバサイドでの設定"
-  - id: "performance-rel-prefetch"
-    title: "rel=prefetch"
+  - id: "performance-prefetch"
+    title: "リソースの先読み"
 ---
 
 <h3 id="performance-basic">基本</h3>
@@ -156,7 +156,7 @@ gzip または Brotli による圧縮転送を有効にすること。Apache の
 
 サーバ側で HTTP/2 または HTTP/3 の利用が可能であれば利用する。CDN（Content Delivery Network）の利用など、サードパーティのサービスを利用する場合はクライアントと協議の上決定すること。
 
-<h3 id="performance-rel-prefetch">rel=prefetch</h3>
+<h3 id="performance-prefetch">リソースの先読み</h3>
 
 チュートリアルなど、連続して次のページを読んでいくようなコンテンツの場合、あるいは、ほぼ次に移動する静的なページが決まっているような場合は、Link prefetching の利用が効果的な場合がある。
 
@@ -164,8 +164,21 @@ gzip または Brotli による圧縮転送を有効にすること。Apache の
 <link rel="prefetch" href="step-2.html" />
 ```
 
-また、重要なページのナビゲーション先には `rel="prerender"` を使用することで、バックグラウンドでページを先読みできる。
+なお、`rel="prerender"` はモダンブラウザでは廃止されており使用しないこと。代替として **Speculation Rules API** が利用可能。次に移動する可能性が高いページを JSON 形式で宣言的に指定することで、ブラウザがバックグラウンドでページのプリレンダリングを行う。
+
+```html
+<script type="speculationrules">
+{
+  "prerender": [
+    {
+      "urls": ["step-2.html"]
+    }
+  ]
+}
+</script>
+```
 
 詳細は下記を参照。
 
-- [Link prefetching FAQ：MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/HTTP/Link_prefetching_FAQ)
+- [rel=prefetch：MDN Web Docs](https://developer.mozilla.org/ja/docs/Web/HTML/Attributes/rel/prefetch)
+- [Speculation Rules API によるページのプリレンダリング：Chrome Developers](https://developer.chrome.com/docs/web-platform/prerender-pages)
