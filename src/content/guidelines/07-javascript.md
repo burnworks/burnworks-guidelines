@@ -105,7 +105,7 @@ const API_KEY = 'b6lC50HCr4mA';
 
 <h3 id="javascript-function-declaration">ブロックの中での関数宣言</h3>
 
-ECMAScript では、if や while などのブロック内における関数宣言を認めていない。将来的な互換性を確保するため、この仕様に準じる。
+ブロック内での関数宣言は、実行環境によって挙動が一致しない場合があり、可読性も低下するため推奨しない。
 
 ```javascript badcode
 // 非推奨
