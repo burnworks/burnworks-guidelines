@@ -30,9 +30,9 @@ const ogUrl = Astro.site?.toString() ?? "https://burnworks.com/docs/guidelines/"
     <meta property="og:image" content="https://burnworks.com/static/img/ogp-image.png" />
     <meta property="og:image:secure_url" content="https://burnworks.com/static/img/ogp-image.png" />
     <meta property="og:type" content="website" />
-    <link rel="icon" type="image/x-icon" href="/static/img/favicon/favicon.ico" />
-    <link rel="icon" type="image/png" href="/static/img/favicon/icon-192x192.png" />
-    <link rel="apple-touch-icon" type="image/png" href="/static/img/favicon/apple-touch-icon-180x180.png" />
+    <link rel="icon" type="image/x-icon" href={`${import.meta.env.BASE_URL}static/img/favicon/favicon.ico`} />
+    <link rel="icon" type="image/png" href={`${import.meta.env.BASE_URL}static/img/favicon/icon-192x192.png`} />
+    <link rel="apple-touch-icon" type="image/png" href={`${import.meta.env.BASE_URL}static/img/favicon/apple-touch-icon-180x180.png`} />
     <!--
     Burnworks Inc. Web Development Guidelines Ver.2.0.0
     https://burnworks.com/docs/guidelines/

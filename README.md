@@ -8,7 +8,7 @@ This document is licensed under a [Creative Commons Attribution-NonCommercial 4.
 
 ## Tech Stack
 
-- [Astro](https://astro.build/) v5 — Static site generator
+- [Astro](https://astro.build/) v6 — Static site generator
 - [Tailwind CSS](https://tailwindcss.com/) v4 — Utility-first CSS
 - [@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin) — Prose styles for Markdown content
 - Content Collections — Markdown-based content management
